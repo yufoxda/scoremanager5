@@ -1,4 +1,4 @@
-# from database.skima.createSQL import Book, Song, Author, PublishURL
+from database.skima.createSQL import Book, Song, Author, PublishURL
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
