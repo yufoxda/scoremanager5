@@ -1,10 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 def get_page(url):
     response = requests.get(url)
     response.encoding = 'utf-8'
     return response.text
+
+def split_composer_data(data):
+    # 複数の区切り文字に対応する関数
+    delimiters = ['/', '、', 'と', '・']
+    for delimiter in delimiters:
+        if delimiter in data:
+            return [name.strip() for name in data.split(delimiter)]
+    return [data.strip()]
 
 def parse_html(html):
     soup = BeautifulSoup(html, 'html.parser')
@@ -21,23 +30,31 @@ def parse_html(html):
 
         # 主題歌や追加情報を取得
         additional_info_element = track.select_one('.main')
-        additional_info = ""
+        print(list(additional_info_element.stripped_strings))
+        additional_info = []
+        lyricist_list = []
+        composer_list = []
+        arranger_list = []
+        fase = 0
         for text in additional_info_element.stripped_strings:
-            if text not in song_name:
-                additional_info += text + " "
-        additional_info = additional_info.strip()
-
-        # 作詞者を取得
-        lyricist_element = track.find(string="作詞：")
-        lyricist = lyricist_element.find_next('a').text.strip() if lyricist_element else "N/A"
-
-        # 作曲者を取得
-        composer_element = track.find(string="作曲：")
-        composer = composer_element.find_next('a').text.strip() if composer_element else "N/A"
-
-        # 編曲者を取得
-        arranger_element = track.find(string="編曲：")
-        arranger = arranger_element.find_next(string=True).strip() if arranger_element else "N/A"
+            if text in song_name :
+                continue
+            if(text == '作詞：'):
+                fase = 1
+                continue
+            if(text == '作曲：'):
+                fase = 2
+                continue
+            if(fase == 0):
+                additional_info.append(text)
+            elif(fase == 1):
+                lyricist_list.append(text)
+            elif(fase == 2):
+                composer_list.append(text)
+                fase = 3
+            elif(fase == 3):
+                arranger_list.append(text.replace('編曲：',''))
+            
 
         # グレードを取得
         grade_element = track.select_one('.sub')
@@ -51,9 +68,9 @@ def parse_html(html):
         tracks.append({
             '曲名': song_name,
             'メモ': additional_info,
-            '作詞者': lyricist,
-            '作曲者': composer,
-            '編曲者': arranger,
+            '作詞者': lyricist_list,
+            '作曲者': composer_list,
+            '編曲者': arranger_list,
             'グレード': grade
         })
 
@@ -85,7 +102,7 @@ def main():
 
     # 抽出した曲の情報を表示
     for track in all_tracks:
-        print(f"曲名: {track['曲名']}, メモ: {track['メモ']}, 作詞者: {track['作詞者']}, 作曲者: {track['作曲者']}, 編曲者: {track['編曲者']}, グレード: {track['グレード']}")
+        print(track['曲名'],track['メモ'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
 
 if __name__ == '__main__':
     main()
