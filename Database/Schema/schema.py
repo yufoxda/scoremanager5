@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 from datetime import datetime
 
 # エンジンを作成
-engine = create_engine('sqlite:///Database/ompuscores.db', echo=True)
+engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 
 # ベースクラスを定義
 Base = declarative_base()
@@ -30,9 +30,17 @@ class Song(Base):
     memo = Column(String,  nullable=True)
 
     parent_book = relationship('Book', back_populates='songs')
+    artists = relationship('Artist', secondary='song_artist_association', back_populates='songs')
     lyricists = relationship('Lyricist', secondary='song_lyricist_association', back_populates='songs')
     song_writers = relationship('SongWriter', secondary='song_writer_association', back_populates='songs')
     arrangers = relationship('Arranger', secondary='song_arranger_association', back_populates='songs')
+
+class Artist(Base):
+    __tablename__ = 'artists'
+    id = Column(Integer, primary_key=True, unique=True)
+    Artist_name = Column(String, nullable=False)
+
+    songs = relationship('Song', secondary='song_artist_association', back_populates='artists')
 
 # 作詞家
 class Lyricist(Base):
@@ -73,3 +81,4 @@ class SongArrangerAssociation(Base):
     __tablename__ = 'song_arranger_association'
     song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
     arranger_id = Column(Integer, ForeignKey('arrangers.id'), primary_key=True)
+

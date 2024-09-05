@@ -27,17 +27,22 @@ def parse_html(html):
     for track in soup.select('tr[itemprop="track"]'):
         # 曲名を取得
         song_name = track.select_one('.main a span[itemprop="name"]').text.strip()
-
+        artist = ""
+        try:
+            artist = (track.find('a', {'itemprop': 'byArtist'}).text.strip())
+        except:
+            artist = "none"
         # 主題歌や追加情報を取得
         additional_info_element = track.select_one('.main')
         print(list(additional_info_element.stripped_strings))
         additional_info = []
-        lyricist= ""
-        composer = ""
-        arranger= ""
+        lyricist= "none"
+        composer = "none"
+        arranger= "none"
+        
         fase = 0
         for text in additional_info_element.stripped_strings:
-            if text in song_name :
+            if text in song_name or (fase == 0 and text in artist) :
                 continue
             if(text == '作詞：'):
                 fase = 1
@@ -45,15 +50,14 @@ def parse_html(html):
             if(text == '作曲：'):
                 fase = 2
                 continue
-            if(fase == 0):
+            if(not text.find('編曲：') == -1):
+                arranger = text.replace('編曲：','')
+            elif(fase == 0):
                 additional_info.append(text)
             elif(fase == 1):
                 lyricist = text
             elif(fase == 2):
                 composer = text
-                fase = 3
-            elif(fase == 3):
-                arranger = text.replace('編曲：','')
             
 
         # グレードを取得
@@ -68,10 +72,11 @@ def parse_html(html):
         tracks.append({
             '曲名': song_name,
             'メモ': additional_info,
+            'アーティスト':list(artist.split('/')),
             '作詞者': list(lyricist.split('/')),
             '作曲者': list(composer.split('/')),
             '編曲者': list(arranger.split('/')),
-            'グレード': grade
+            'グレード': grade.replace("級","")
         })
 
     return num_tracks, tracks
@@ -102,7 +107,7 @@ def main():
 
     # 抽出した曲の情報を表示
     for track in all_tracks:
-        print(track['曲名'],track['メモ'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
+        print(track['曲名'],track['メモ'],track['アーティスト'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
 
 if __name__ == '__main__':
     main()
