@@ -32,9 +32,9 @@ def parse_html(html):
         additional_info_element = track.select_one('.main')
         print(list(additional_info_element.stripped_strings))
         additional_info = []
-        lyricist_list = []
-        composer_list = []
-        arranger_list = []
+        lyricist= ""
+        composer = ""
+        arranger= ""
         fase = 0
         for text in additional_info_element.stripped_strings:
             if text in song_name :
@@ -48,12 +48,12 @@ def parse_html(html):
             if(fase == 0):
                 additional_info.append(text)
             elif(fase == 1):
-                lyricist_list.append(text)
+                lyricist = text
             elif(fase == 2):
-                composer_list.append(text)
+                composer = text
                 fase = 3
             elif(fase == 3):
-                arranger_list.append(text.replace('編曲：',''))
+                arranger = text.replace('編曲：','')
             
 
         # グレードを取得
@@ -68,9 +68,9 @@ def parse_html(html):
         tracks.append({
             '曲名': song_name,
             'メモ': additional_info,
-            '作詞者': lyricist_list,
-            '作曲者': composer_list,
-            '編曲者': arranger_list,
+            '作詞者': list(lyricist.split('/')),
+            '作曲者': list(composer.split('/')),
+            '編曲者': list(arranger.split('/')),
             'グレード': grade
         })
 
