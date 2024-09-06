@@ -63,9 +63,9 @@ def parse_html(html):
             elif(fase == 0):
                 additional_info.append(text)
             elif(fase == 1):
-                lyricist = text
+                lyricist = text.strip()
             elif(fase == 2):
-                composer = text
+                composer = text.strip()
             
 
         # グレードを取得
@@ -90,6 +90,11 @@ def parse_html(html):
     return num_tracks, tracks,bookname
 
 def main(code):
+
+    existcode = session.query(Book).filter_by(product_code = code).first()
+    if existcode:
+        return
+
     base_url = 'https://www.ymm.co.jp/p/detail.php?code='+code+'&dm=d&o='
     all_tracks = []
     page_offset = 0
@@ -139,46 +144,50 @@ def main(code):
             memo=memos,
             created_at=datetime.now()
         )
+    # アーティストを曲に関連付け
+    for i in track['アーティスト']:
+        existing_artist = session.query(Artist).filter_by(Artist_name=i.strip()).first()
+        if existing_artist:
+            print(f"アーティスト '{i}' が存在します")
+            new_song.artists.append(existing_artist)
+        else:
+            new_artist = Artist(Artist_name=i.strip())
+            session.add(new_artist)  # セッションに追加
+            new_song.artists.append(new_artist)
 
-        # アーティストを曲に関連付け
-        for i in track['アーティスト']:
-            existing_artist = session.query(Artist).filter_by(Artist_name=i).first()
-            if existing_artist:
-                print(f"アーティスト '{i}' が存在します")
-                new_song.artists.append(existing_artist)
-            else:
-                new_artist = Artist(Artist_name=i)
-                new_song.artists.append(new_artist)
+    # 作詞家を曲に関連付け
+    for i in track['作詞者']:
+        existing_lyricist = session.query(Lyricist).filter_by(lyricist_name=i.strip()).first()
+        if existing_lyricist:
+            print(f"作詞家 '{i}' が存在します")
+            new_song.lyricists.append(existing_lyricist)
+        else:
+            new_lyricist = Lyricist(lyricist_name=i.strip())
+            session.add(new_lyricist)  # セッションに追加
+            new_song.lyricists.append(new_lyricist)
 
-        # 作詞家を曲に関連付け
-        for i in track['作詞者']:
-            existing_lyricist = session.query(Lyricist).filter_by(lyricist_name=i).first()
-            if existing_lyricist:
-                print(f"作詞家 '{i}' が存在します")
-                new_song.lyricists.append(existing_lyricist)
-            else:
-                new_lyricist = Lyricist(lyricist_name=i)
-                new_song.lyricists.append(new_lyricist)
+    # 作曲家を曲に関連付け
+    for i in track['作曲者']:
+        existing_writer = session.query(SongWriter).filter_by(song_writer_name=i.strip()).first()
+        if existing_writer:
+            print(f"作曲家 '{i}' が存在します")
+            new_song.song_writers.append(existing_writer)
+        else:
+            new_writer = SongWriter(song_writer_name=i.strip())
+            session.add(new_writer)  # セッションに追加
+            new_song.song_writers.append(new_writer)
 
-        # 作曲家を曲に関連付け
-        for i in track['作曲者']:
-            existing_writer = session.query(SongWriter).filter_by(song_writer_name=i).first()
-            if existing_writer:
-                print(f"作曲家 '{i}' が存在します")
-                new_song.song_writers.append(existing_writer)
-            else:
-                new_writer = SongWriter(song_writer_name=i)
-                new_song.song_writers.append(new_writer)
+    # 編曲家を曲に関連付け
+    for i in track['編曲者']:
+        existing_arranger = session.query(Arranger).filter_by(arranger_name=i.strip()).first()
+        if existing_arranger:
+            print(f"編曲家 '{i}' が存在します")
+            new_song.arrangers.append(existing_arranger)
+        else:
+            new_arranger = Arranger(arranger_name=i.strip())
+            session.add(new_arranger)  # セッションに追加
+            new_song.arrangers.append(new_arranger)
 
-        # 編曲家を曲に関連付け
-        for i in track['編曲者']:
-            existing_arranger = session.query(Arranger).filter_by(arranger_name=i).first()
-            if existing_arranger:
-                print(f"編曲家 '{i}' が存在します")
-                new_song.arrangers.append(existing_arranger)
-            else:
-                new_arranger = Arranger(arranger_name=i)
-                new_song.arrangers.append(new_arranger)
 
         # 曲をセッションに追加
         session.add(new_song)
@@ -191,7 +200,7 @@ def main(code):
     
 
 if __name__ == '__main__':
-    filename = "Database/Register/datum/test.text"
+    filename = "Database/Register/datum/lists.text"
     f = open(filename, 'r')
 
     datalist = f.readlines()
