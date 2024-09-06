@@ -6,9 +6,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 
-from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger
-
-from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArrangerAssociation
+from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger,Artist
+from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArtistAssociation
 
 
 
@@ -21,14 +20,6 @@ def get_page(url):
     response.encoding = 'utf-8'
     return response.text
 
-def split_composer_data(data):
-    # 複数の区切り文字に対応する関数
-    delimiters = ['/', '、', 'と', '・']
-    for delimiter in delimiters:
-        if delimiter in data:
-            return [name.strip() for name in data.split(delimiter)]
-    return [data.strip()]
-
 def parse_html(html):
     soup = BeautifulSoup(html, 'html.parser')
     tracks = []
@@ -36,7 +27,10 @@ def parse_html(html):
     # 収録曲数を取得
     num_tracks_element = soup.select_one('span[itemprop="numTracks"]')
     num_tracks = int(num_tracks_element.text.strip()) if num_tracks_element else 0
-
+    
+    name = soup.find('span',itemprop="name")
+    bookname = re.sub(r"\s", "", name.get_text())
+    print(bookname)
     # 各曲の情報を抽出
     for track in soup.select('tr[itemprop="track"]'):
         # 曲名を取得
@@ -48,7 +42,7 @@ def parse_html(html):
             artist = "none"
         # 主題歌や追加情報を取得
         additional_info_element = track.select_one('.main')
-        print(list(additional_info_element.stripped_strings))
+        #print(list(additional_info_element.stripped_strings))
         additional_info = []
         lyricist= "none"
         composer = "none"
@@ -76,7 +70,7 @@ def parse_html(html):
 
         # グレードを取得
         grade_element = track.select_one('.sub')
-        grade = "N/A"
+        grade = "none"
         if grade_element:
             for text in grade_element.stripped_strings:
                 if "グレード：" in text:
@@ -93,10 +87,10 @@ def parse_html(html):
             'グレード': grade.replace("級","")
         })
 
-    return num_tracks, tracks
+    return num_tracks, tracks,bookname
 
-def main():
-    base_url = 'https://www.ymm.co.jp/p/detail.php?code=GTM01101878&dm=d&o='
+def main(code):
+    base_url = 'https://www.ymm.co.jp/p/detail.php?code='+code+'&dm=d&o='
     all_tracks = []
     page_offset = 0
 
@@ -104,7 +98,7 @@ def main():
         url = f"{base_url}{page_offset}"
         print(f"Fetching page with offset {page_offset}...")
         html = get_page(url)
-        num_tracks, new_tracks = parse_html(html)
+        num_tracks, new_tracks,bookname = parse_html(html)
 
         if not new_tracks:
             break
@@ -118,12 +112,89 @@ def main():
 
     # 総収録曲数を表示
     print(f"総収録曲数: {num_tracks}曲")
+    
+    
 
     # 抽出した曲の情報を表示
     for track in all_tracks:
         print(track['曲名'],track['メモ'],track['アーティスト'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
 
+    print("------------")
+
+    # 楽譜集を作成
+    new_book = Book(book_name=bookname, product_code=code, created_at=datetime.now())
+    session.add(new_book)
+    session.flush()
+
+    for track in all_tracks:
+        memos = ""
+        for i in track['メモ']:
+            memos += (" " + i)
+
+        # 新しい曲を作成
+        new_song = Song(
+            book_id=new_book.id,
+            song_name=track['曲名'],
+            grade=track['グレード'],
+            memo=memos,
+            created_at=datetime.now()
+        )
+
+        # アーティストを曲に関連付け
+        for i in track['アーティスト']:
+            existing_artist = session.query(Artist).filter_by(Artist_name=i).first()
+            if existing_artist:
+                print(f"アーティスト '{i}' が存在します")
+                new_song.artists.append(existing_artist)
+            else:
+                new_artist = Artist(Artist_name=i)
+                new_song.artists.append(new_artist)
+
+        # 作詞家を曲に関連付け
+        for i in track['作詞者']:
+            existing_lyricist = session.query(Lyricist).filter_by(lyricist_name=i).first()
+            if existing_lyricist:
+                print(f"作詞家 '{i}' が存在します")
+                new_song.lyricists.append(existing_lyricist)
+            else:
+                new_lyricist = Lyricist(lyricist_name=i)
+                new_song.lyricists.append(new_lyricist)
+
+        # 作曲家を曲に関連付け
+        for i in track['作曲者']:
+            existing_writer = session.query(SongWriter).filter_by(song_writer_name=i).first()
+            if existing_writer:
+                print(f"作曲家 '{i}' が存在します")
+                new_song.song_writers.append(existing_writer)
+            else:
+                new_writer = SongWriter(song_writer_name=i)
+                new_song.song_writers.append(new_writer)
+
+        # 編曲家を曲に関連付け
+        for i in track['編曲者']:
+            existing_arranger = session.query(Arranger).filter_by(arranger_name=i).first()
+            if existing_arranger:
+                print(f"編曲家 '{i}' が存在します")
+                new_song.arrangers.append(existing_arranger)
+            else:
+                new_arranger = Arranger(arranger_name=i)
+                new_song.arrangers.append(new_arranger)
+
+        # 曲をセッションに追加
+        session.add(new_song)
+
+    # セッションをコミットしてデータベースに保存
+    session.commit()
+
+    print("データベースに楽譜集と曲を保存しました。")
+
     
 
 if __name__ == '__main__':
-    main()
+    filename = "Database/Register/datum/test.text"
+    f = open(filename, 'r')
+
+    datalist = f.readlines()
+    for i in datalist:
+        print(i)
+        main(i.strip())

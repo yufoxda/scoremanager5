@@ -1,45 +1,58 @@
 from sqlalchemy import create_engine 
 from sqlalchemy.orm import sessionmaker
-from Database.Schema.schema import Book,Song,Lyricist,SongWriter,Arranger
-from Database.Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArrangerAssociation
+from Database.Schema.schema import (
+    Book, Song, Lyricist, SongWriter, Arranger,Artist,
+    SongLyricistAssociation, SongWriterAssociation, 
+    SongArrangerAssociation, SongArtistAssociation
+)
 
 # エンジンを作成
-engine = create_engine('sqlite:///Database/ompooscores.db')
+engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 
 # セッションを作成
 Session = sessionmaker(bind=engine)
 session = Session()
 
 try:
-    # 書籍のクエリ例
-    # books = session.query(Book).all()
-    # for book in books:
-    #     print(f"Book ID: {book.id}, Book Name: {book.book_name}")
-
-    # 曲のクエリ例
-    # songs = session.query(Song).all()
-    # for song in songs:
-    #     print(f"Song ID: {song.id}, Song Name: {song.song_name}, Book ID: {song.book_id}")
-
-    # # 著者のクエリ例
-    # authors = session.query(Author).all()
-    # for author in authors:
-    #     print(f"Author ID: {author.id}, Author Name: {author.author_name}, Song ID: {author.song_id}")
-
-    # # 公開URLのクエリ例
-    # publish_urls = session.query(PublishURL).all()
-    # for publish_url in publish_urls:
-    #     print(f"Publish URL ID: {publish_url.id}, URL: {publish_url.url}, Song ID: {publish_url.song_id}")
-
+    # Bookテーブルのデータを取得
     books = session.query(Book).all()
-    for i in books:
-        try:
-            print(i.product_code.strip())
-        except:
-            continue
-        
+    print("Books:")
+    for book in books:
+        print(f"ID: {book.id}, Name: {book.book_name}, Product Code: {book.product_code}")
+    
+    # Songテーブルのデータを取得
+    songs = session.query(Song).all()
+    print("\nSongs:")
+    for song in songs:
+        print(f"ID: {song.id}, Name: {song.song_name}, Book ID: {song.book_id},memo:{song.memo},grade:{song.grade}")
+    
+    # Artistテーブルのデータを取得
+    artists = session.query(Artist).all()
+    print("\nArtists:")
+    for artist in artists:
+        print(f"ID: {artist.id}, Name: {artist.Artist_name}")
+    
+    # Lyricistテーブルのデータを取得
+    lyricists = session.query(Lyricist).all()
+    print("\nLyricists:")
+    for lyricist in lyricists:
+        print(f"ID: {lyricist.id}, Name: {lyricist.lyricist_name}")
+    
+    # SongWriterテーブルのデータを取得
+    song_writers = session.query(SongWriter).all()
+    print("\nSong Writers:")
+    for writer in song_writers:
+        print(f"ID: {writer.id}, Name: {writer.song_writer_name}")
+    
+    # Arrangerテーブルのデータを取得
+    arrangers = session.query(Arranger).all()
+    print("\nArrangers:")
+    for arranger in arrangers:
+        print(f"ID: {arranger.id}, Name: {arranger.arranger_name}")
+
 except Exception as e:
     print(f"Error occurred: {e}")
 
 finally:
-    session.close()  # セッションをクローズしてリソースを解放
+    # セッションをクローズしてリソースを解放
+    session.close()
