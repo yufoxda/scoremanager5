@@ -1,9 +1,10 @@
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 from datetime import datetime
+from sqlalchemy import PrimaryKeyConstraint
 
 # エンジンを作成
-engine = create_engine('sqlite:///Database/ompuscores.db', echo=True)
+engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 
 # ベースクラスを定義
 Base = declarative_base()
@@ -30,9 +31,17 @@ class Song(Base):
     memo = Column(String,  nullable=True)
 
     parent_book = relationship('Book', back_populates='songs')
+    artists = relationship('Artist', secondary='song_artist_association', back_populates='songs')
     lyricists = relationship('Lyricist', secondary='song_lyricist_association', back_populates='songs')
     song_writers = relationship('SongWriter', secondary='song_writer_association', back_populates='songs')
     arrangers = relationship('Arranger', secondary='song_arranger_association', back_populates='songs')
+
+class Artist(Base):
+    __tablename__ = 'artists'
+    id = Column(Integer, primary_key=True, unique=True)
+    Artist_name = Column(String, nullable=False)
+
+    songs = relationship('Song', secondary='song_artist_association', back_populates='artists')
 
 # 作詞家
 class Lyricist(Base):
@@ -58,18 +67,43 @@ class Arranger(Base):
 
     songs = relationship('Song', secondary='song_arranger_association', back_populates='arrangers')
 
-# 中間テーブル
+
+# 中間テーブル for Song-Lyricist
 class SongLyricistAssociation(Base):
     __tablename__ = 'song_lyricist_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    lyricist_id = Column(Integer, ForeignKey('lyricists.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    lyricist_id = Column(Integer, ForeignKey('lyricists.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'lyricist_id'),
+    )
 
+# 中間テーブル for Song-Writer
 class SongWriterAssociation(Base):
     __tablename__ = 'song_writer_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    song_writer_id = Column(Integer, ForeignKey('songwriters.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    song_writer_id = Column(Integer, ForeignKey('songwriters.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'song_writer_id'),
+    )
 
+# 中間テーブル for Song-Arranger
 class SongArrangerAssociation(Base):
     __tablename__ = 'song_arranger_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    arranger_id = Column(Integer, ForeignKey('arrangers.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    arranger_id = Column(Integer, ForeignKey('arrangers.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'arranger_id'),
+    )
+
+class SongArtistAssociation(Base):
+    __tablename__ = 'song_artist_association'
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    artist_id = Column(Integer, ForeignKey('artists.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'artist_id'),
+    )
+

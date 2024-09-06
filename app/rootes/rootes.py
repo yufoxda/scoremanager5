@@ -1,5 +1,5 @@
-from app_init_ import app,db,per_page
-from app_init_ import Book, Song
+from App.app_init_ import app,db,per_page
+from App.app_init_ import Book, Song
 from flask import render_template, request, url_for
 from flask_sqlalchemy import pagination 
 import os
