@@ -2,6 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from datetime import datetime
+
+from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger
+
+from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArrangerAssociation
+
+
+
+engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
+Session = sessionmaker(bind=engine)
+session = Session()
+
 def get_page(url):
     response = requests.get(url)
     response.encoding = 'utf-8'
@@ -108,6 +122,8 @@ def main():
     # 抽出した曲の情報を表示
     for track in all_tracks:
         print(track['曲名'],track['メモ'],track['アーティスト'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
+
+    
 
 if __name__ == '__main__':
     main()
