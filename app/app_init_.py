@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 # create the app
 app = Flask(__name__, template_folder="../Pages/Templates",static_folder="../Pages/Static")
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database/ompuscores.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database/ompooscores.db'
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 

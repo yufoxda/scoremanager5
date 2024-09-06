@@ -1,9 +1,10 @@
-from sqlalchemy import create_engine # type: ignore
-from sqlalchemy.orm import sessionmaker # type: ignore
-from Schema.schema import Book, Song, Author, PublishURL
+from sqlalchemy import create_engine 
+from sqlalchemy.orm import sessionmaker
+from Database.Schema.schema import Book,Song,Lyricist,SongWriter,Arranger
+from Database.Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArrangerAssociation
 
 # エンジンを作成
-engine = create_engine('sqlite:///ompuscores.db')
+engine = create_engine('sqlite:///Database/ompooscores.db')
 
 # セッションを作成
 Session = sessionmaker(bind=engine)

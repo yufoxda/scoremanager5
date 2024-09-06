@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, Column, String, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 from datetime import datetime
+from sqlalchemy import PrimaryKeyConstraint
 
 # エンジンを作成
 engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
@@ -66,19 +67,43 @@ class Arranger(Base):
 
     songs = relationship('Song', secondary='song_arranger_association', back_populates='arrangers')
 
-# 中間テーブル
+
+# 中間テーブル for Song-Lyricist
 class SongLyricistAssociation(Base):
     __tablename__ = 'song_lyricist_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    lyricist_id = Column(Integer, ForeignKey('lyricists.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    lyricist_id = Column(Integer, ForeignKey('lyricists.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'lyricist_id'),
+    )
 
+# 中間テーブル for Song-Writer
 class SongWriterAssociation(Base):
     __tablename__ = 'song_writer_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    song_writer_id = Column(Integer, ForeignKey('songwriters.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    song_writer_id = Column(Integer, ForeignKey('songwriters.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'song_writer_id'),
+    )
 
+# 中間テーブル for Song-Arranger
 class SongArrangerAssociation(Base):
     __tablename__ = 'song_arranger_association'
-    song_id = Column(Integer, ForeignKey('songs.id'), primary_key=True)
-    arranger_id = Column(Integer, ForeignKey('arrangers.id'), primary_key=True)
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    arranger_id = Column(Integer, ForeignKey('arrangers.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'arranger_id'),
+    )
+
+class SongArtistAssociation(Base):
+    __tablename__ = 'song_artist_association'
+    song_id = Column(Integer, ForeignKey('songs.id'), nullable=False)
+    artist_id = Column(Integer, ForeignKey('artists.id'), nullable=False)
+    
+    __table_args__ = (
+        PrimaryKeyConstraint('song_id', 'artist_id'),
+    )
 
