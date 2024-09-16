@@ -15,10 +15,25 @@ engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
+ignoresplitlist = ["DISH//"]
+
 def get_page(url):
     response = requests.get(url)
     response.encoding = 'utf-8'
     return response.text
+
+def splitartist(texts):
+    thistext = texts
+    retrunlists = []
+    for edgename in ignoresplitlist:
+        if edgename in thistext:
+            retrunlists.append(edgename)
+            thistext = thistext.replace(edgename,"")
+            
+    if(not thistext == ""):
+        retrunlists += list(thistext.split('/'))
+    return retrunlists
+
 
 def parse_html(html):
     soup = BeautifulSoup(html, 'html.parser')
@@ -76,11 +91,13 @@ def parse_html(html):
                 if "グレード：" in text:
                     grade = text.split("グレード：")[1].strip()
                     break
+        
+        
 
         tracks.append({
             '曲名': song_name,
             'メモ': additional_info,
-            'アーティスト':list(artist.split('/')),
+            'アーティスト':splitartist(artist),
             '作詞者': list(lyricist.split('/')),
             '作曲者': list(composer.split('/')),
             '編曲者': list(arranger.split('/')),
@@ -125,7 +142,6 @@ def main(code):
         print(track['曲名'],track['メモ'],track['アーティスト'], track['作詞者'], track['作曲者'], track['編曲者'],track['グレード'])
 
     print("------------")
-
     # 楽譜集を作成
     new_book = Book(book_name=bookname, product_code=code, created_at=datetime.now())
     session.add(new_book)
@@ -144,49 +160,51 @@ def main(code):
             memo=memos,
             created_at=datetime.now()
         )
-    # アーティストを曲に関連付け
-    for i in track['アーティスト']:
-        existing_artist = session.query(Artist).filter_by(Artist_name=i.strip()).first()
-        if existing_artist:
-            print(f"アーティスト '{i}' が存在します")
-            new_song.artists.append(existing_artist)
-        else:
-            new_artist = Artist(Artist_name=i.strip())
-            session.add(new_artist)  # セッションに追加
-            new_song.artists.append(new_artist)
 
-    # 作詞家を曲に関連付け
-    for i in track['作詞者']:
-        existing_lyricist = session.query(Lyricist).filter_by(lyricist_name=i.strip()).first()
-        if existing_lyricist:
-            print(f"作詞家 '{i}' が存在します")
-            new_song.lyricists.append(existing_lyricist)
-        else:
-            new_lyricist = Lyricist(lyricist_name=i.strip())
-            session.add(new_lyricist)  # セッションに追加
-            new_song.lyricists.append(new_lyricist)
+        if track['アーティスト'] is not None:
+            # アーティストを曲に関連付け
+            for i in track['アーティスト']:
+                existing_artist = session.query(Artist).filter_by(Artist_name=i.strip()).first()
+                if existing_artist:
+                    print(f"アーティスト '{i}' が存在します")
+                    new_song.artists.append(existing_artist)
+                else:
+                    new_artist = Artist(Artist_name=i.strip())
+                    session.add(new_artist)  # セッションに追加
+                    new_song.artists.append(new_artist)
 
-    # 作曲家を曲に関連付け
-    for i in track['作曲者']:
-        existing_writer = session.query(SongWriter).filter_by(song_writer_name=i.strip()).first()
-        if existing_writer:
-            print(f"作曲家 '{i}' が存在します")
-            new_song.song_writers.append(existing_writer)
-        else:
-            new_writer = SongWriter(song_writer_name=i.strip())
-            session.add(new_writer)  # セッションに追加
-            new_song.song_writers.append(new_writer)
+        # 作詞家を曲に関連付け
+        for i in track['作詞者']:
+            existing_lyricist = session.query(Lyricist).filter_by(lyricist_name=i.strip()).first()
+            if existing_lyricist:
+                print(f"作詞家 '{i}' が存在します")
+                new_song.lyricists.append(existing_lyricist)
+            else:
+                new_lyricist = Lyricist(lyricist_name=i.strip())
+                session.add(new_lyricist)  # セッションに追加
+                new_song.lyricists.append(new_lyricist)
 
-    # 編曲家を曲に関連付け
-    for i in track['編曲者']:
-        existing_arranger = session.query(Arranger).filter_by(arranger_name=i.strip()).first()
-        if existing_arranger:
-            print(f"編曲家 '{i}' が存在します")
-            new_song.arrangers.append(existing_arranger)
-        else:
-            new_arranger = Arranger(arranger_name=i.strip())
-            session.add(new_arranger)  # セッションに追加
-            new_song.arrangers.append(new_arranger)
+        # 作曲家を曲に関連付け
+        for i in track['作曲者']:
+            existing_writer = session.query(SongWriter).filter_by(song_writer_name=i.strip()).first()
+            if existing_writer:
+                print(f"作曲家 '{i}' が存在します")
+                new_song.song_writers.append(existing_writer)
+            else:
+                new_writer = SongWriter(song_writer_name=i.strip())
+                session.add(new_writer)  # セッションに追加
+                new_song.song_writers.append(new_writer)
+
+        # 編曲家を曲に関連付け
+        for i in track['編曲者']:
+            existing_arranger = session.query(Arranger).filter_by(arranger_name=i.strip()).first()
+            if existing_arranger:
+                print(f"編曲家 '{i}' が存在します")
+                new_song.arrangers.append(existing_arranger)
+            else:
+                new_arranger = Arranger(arranger_name=i.strip())
+                session.add(new_arranger)  # セッションに追加
+                new_song.arrangers.append(new_arranger)
 
 
         # 曲をセッションに追加
