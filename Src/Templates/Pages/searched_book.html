@@ -1,0 +1,97 @@
+{% extends 'Containers/base.html' %}
+{% block title %}
+  Books
+{% endblock %}
+
+{% block header %}
+  {% include 'Compornents/header.html' %}
+
+{% endblock %}
+
+{% block content %}
+<div class="mx-auto max-w-5xl p-10">
+        
+    <h2 class="text-2xl font-extrabold dark:text-white p-1">{{ que }} : search result</h2>
+    <table class="w-full border-collapse bg-white object-center text-left text-sm text-gray-500">
+    <thead class="bg-gray-50">
+        <tr>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book name</th>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">added date</th>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">product code</th>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book ID</th>
+        </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-100 border-t border-gray-100">
+        {% for book in books.items %}
+        <tr class="hover:bg-gray-50">
+        <th class="px-6 py-4 font-medium  text-blue-500 dark:text-blue-300 hover:underline"><a href="/book/{{ book.id }}">{{ book.book_name }}</a></th>
+        <td class="px-6 py-4 ">{{ book.created_at }}</td>
+        <td class="px-6 py-4 ">{{ book.product_code }}</td>
+        <td class="px-6 py-4 ">{{ book.id }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+    
+    <div class="p-4 flex justify-center">
+        <nav aria-label="Pagination">
+            <ul class="inline-flex items-center space-x-1 rounded-md text-sm">
+                <!-- Previous Page Link -->
+                {% if books.has_prev %}
+                    <li>
+                        <a href="{{ url_for('searchbook', page=page-1, query=que) }}" class="inline-flex items-center space-x-2 rounded-full border border-gray-300 bg-white px-2 py-2 font-medium text-gray-500 hover:bg-gray-50">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <span class="inline-flex items-center space-x-2 rounded-full border border-gray-300 bg-white px-2 py-2 font-medium text-gray-300">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </li>
+                {% endif %}
+    
+                <!-- Page Indicator -->
+                <li>
+                    <span class="inline-flex items-center space-x-1 rounded-md bg-white px-4 py-2 text-gray-500">
+                        Page <b class="mx-1">{{ page }}</b> of <b class="ml-1">{{ books.pages }}</b>
+                    </span>
+                </li>
+    
+                <!-- Next Page Link -->
+                {% if books.has_next %}
+                    <li>
+                        <a href="{{ url_for('searchbook', page=page+1, query=que) }}" class="inline-flex items-center space-x-2 rounded-full border border-gray-300 bg-white px-2 py-2 font-medium text-gray-500 hover:bg-gray-50">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <span class="inline-flex items-center space-x-2 rounded-full border border-gray-300 bg-white px-2 py-2 font-medium text-gray-300">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+    
+
+</div>
+
+    <a href="/">Go Back</a>
+   
+{% endblock %}
+
+{% block footer %}
+  {% include 'Compornents/footer.html' %}
+{% endblock %}
