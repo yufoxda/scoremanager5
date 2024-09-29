@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.css": "tailwindcss",
+        "*.jinja.html": "jinja-html",
+        "*.html": "jinja-html"
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "tailwindCSS.includeLanguages": {
+        "jinja-html": "html" // Jinja HTMLをHTMLとして扱う
+    },
+}

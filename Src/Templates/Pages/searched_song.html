@@ -16,6 +16,7 @@
     <thead class="bg-gray-50">
         <tr>
         <th scope="col" class="px-6 py-4 font-medium  text-gray-900">song name</th>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">song info</th>
         <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book name</th>
         <th scope="col" class="px-6 py-4 font-medium  text-gray-900 ">added date</th>
         <th scope="col" class="px-6 py-4 font-medium  text-gray-900 ">song id</th>
@@ -25,6 +26,10 @@
         {% for song in songs %}
         <tr class="hover:bg-gray-50">
         <td class="px-6 py-4 font-medium">{{ song.song_name }}</td>
+        <td class="px-6 py-4 font-medium">
+        
+            {{ song.artists}}
+        </td>
         <th class="px-6 py-4 font-medium  text-blue-500 dark:text-blue-300 hover:underline"><a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a></th>
         <td class="px-6 py-4 ">{{ song.created_at }}</td>
         <td class="px-6 py-4 ">{{ song.id }}</td>

@@ -9,17 +9,21 @@
 {% endblock %}
 
 {% block content %}
-  <div class="mx-auto max-w-5xl px-10">
-    <h1 class="text-center text-5xl font-extrabold p-10">HOME</h1>
-    <p class="text-center text-2xl pb-5">音風　楽譜館へようこそ。ここでは部室所蔵の楽譜を検索できます。</p>
+  <div class="mx-auto max-w-5xl w-full">
+    <h1 class="text-center text-5xl font-extrabold py-10">HOME</h1>
+    <p class="text-center text-2xl pb-5">
+      音風　楽譜館へようこそ。
+      <br />
+      ここでは部室所蔵の楽譜を検索できます。
+    </p>
     
     <h1 class="text-center text-2xl font-extrabold p-5">本の検索</h1>
-    <form method="get" action="/searchbook/">
+    <form method="get" action="/searchbook">
       {% include 'Compornents/searchber.html' %}
     </form>
     
     <h1 class="text-center text-2xl font-extrabold p-5">曲の検索</h1>
-    <form method="get" action="/searchsong/">
+    <form method="get" action="/searchsong">
       {% include 'Compornents/searchber.html' %}
     </form>
   </div>
