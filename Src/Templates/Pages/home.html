@@ -4,13 +4,12 @@
 {% endblock %}
 
 {% block header %}
-  {% include 'Compornents/header.html' %}
+  {% include 'Compornents/header_home.html' %}
 
 {% endblock %}
 
 {% block content %}
   <div class="mx-auto max-w-5xl w-full">
-    <h1 class="text-center text-5xl font-extrabold py-10">HOME</h1>
     <p class="text-center text-2xl pb-5">
       音風　楽譜館へようこそ。
       <br />
@@ -26,6 +25,15 @@
     <form method="get" action="/searchsong">
       {% include 'Compornents/searchber.html' %}
     </form>
+
+    <h1 class="text-center text-2xl font-extrabold pt-5">詳細検索</h1>
+    <p class="text-center">開発中</p>
+
+    <h1 class="text-center text-2xl font-extrabold pt-5 pb-3">お知らせ</h1>
+      {% include 'Compornents/notice.html' %}
+
+    {# <h1 class="text-center text-2xl font-extrabold py-3">pic up</h1> #}
+
   </div>
 {% endblock %}
 
