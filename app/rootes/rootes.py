@@ -8,7 +8,7 @@ import os
 def home():
   return render_template('Pages/home.html')
 
-@app.route("/searchbook/",methods = ["GET"])
+@app.route("/searchbook",methods = ["GET"])
 def searchbook():
   page = request.args.get('page', 1, type=int)
   query = request.args.get('query')
@@ -17,7 +17,7 @@ def searchbook():
 
   return render_template('Pages/searched_book.html',books = books,que = query,page=page)
 
-@app.route("/searchsong/",methods = ["GET"])
+@app.route("/searchsong",methods = ["GET"])
 def searchsong():
   page = request.args.get('page', 1, type=int)
   query = request.args.get('query')

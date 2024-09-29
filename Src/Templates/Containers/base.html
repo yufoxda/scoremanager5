@@ -7,14 +7,13 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='./output.css') }}">
     </head>
     <body>
-        {% block header %}
-        {% endblock %}
-
-        <div id="content">
-            {% block content %}
+        <div class = "min-w-[500px]">
+            {% block header %}
             {% endblock %}
-        </div>
-        <div id="footer">
+            <div class = "px-3">
+                {% block content %}
+                {% endblock %}
+            </div>
             {% block footer %}
             {% endblock %}
         </div>
