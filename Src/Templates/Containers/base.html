@@ -8,14 +8,20 @@
     </head>
     <body>
         <div class = "min-w-[500px]">
-            {% block header %}
-            {% endblock %}
-            <div class = "px-3">
+            <div class = "w-full">
+                {% block header %}
+                {% endblock %}
+            </div>
+                
+            <div class = "w-full px-3 py-5">
                 {% block content %}
                 {% endblock %}
             </div>
-            {% block footer %}
-            {% endblock %}
+
+            <div class = "w-full">
+                {% block footer %}
+                {% endblock %}
+            </div>    
         </div>
     </body>
 </html>
