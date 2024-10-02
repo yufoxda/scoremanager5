@@ -7,10 +7,10 @@
   ],
   "functions": {
     "App/app_init_.py": {
-      "includeFiles": "Rootes/**"
-    },
-    "App/Rootes/rootes.py": {
-      "includeFiles": "App/**"
+      "includeFiles": [
+        "Rootes/**",
+        "..Database/Schema/**"
+      ]
     }
   },
   "routes": [
