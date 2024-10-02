@@ -7,9 +7,7 @@
   ],
   "functions": {
     "App/app_init_.py": {
-      "includeFiles": [
-        "Rootes/**"
-      ]
+      "includeFiles": "Rootes/**"
     }
   },
   "routes": [
