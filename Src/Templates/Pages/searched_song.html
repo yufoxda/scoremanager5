@@ -4,40 +4,34 @@
 {% endblock %}
 
 {% block header %}
-  {% include 'Compornents/header_home.html' %}
-
+  {% include 'Compornents/header.html' %}
 {% endblock %}
 
 {% block content %}
-<div class="mx-auto max-w-screen-xl p-10">
-        
-    <h2 class="text-2xl font-extrabold dark:text-white p-1">{{ que }} : search result</h2>
-    <table class="w-full border-collapse  bg-white object-center text-left text-sm text-gray-500">
-    <thead class="bg-gray-50">
-        <tr>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">song name</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">song info</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book name</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900 ">added date</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900 ">song id</th>
-        </tr>
-    </thead>
-    <tbody class="divide-y divide-gray-100 border-t border-gray-100">
-        {% for song in songs %}
-        <tr class="hover:bg-gray-50">
-        <td class="px-6 py-4 font-medium">{{ song.song_name }}</td>
-        <td class="px-6 py-4 font-medium">
-        
-            {{ song.artists}}
-        </td>
-        <th class="px-6 py-4 font-medium  text-blue-500 dark:text-blue-300 hover:underline"><a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a></th>
-        <td class="px-6 py-4 ">{{ song.created_at }}</td>
-        <td class="px-6 py-4 ">{{ song.id }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-    </table>
-    
+<div class="mx-auto w-full">
+    <div class="w-full overflow-x-auto">
+        <table class="w-full border-collapse table-fixed bg-white object-center text-left text-sm text-gray-500">
+            <thead class="w-full bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-4 font-medium w-1/2 text-gray-900">song name</th>
+                    <th scope="col" class="px-6 py-4 font-medium w-1/2 text-gray-900">book name</th>
+                    <th scope="col" class="px-6 py-4 font-medium w-fit  text-gray-900">added</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 border-t border-gray-100">
+                {% for song in songs %}
+                <tr class="hover:bg-gray-50">
+                    <td class="px-6 py-4 font-medium">{{ song.song_name }}</td>
+                    <td class="px-6 py-4 font-medium text-blue-500 dark:text-blue-300 hover:underline">
+                        <a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-gray-500">{{ song.created_at.date() }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>    
+        </table>
+    </div>
+
     <div class="p-4 flex justify-center">
         <nav aria-label="Pagination">
             <ul class="inline-flex items-center space-x-1 rounded-md text-sm">
@@ -59,14 +53,14 @@
                         </span>
                     </li>
                 {% endif %}
-    
+
                 <!-- Page Indicator -->
                 <li>
                     <span class="inline-flex items-center space-x-1 rounded-md bg-white px-4 py-2 text-gray-500">
                         Page <b class="mx-1">{{ page }}</b> of <b class="ml-1">{{ songs.pages }}</b>
                     </span>
                 </li>
-    
+
                 <!-- Next Page Link -->
                 {% if songs.has_next %}
                     <li>
@@ -88,9 +82,7 @@
             </ul>
         </nav>
     </div>
-    
 </div>
-<a href="/">Go Back</a>
 {% endblock %}
 
 {% block footer %}
