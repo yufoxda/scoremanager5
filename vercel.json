@@ -7,14 +7,10 @@
   ],
   "functions": {
     "App/app_init_.py": {
-      "includeFiles": [
-        "Rootes/**"
-      ]
+      "includeFiles": "Rootes/**"
     },
     "App/Rootes/rootes.py": {
-      "includeFiles": [
-        "App/**"
-      ]
+      "includeFiles": "App/**"
     }
   },
   "routes": [
