@@ -10,8 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 # create the app
 app = Flask(__name__, template_folder="../Src/Templates",static_folder="../Src/Static")
 import os
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(basedir, "../Database/ompooscores.db")}'
+db_path = os.path.join(os.getcwd(), 'Database/ompooscores.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
