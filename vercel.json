@@ -1,8 +1,21 @@
 {
   "builds": [
-    { "src": "*.py", "use": "@vercel/python" }
+    {
+      "src": "*.py",
+      "use": "@vercel/python"
+    }
   ],
+  "functions": {
+    "App/app_init_.py": {
+      "includeFiles": [
+        "Rootes/**"
+      ]
+    }
+  },
   "routes": [
-    { "src": "/(.*)", "dest": "app.py" }
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
   ]
 }
