@@ -1,22 +1,8 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "*.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "functions": {
-    "App/app_init_.py": {
-      "includeFiles": [
-        "Rootes/**",
-        "..Database/Schema/**"
-      ]
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
+      "source": "/(.*)",
+      "destination": "/app"
     }
   ]
 }
