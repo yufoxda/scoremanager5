@@ -4,30 +4,29 @@
 {% endblock %}
 
 {% block header %}
-  {% include 'Compornents/header_home.html' %}
+  {% include 'Compornents/header.html' %}
 
 {% endblock %}
 
 {% block content %}
-<div class="mx-auto max-w-5xl p-10">
-        
-    <h2 class="text-2xl font-extrabold dark:text-white p-1">{{ que }} : search result</h2>
-    <table class="w-full border-collapse bg-white object-center text-left text-sm text-gray-500">
+<div class="mx-auto w-full">
+    
+    <h1 class="text-center text-2xl font-extrabold">本の検索</h1>
+    <form method="get" action="/searchbook">
+      {% include 'Compornents/searchber.html' %}
+    </form>
+    <table class=" border-collapse bg-white object-center text-left text-sm text-gray-500">
     <thead class="bg-gray-50">
         <tr>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book name</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">added date</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">product code</th>
-        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">book ID</th>
+        <th scope="col" class="px-6 py-4 font-medium full text-gray-900">book name</th>
+        <th scope="col" class="px-6 py-4 font-medium  text-gray-900">added</th>
         </tr>
     </thead>
     <tbody class="divide-y divide-gray-100 border-t border-gray-100">
         {% for book in books.items %}
         <tr class="hover:bg-gray-50">
         <th class="px-6 py-4 font-medium  text-blue-500 dark:text-blue-300 hover:underline"><a href="/book/{{ book.id }}">{{ book.book_name }}</a></th>
-        <td class="px-6 py-4 ">{{ book.created_at }}</td>
-        <td class="px-6 py-4 ">{{ book.product_code }}</td>
-        <td class="px-6 py-4 ">{{ book.id }}</td>
+        <td class="px-6 py-4 whitespace-nowrap">{{ book.created_at.date() }}</td>
         </tr>
         {% endfor %}
     </tbody>
@@ -87,8 +86,6 @@
     
 
 </div>
-
-    <a href="/">Go Back</a>
    
 {% endblock %}
 
