@@ -1,12 +1,14 @@
 <div class="max-w-md mx-auto relative">
-<label for="Search" class="sr-only">Search</label>
+
 <input
     type="text"
     id="query"
     name="query"
-    placeholder="Search song..."
+    placeholder="Search for ..."
+    value="{{ que }}"
     class="w-full rounded-md border-gray-200 py-2.5 pe-10 ps-1 shadow-sm sm:text-sm"
 />
+
 <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
     <button class="text-gray-600 hover:text-gray-700">
     <span class="sr-only">Search</span>
