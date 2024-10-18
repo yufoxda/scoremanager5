@@ -17,7 +17,13 @@ python -m Database.database_init_
 ```
 ## db-register
 ```
-python -m Databaase.Register.register_bytext
+python -m Database.Register.register_bytext
 ```
 Database/Register/datum/lists.textに記載されている商品コードに含まれる楽譜を登録します。
 エラーが出る場合は手動登録。
+
+## debug 
+全出力
+```
+python -m Database.Debug.printput
+```
