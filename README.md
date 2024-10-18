@@ -21,3 +21,8 @@ python -m Database.Register.register_bytext
 ```
 Database/Register/datum/lists.textに記載されている商品コードに含まれる楽譜を登録します。
 エラーが出る場合は手動登録。
+
+# debug 
+```
+python -m Database.Debug.datumout > ./Database/Debug/dataout.txt
+```
