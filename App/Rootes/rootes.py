@@ -8,7 +8,7 @@ import os
 @app.route("/")
 def home():
   num = db.session.query(Book).count()
-  random_ids = random.sample(range(1, num + 1), 4)
+  random_ids = random.sample(range(1, num), 4)
   picup = db.session.query(Book).filter(Book.id.in_(random_ids)).all()
   return render_template('Pages/home.html',picup = picup)
 
