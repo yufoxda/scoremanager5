@@ -783,6 +783,33 @@ video {
 .table-fixed {
   table-layout: fixed;
 }
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[350\] {
+  max-width: 350;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.grow {
+  flex-grow: 1;
+}
 
 .border-collapse {
   border-collapse: collapse;
@@ -1013,6 +1040,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-3 {
