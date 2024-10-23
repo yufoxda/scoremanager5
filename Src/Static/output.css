@@ -700,6 +700,28 @@ video {
   width: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
+.w-\[max-content\] {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -708,8 +730,36 @@ video {
   max-width: 1024px;
 }
 
-.table-fixed {
-  table-layout: fixed;
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[px\] {
+  max-width: px;
+}
+
+.max-w-\[350\] {
+  max-width: 350;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .border-collapse {
@@ -769,20 +819,8 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .whitespace-nowrap {
@@ -933,6 +971,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-3 {
