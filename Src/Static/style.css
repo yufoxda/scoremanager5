@@ -1,0 +1,17 @@
+#searchsongid{
+    width: 100%;
+    overflow: scroll;
+}
+#searchsongid > table{
+  table-layout: fixed;
+  width: 150%;
+}
+
+#song{
+    width : 33.33333% ; /* 未対応ブラウザ用フォールバック */
+    width : -webkit-calc(100% / 3) ;
+    width : calc(100% / 3) ;
+}
+#date{
+    width: 130px;
+}

@@ -1,14 +1,11 @@
-<div class="flex flex-row space-x-4 px-5">
-    <div class="h-fit overflow-hidden rounded-lg bg-gray-100 shadow-lg mx-auto">
-        <a href="https://www.ymm.co.jp/p/detail.php?code=GTM01101878"><img src="https://www.ymm.co.jp/p/cover/GTM01101878.gif" loading="lazy" class="object-cover mx-auto" /></a>
+<div class="flex flex-row space-x-2 items-center w-full h-fit">
+    {% for i in picup %}
+    <div class="rounded-lg flex-1 bg-gray-100 shadow-lg h-[30vw] lg:h-[15vw]">
+        <a href="https://www.ymm.co.jp/p/detail.php?code={{ i.product_code }}" class="h-full flex items-center justify-center">
+            <img src="https://www.ymm.co.jp/p/cover/{{ i.product_code }}.gif" 
+                 loading="lazy" 
+                 class="object-contain h-full w-full" />
+        </a>
     </div>
-    <div class="h-fit overflow-hidden rounded-lg bg-gray-100 shadow-lg mx-auto">
-        <a href="https://www.ymm.co.jp/p/detail.php?code=GTM01101878"><img src="https://www.ymm.co.jp/p/cover/GTM01101878.gif" loading="lazy" class="object-cover mx-auto" /></a>
-    </div>
-    <div class="h-fit overflow-hidden rounded-lg bg-gray-100 shadow-lg mx-auto">
-        <a href="https://www.ymm.co.jp/p/detail.php?code=GTM01101878"><img src="https://www.ymm.co.jp/p/cover/GTM01101878.gif" loading="lazy" class="object-cover mx-auto" /></a>
-    </div>
-    <div class="h-fit overflow-hidden rounded-lg bg-gray-100 shadow-lg mx-auto">
-        <a href="https://www.ymm.co.jp/p/detail.php?code=GTM01101878"><img src="https://www.ymm.co.jp/p/cover/GTM01101878.gif" loading="lazy" class="object-cover mx-auto" /></a>
-    </div>
+    {% endfor %}
 </div>

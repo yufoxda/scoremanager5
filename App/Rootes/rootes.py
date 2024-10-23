@@ -2,11 +2,16 @@ from App.app_init_ import app,db,per_page
 from App.app_init_ import Book, Song
 from flask import render_template, request, url_for
 from flask_sqlalchemy import pagination 
+import random
 import os
 
 @app.route("/")
 def home():
-  return render_template('Pages/home.html')
+  num = db.session.query(Book).count()
+  random_ids = random.sample(range(1, num), 4)
+  picup = db.session.query(Book).filter(Book.id.in_(random_ids)).all()
+  return render_template('Pages/home.html',picup = picup)
+
 
 @app.route("/searchbook",methods = ["GET"])
 def searchbook():
