@@ -13,13 +13,14 @@
     <form method="get" action="/searchsong">
         {% include 'Compornents/searchber.html' %}
     </form>
-    <div class="w-full overflow-x-scroll">
-        <table class="table-fixed overflow-hidden border-collapse bg-white object-center text-left text-sm text-gray-500">
+    <div class="overflow-hidden">
+    <div class="" id = "searchsongid">
+        <table class="border-collapse bg-white object-center text-left text-sm text-gray-500">
             <thead class="bg-gray-50">
                 <tr>
-                    <th scope="col" class="w-full px-6 py-4 font-medium text-gray-900">song name</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">book name</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900">added</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "song">song name</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "book">book name</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "date">added</th>
                 </tr>
             </thead>
             <tbody class=" divide-y divide-gray-100 border-t border-gray-100">
@@ -34,6 +35,7 @@
                 {% endfor %}
             </tbody>
         </table>
+    </div>
     </div>
     <div class="p-4 flex justify-center">
         <nav aria-label="Pagination">
