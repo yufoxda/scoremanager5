@@ -6,6 +6,8 @@ import os
 
 @app.route("/")
 def home():
+  num = db.session.query(Book).count()
+  
   return render_template('Pages/home.html')
 
 @app.route("/searchbook",methods = ["GET"])
