@@ -1,29 +1,6 @@
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<details>
+  <summary class="text-center text-xl font-extrabold p-5">詳細検索</summary>
+  {% include 'Compornents/extraforms.html' %}
+</details>
 
-<div id="app">
-  <button type="button" @click="toggle" class="mx-auto pt-5 flex items-center justify-center">
-    <span class="text-center text-2xl font-extrabold">詳細検索</span>
-  </button>
-
-  <!-- Conditionally render this div based on `show` state -->
-  <div v-if="show">
-    {% include 'Compornents/extraforms.html' %}
-  </div>
-</div>
-
-<script>
-  const app = Vue.createApp({
-      delimiters: ['[[', ']]'], // Set custom delimiters
-      data() {
-          return {
-              show: false
-          }
-      },
-      methods: {
-          toggle() {
-              this.show = !this.show;
-          }
-      }
-  });
-  app.mount("#app");
-</script>
+    
