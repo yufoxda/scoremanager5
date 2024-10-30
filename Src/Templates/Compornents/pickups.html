@@ -1,7 +1,7 @@
 <div class="flex flex-row space-x-2 items-center w-full h-fit">
     {% for i in picup %}
     <div class="rounded-lg flex-1 bg-gray-100 shadow-lg h-[30vw] lg:h-[15vw]">
-        <a href="https://www.ymm.co.jp/p/detail.php?code={{ i.product_code }}" class="h-full flex items-center justify-center">
+        <a href="/book/{{ i.id }}" class="h-full flex items-center justify-center">
             <img src="https://www.ymm.co.jp/p/cover/{{ i.product_code }}.gif" 
                  loading="lazy" 
                  class="object-contain h-full w-full" />
