@@ -9,38 +9,35 @@
 {% endblock %}
 
 {% block content %}
-  <div class="mx-auto w-full">
-    <p class="text-center text-2xl my-10 break-keep">
-      音風　楽譜館へようこそ。
-      <br />
-      ここでは<wbr>部室所蔵の楽譜を<wbr>
-      検索できます。
-    </p>
-    
-    <h1 class="text-center text-2xl font-extrabold p-5">本の検索</h1>
-    <form method="get" action="/searchbook">
-      {% include 'Compornents/searchber.html' %}
-    </form>
-    
-    <h1 class="text-center text-2xl font-extrabold p-5">曲の検索</h1>
-    <form method="get" action="/searchsong">
-      {% include 'Compornents/searchber.html' %}
-    </form>
+  <p class="text-center text-2xl my-10 break-keep">
+    音風　楽譜館へようこそ。
+    <br />
+    ここでは<wbr>部室所蔵の楽譜を<wbr>
+    検索できます。
+  </p>
+  
+  <h1 class="text-center text-2xl font-extrabold p-5">本の検索</h1>
+  <form method="get" action="/searchbook">
+    {% include 'Compornents/searchber.html' %}
+  </form>
+  
+  <h1 class="text-center text-2xl font-extrabold p-5">曲の検索</h1>
+  <form method="get" action="/searchsong">
+    {% include 'Compornents/searchber.html' %}
+  </form>
 
-    <h1 class="text-center text-2xl font-extrabold pt-5">詳細検索</h1>
-    <p class="text-center">開発中</p>
+  {% include 'Containers/extrasearch.html'%}
 
-    <h1 class="text-center text-2xl font-extrabold pt-5 pb-3 mt-10">お知らせ</h1>
-      {% include 'Compornents/notice.html' %}
+  <h1 class="text-center text-2xl font-extrabold pt-5 pb-3 mt-10">お知らせ</h1>
+    {% include 'Compornents/notice.html' %}
 
-    <h1 class="text-center text-2xl font-extrabold py-3 mt-10">pic up</h1>
-      {% include 'Compornents/picups.html' %}
+  <h1 class="text-center text-2xl font-extrabold py-3 mt-10">pick up</h1>
+    {% include 'Compornents/pickups.html' %}
 
-  </div>
 {% endblock %}
 
 {% block footer %}
-  <div class = "mt-10">
+  <div class = "mt-5">
     {% include 'Compornents/footer.html' %}
   </div>
 {% endblock %}

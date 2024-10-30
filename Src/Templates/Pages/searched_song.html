@@ -1,7 +1,7 @@
 {% extends 'Containers/base.html' %}
-{# {% block title %}
+{% block title %}
   Songs
-{% endblock %} #}
+{% endblock %}
 
 {% block header %}
   {% include 'Compornents/header.html' %}
@@ -9,18 +9,22 @@
 
 {% block content %}
 <div class="mx-auto w-full">
-    <h1 class="text-center text-2xl font-bold">曲の検索</h1>
+    <h1 class="text-center text-2xl font-bold mb-3">曲の検索</h1>
     <form method="get" action="/searchsong">
         {% include 'Compornents/searchber.html' %}
     </form>
-    <div class="overflow-hidden">
+    <div class="overflow-hidden mt-5">
     <div class="" id = "searchsongid">
-        <table class="border-collapse bg-white object-center text-left text-sm text-gray-500">
+        <table class="border-collapse bg-white object-center text-left text-sm text-gray-500 ">
             <thead class="bg-gray-50">
                 <tr>
                     <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "song">song name</th>
                     <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "book">book name</th>
-                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "date">added</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">Artist</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">Lyricist</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">SongWriter</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "Arranger">Arranger</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "date">add date</th>
                 </tr>
             </thead>
             <tbody class=" divide-y divide-gray-100 border-t border-gray-100">
@@ -30,6 +34,26 @@
                         <td class="px-6 py-4 font-medium text-blue-500 hover:underline dark:text-blue-300">
                             <a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a>
                         </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for artist in song.artists %}
+                                {{ artist.Artist_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for lyricist in song.lyricists %}
+                                {{ lyricist.lyricist_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for songwriter in song.song_writers %}
+                                {{ songwriter.song_writer_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for arranger in song.arrangers %}
+                                {{ arranger.arranger_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>   
                         <td class="whitespace-nowrap px-6 py-4 text-gray-500">{{ song.created_at.date() }}</td>
                     </tr>
                 {% endfor %}
