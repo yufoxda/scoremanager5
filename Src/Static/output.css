@@ -596,6 +596,11 @@ video {
   margin-right: 0.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -609,11 +614,6 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mb-2 {
@@ -630,10 +630,6 @@ video {
 
 .ml-1 {
   margin-left: 0.25rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .ml-7 {
@@ -692,10 +688,6 @@ video {
   height: 30vw;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -705,56 +697,20 @@ video {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[10\] {
-  height: 10;
-}
-
-.h-\[10\%\] {
-  height: 10%;
-}
-
-.h-\[30\%\] {
-  height: 30%;
-}
-
-.h-\[20\%\] {
-  height: 20%;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-\[80px\] {
-  height: 80px;
-}
-
-.max-h-\[30\%\] {
-  max-height: 30%;
-}
-
-.max-h-\[10\%\] {
-  max-height: 10%;
-}
-
-.max-h-\[15\%\] {
-  max-height: 15%;
-}
-
-.max-h-\[15vh\] {
-  max-height: 15vh;
+.max-h-\[200px\] {
+  max-height: 200px;
 }
 
 .max-h-\[30vh\] {
   max-height: 30vh;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.max-h-\[30\] {
+  max-height: 30;
 }
 
 .min-h-screen {
@@ -777,8 +733,8 @@ video {
   width: 1.25rem;
 }
 
-.w-\[200\%\] {
-  width: 200%;
+.w-\[150\%\] {
+  width: 150%;
 }
 
 .w-full {
@@ -789,16 +745,20 @@ video {
   width: ;
 }
 
-.w-\[750\] {
-  width: 750;
+.w-\[150px\] {
+  width: 150px;
 }
 
-.w-\[750px\] {
-  width: 750px;
+.w-\[130px\] {
+  width: 130px;
 }
 
-.w-\[150\%\] {
-  width: 150%;
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[125px\] {
+  width: 125px;
 }
 
 .min-w-\[750px\] {
@@ -823,6 +783,10 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 .border-collapse {
@@ -1191,10 +1155,6 @@ video {
   text-decoration-line: underline;
 }
 
-.has-\[\]\:w-full:has() {
-  width: 100%;
-}
-
 @media (min-width: 640px) {
   .sm\:grid-flow-col {
     grid-auto-flow: column;
@@ -1202,6 +1162,11 @@ video {
 
   .sm\:items-start {
     align-items: flex-start;
+  }
+
+  .sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .sm\:py-8 {
@@ -1224,6 +1189,11 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -1243,6 +1213,11 @@ video {
 @media (min-width: 1024px) {
   .lg\:h-\[15vw\] {
     height: 15vw;
+  }
+
+  .lg\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .lg\:py-12 {
