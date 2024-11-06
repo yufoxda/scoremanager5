@@ -11,9 +11,15 @@
     width: 14%;
 }
 
-#date,#Arranger {
+#Arranger {
     width: 150px; /* サイズを小さく設定 */
     max-width: 150px; /* 最大幅を指定 */
     word-break: keep-all; /* 単語を分割しない */
+    white-space: nowrap; /* テキストを折り返さず表示 */
+}
+
+#grade {
+    width: 75px; /* サイズを小さく設定 */
+    max-width: 75px; /* 最大幅を指定 */
     white-space: nowrap; /* テキストを折り返さず表示 */
 }
