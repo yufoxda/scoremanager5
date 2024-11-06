@@ -17,4 +17,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 
-per_page = 30
+ppage = 30
+
+import App.Rootes.rootes
