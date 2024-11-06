@@ -11,4 +11,7 @@
     "tailwindCSS.includeLanguages": {
         "jinja-html": "html" // Jinja HTMLをHTMLとして扱う
     },
+    "[python]": {
+        "editor.formatOnSave": false
+    }
 }

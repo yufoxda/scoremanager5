@@ -1,0 +1,77 @@
+{% extends 'Containers/base.html' %}
+{% block title %}
+  advanced
+{% endblock %}
+
+{% block header %}
+  {% include 'Compornents/header.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="mx-auto w-full">
+
+    {% include 'Containers/extrasearch.html'%}
+
+    <div class="overflow-hidden mt-5">
+    <div class="" id = "searchsongid">
+        <table class="border-collapse bg-white object-center text-left text-sm text-gray-500 ">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "song">song name</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "book">book name</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">Artist</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">Lyricist</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "details">SongWriter</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "Arranger">Arranger</th>
+                    <th scope="col" class="px-6 py-4 font-medium text-gray-900" id = "grade">Grade</th>
+                </tr>
+            </thead>
+            <tbody class=" divide-y divide-gray-100 border-t border-gray-100 text-gray-700">
+                {% for song in songs %}
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium">{{ song.song_name }}</td>
+                        <td class="px-6 py-4 font-medium text-blue-800 hover:underline dark:text-blue-500">
+                            <a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a>
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for artist in song.artists %}
+                                {{ artist.Artist_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for lyricist in song.lyricists %}
+                                {{ lyricist.lyricist_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for songwriter in song.song_writers %}
+                                {{ songwriter.song_writer_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="px-6 py-4 font-medium">
+                            {% for arranger in song.arrangers %}
+                                {{ arranger.arranger_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
+                            {% endfor %}
+                        </td>   
+                        <td class="whitespace-nowrap px-6 py-4">{{ song.grade }}級</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </div>
+        {% set endpoint = "advancedsearch" %}
+        {% set current_page = page %}
+        {% set total_pages = songs.pages %}
+        {% set has_prev = songs.has_prev %}
+        {% set has_next = songs.has_next %}
+        {% set query = que %}
+
+        {% include 'Compornents/pagination.html' %}
+
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'Compornents/footer.html' %}
+{% endblock %}
