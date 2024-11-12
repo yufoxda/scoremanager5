@@ -1,11 +1,9 @@
 from App.app_init_ import app,db,ppage
 from App.app_init_ import Book, Song,Artist,Lyricist,SongWriter,Arranger
-from flask import render_template, request, url_for,jsonify
-from flask_sqlalchemy import pagination 
-from sqlalchemy.orm import joinedload , contains_eager
-
+from flask import render_template, request
+from flask_sqlalchemy import pagination
+from sqlalchemy.orm import contains_eager
 import random
-import os
 
 @app.route("/")
 def home():
@@ -48,13 +46,11 @@ def advancedsearch():
         'memo': request.args.get('memo'),
         'page': request.args.get('page', 1, type=int)
     }
-
     query = db.session.query(Song)
 
     # 動的にフィルタを追加
     if search_params['song']:
         query = query.filter(Song.song_name.contains(search_params['song']))
-        
     if search_params['book']:
         query = query.join(Book).filter(Book.book_name.contains(search_params['book'])).options(contains_eager(Song.parent_book))
     if search_params['artist']:
@@ -73,7 +69,19 @@ def advancedsearch():
     # クエリの結果を取得
     results = query.order_by(Song.song_name).paginate(page=search_params['page'], per_page=ppage, error_out=False)
 
-    return render_template('Pages/searched_song_advanced.html',songs = results,que = search_params,page=search_params['page'])
+    return render_template(
+        'Pages/searched_song_advanced.html',
+        songs=results,
+        book=search_params['book'] if search_params['book'] else '',
+        song=search_params['song'] if search_params['song'] else '',
+        artist=search_params['artist'] if search_params['artist'] else '',
+        lyricist=search_params['lyricist'] if search_params['lyricist'] else '',
+        song_writer=search_params['song_writer'] if search_params['song_writer'] else '',
+        arranger=search_params['arranger'] if search_params['arranger'] else '',
+        grade=search_params['grade'] if search_params['grade'] else '',
+        memo=search_params['memo'] if search_params['memo'] else '',
+        page=search_params['page']
+    )
 
 
 @app.route("/book/<int:id>")
