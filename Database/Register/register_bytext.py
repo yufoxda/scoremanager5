@@ -53,7 +53,7 @@ def parse_html(html):
         artist = ""
         try:
             artist = (track.find('a', {'itemprop': 'byArtist'}).text.strip())
-        except:
+        except BaseException:
             artist = "none"
         # 主題歌や追加情報を取得
         additional_info_element = track.select_one('.main')
