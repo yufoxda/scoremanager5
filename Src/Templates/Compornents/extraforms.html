@@ -1,39 +1,39 @@
 <label for="book" class="block mt-2 text-sm font-medium text-gray-900">Book Name</label>
 <input type="text" name="book" placeholder="" id="book"
-       value="{{ que['book'] if que and 'book' in que else '' }}"
+       value="{{ book if book else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="song_name" class="block mt-2 text-sm font-medium text-gray-900">Song Name</label>
 <input type="text" name="song" placeholder="" id="song_name"
-       value="{{ que['song'] if que and 'song' in que else '' }}"
+       value="{{ song if song else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="artist" class="block mt-2 text-sm font-medium text-gray-900">Artist</label>
 <input type="text" name="artist" placeholder="" id="artist"
-       value="{{ que['artist'] if que and 'artist' in que else '' }}"
+       value="{{ artist if artist else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="lyricist" class="block mt-2 text-sm font-medium text-gray-900">Lyricist</label>
 <input type="text" name="lyricist" placeholder="" id="lyricist"
-       value="{{ que['lyricist'] if que and 'lyricist' in que else '' }}"
+       value="{{ lyricist if lyricist else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="song_writer" class="block mt-2 text-sm font-medium text-gray-900">Song Writer</label>
 <input type="text" name="songWriter" placeholder="" id="song_writer"
-       value="{{ que['song_writer'] if que and 'song_writer' in que else '' }}"
+       value="{{ song_writer if song_writer else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="arranger" class="block mt-2 text-sm font-medium text-gray-900">Arranger</label>
 <input type="text" name="arranger" placeholder="" id="arranger"
-       value="{{ que['arranger'] if que and 'arranger' in que else '' }}"
+       value="{{ arranger if arranger else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="sgrade" class="block mt-2 text-sm font-medium text-gray-900">Grade</label>
 <input type="text" name="grade" placeholder="" id="sgrade"
-       value="{{ que['grade'] if que and 'grade' in que else '' }}"
+       value="{{ grade if grade else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
 
 <label for="memo" class="block mt-2 text-sm font-medium text-gray-900">Memo Contain</label>
 <input type="text" name="memo" placeholder="" id="memo"
-       value="{{ que['memo'] if que and 'memo' in que else '' }}"
+       value="{{ memo if memo else '' }}"
        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
