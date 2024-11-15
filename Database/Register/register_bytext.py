@@ -218,7 +218,7 @@ def main(code):
     
 
 if __name__ == '__main__':
-    filename = "Database/Register/datum/out.txt"
+    filename = "Database/Register/datum/lists.text"
     f = open(filename, 'r')
 
     datalist = f.readlines()
