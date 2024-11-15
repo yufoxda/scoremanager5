@@ -208,6 +208,56 @@ ID: 206, Name: STAGEA・ELピアノ＆エレクトーン中～上級Vol.8ミュ�
 ID: 207, Name: STAGEA・ELピアノ&エレクトーン中～上級Vol.13テレビ・テーマ・ミュージック, Product Code: TEL01087949
 ID: 208, Name: STAGEA・ELピアノ&エレクトーン中～上級Vol.1ピアニズム, Product Code: GTE745770
 ID: 209, Name: STAGEA・ELピアノ&エレクトーン中～上級Vol.9エレクトーン・プレイヤーオリジナル作品集, Product Code: GTE01084912
+ID: 210, Name: STAGEAパーソナル5～3級Vol.24冴咲賢一「ONESWAY」, Product Code: TEL01087342
+ID: 211, Name: エレクトーンSTAGEAアーチスト・シリーズグレード7～6級Vol.2ポルノグラフィティ, Product Code: GTE744860
+ID: 212, Name: STAGEA・ELアーチスト5～3級Vol.20マイケル・ジャクソン, Product Code: TEL01087310
+ID: 213, Name: STAGEA・ELアーティスト5～3級Vol.24アストル・ピアソラ, Product Code: TEL01088084
+ID: 214, Name: STAGEA・ELポピュラー5級Vol.635級セレクションBEST, Product Code: TEL01087456
+ID: 215, Name: エレクトーンディズニー・シリーズグレード5～3級(FD付)ディズニー・ジャズ【FD付】, Product Code: GTE746420
+ID: 216, Name: エレクトーングレード5級5級セレクションVol.1【FD付】, Product Code: GTE745460
+ID: 217, Name: エレクトーングレード5級5級セレクションVol.2【FD付】, Product Code: GTE745480
+ID: 218, Name: エレクトーングレード5級5級セレクションVol.4【FD付】, Product Code: GTE01081406
+ID: 219, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)TOKYOSKAPARADISEORCHESTRA【FD付】, Product Code: GTE742540
+ID: 220, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)熱帯ジャズ楽団【FD付】, Product Code: GTE742510
+ID: 221, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)宇多田ヒカル「DEEPRIVER」【FD付】, Product Code: GTE742520
+ID: 222, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)クイーン【FD付】, Product Code: GTE745830
+ID: 223, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)ザ・ビートルズ・セレクション1「THEBEATLES/1967-1970」【FD付】, Product Code: GTE741530
+ID: 224, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)T-SQUARE【FD付】, Product Code: GTE742550
+ID: 225, Name: エレクトーンアーチスト・シリーズグレード5～3級(FD付)coba【FD付】, Product Code: GTE741570
+ID: 226, Name: エレクトーン曲集エレクトーンクラシック曲集5級Vol.1, Product Code: TGT136970
+ID: 227, Name: STAGEA・ELエレクトーンで弾く7～5級Vol.30エレクトーンの定番&ザ・ヒット30, Product Code: TEL01090490
+ID: 228, Name: STAGEA・ELエレクトーンで弾く7～6級Vol.34MORE！VOCALOIDSOUNDS, Product Code: GTE01095625
+ID: 229, Name: STAGEA・ELクラシック7～6級Vol.7クラシック名曲集1～乾杯の歌～, Product Code: TEL01087445
+ID: 230, Name: STAGEA・ELポピュラー7～6級Vol.44スタジオジブリ作品集3, Product Code: TEL01087380
+ID: 231, Name: STAGEA・ELポピュラー7～6級Vol.70スタジオジブリ作品集4, Product Code: TEL01089963
+ID: 232, Name: エレクトーンポピュラー・シリーズグレード7～6級(FD付)Vol.60アニメ7【FD付】, Product Code: GTE01081344
+ID: 233, Name: STAGEA・ELアーチスト・シリーズグレード7～6級Vol.13サザンオールスターズ, Product Code: TEL01087236
+ID: 234, Name: STAGEAアーチスト(7～6級)Vol.26SEKAINOOWARI, Product Code: TEL01092951
+ID: 235, Name: STAGEA・ELポピュラー9～8級Vol.25スタジオジブリ作品集4, Product Code: TEL01087377
+ID: 236, Name: STAGEAアーチストグレード5～3級Vol.14ジョン・ウィリアムズ作品集, Product Code: TEL01091528
+ID: 237, Name: STAGEA・ELエレクトーン・アンサンブルVol.13アニメ, Product Code: TEL01088261
+ID: 238, Name: STAGEA・ELエレクトーンアンサンブル初～中級Vol.3スタジオジブリ作品集, Product Code: GTE01081243
+ID: 239, Name: STAGEAエレクトーンアンサンブル初級Vol.19ディズニー作品集[2], Product Code: GTE01096110
+ID: 240, Name: STAGEA・ELエレクトーン&エレクトーン中～上級Vol.4J-BRASS！, Product Code: GTE01081993
+ID: 241, Name: STAGEA・ELエレクトーン&エレクトーン中～上級Vol.6FUNKYFOX, Product Code: GTE01082750
+ID: 242, Name: STAGEAエレクトーン＆エレクトーンVol.14(中級～上級)月刊エレクトーンPresentsE&EBESTVol.1, Product Code: TEL01095193
+ID: 243, Name: STAGEA・ELエレクトーンアンサンブル中～上級Vol.1月刊エレクトーンBestSelection, Product Code: GTE01080424
+ID: 244, Name: STAGEA・ELエレクトーン・アンサンブルVol.10ディズニー作品集, Product Code: TEL01087338
+ID: 245, Name: STAGEA・ELエレクトーン・アンサンブルVol.10ディズニー作品集, Product Code: GTE01085006
+ID: 246, Name: STAGEAエレクトーンアンサンブル中～上級Vol.11クラシック名曲集2～祝典序曲「1812年」～, Product Code: TEL01090752
+ID: 247, Name: STAGEA・ELエレクトーン&エレクトーンVol.12(中級～上級)シネマ, Product Code: TEL01092290
+ID: 248, Name: STAGEA・EL共通エレクトーン・アンサンブル（中～上級）Vol.12月刊エレクトーンBestSelection4～NHK大河ドラマ～, Product Code: TEL01087391
+ID: 249, Name: TAKE the EL T-SQUARE, Product Code: none
+ID: 250, Name: モーニング娘。, Product Code: GTE643730
+ID: 251, Name: ﻿富岡 ヤスヤ, Product Code: GTE641900
+ID: 252, Name: エレクトーンサウンドイン　ファン　17, Product Code: GTE640670
+ID: 253, Name: エレクトーンサウンドイン 12　ビート・オン・クラシック, Product Code: none
+ID: 254, Name: KEN'ICHI KAWANO, Product Code: none
+ID: 255, Name: スーパーマリオワールド, Product Code: スーパーマリオブラザーズ
+ID: 256, Name: スター・ウォーズ　トリロジー, Product Code: 「スター・ウォーズ」メイン・テーマ
+ID: 257, Name: ディズニーメドレー~映画作品集~, Product Code: 美女と野獣・メドレー
+ID: 258, Name: リラクセーション・ミュージック４, Product Code: オリノコ・フロウ
+ID: 259, Name: ゲームミュージック 2 ファイナルファンタジー Ⅸ, Product Code: ビビのテーマ
 
 Songs:
 ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
@@ -2144,6 +2194,323 @@ ID: 1931, Name: YES!!, Book ID: 209, Memo: , Grade: 中上
 ID: 1932, Name: GRACE, Book ID: 209, Memo: , Grade: 中上
 ID: 1933, Name: MISTY DIALOGUE, Book ID: 209, Memo: , Grade: 中上
 ID: 1934, Name: 道, Book ID: 209, Memo: , Grade: 中上
+ID: 1935, Name: ONES WAY, Book ID: 210, Memo: , Grade: 5～3
+ID: 1936, Name: きんとうん, Book ID: 210, Memo: , Grade: 5～3
+ID: 1937, Name: 陽の光を浴びて, Book ID: 210, Memo: , Grade: 5～3
+ID: 1938, Name: +ONE！, Book ID: 210, Memo: , Grade: 5～3
+ID: 1939, Name: TOMORROW, Book ID: 210, Memo: , Grade: 5～3
+ID: 1940, Name: さくら, Book ID: 210, Memo: , Grade: 5～3
+ID: 1941, Name: シスター, Book ID: 211, Memo: , Grade: 7～6
+ID: 1942, Name: Mugen, Book ID: 211, Memo: , Grade: 7～6
+ID: 1943, Name: 黄昏ロマンス, Book ID: 211, Memo: , Grade: 7～6
+ID: 1944, Name: メリッサ, Book ID: 211, Memo: , Grade: 7～6
+ID: 1945, Name: 愛が呼ぶほうへ, Book ID: 211, Memo: , Grade: 7～6
+ID: 1946, Name: ビリー・ジーン, Book ID: 212, Memo: , Grade: 5～3
+ID: 1947, Name: 今夜はビート・イット, Book ID: 212, Memo: , Grade: 5～3
+ID: 1948, Name: スリラー, Book ID: 212, Memo: , Grade: 5～3
+ID: 1949, Name: バッド, Book ID: 212, Memo: , Grade: 5～3
+ID: 1950, Name: マン・イン・ザ・ミラー, Book ID: 212, Memo: , Grade: 5～3
+ID: 1951, Name: リベルタンゴ, Book ID: 213, Memo: , Grade: 5～3
+ID: 1952, Name: アディオス・ノニーノ, Book ID: 213, Memo: , Grade: 5～3
+ID: 1953, Name: ブエノスアイレスの春, Book ID: 213, Memo: , Grade: 5～3
+ID: 1954, Name: オブリビオン, Book ID: 213, Memo: , Grade: 5～3
+ID: 1955, Name: バンドネオン協奏曲 第3楽章, Book ID: 213, Memo: , Grade: 5～3
+ID: 1956, Name: 情熱大陸, Book ID: 214, Memo:  MBS/TBS系「情熱大陸」メインテーマ, Grade: 5
+ID: 1957, Name: ユー・レイズ・ミー・アップ, Book ID: 214, Memo: , Grade: 5
+ID: 1958, Name: ルパン三世'78, Book ID: 214, Memo: , Grade: 5
+ID: 1959, Name: 星に願いを, Book ID: 214, Memo: , Grade: 5
+ID: 1960, Name: エレクトリカルパレード・ドリームライツ, Book ID: 214, Memo: , Grade: 5
+ID: 1961, Name: 星に願いを(ピノキオ), Book ID: 215, Memo: , Grade: 5～3
+ID: 1962, Name: いつか王子様が(白雪姫), Book ID: 215, Memo: , Grade: 5～3
+ID: 1963, Name: くまのプーさん, Book ID: 215, Memo: , Grade: 5～3
+ID: 1964, Name: グリム・グリニング・ゴースト(ホーンテッドマンショ, Book ID: 215, Memo: , Grade: 5～3
+ID: 1965, Name: 美女と野獣(ビューティー・アンド・ビースト), Book ID: 215, Memo: , Grade: 5～3
+ID: 1966, Name: ミッキーマウス・マーチ～ジッパ・ディー・ドゥー・ダ, Book ID: 215, Memo: , Grade: 5～3
+ID: 1967, Name: 星に願いを, Book ID: 216, Memo: , Grade: 5
+ID: 1968, Name: ニカズ・ドリーム, Book ID: 216, Memo: , Grade: 5
+ID: 1969, Name: 情熱大陸, Book ID: 216, Memo:  MBS/TBS系「情熱大陸」メインテーマ, Grade: 5
+ID: 1970, Name: オペラ「カヴァレリア・ルスティカーナ」より間奏曲, Book ID: 216, Memo: , Grade: 5
+ID: 1971, Name: HAPPY BIRTHDAY, Book ID: 216, Memo: , Grade: 5
+ID: 1972, Name: ルパン三世'78, Book ID: 217, Memo: , Grade: none
+ID: 1973, Name: Y・M・C・A, Book ID: 217, Memo: , Grade: none
+ID: 1974, Name: 明日に架ける橋, Book ID: 217, Memo: , Grade: none
+ID: 1975, Name: ワン・ノート・サンバ, Book ID: 217, Memo: , Grade: none
+ID: 1976, Name: シシリエンヌ, Book ID: 217, Memo: , Grade: none
+ID: 1977, Name: スカイ・ハイ, Book ID: 218, Memo: , Grade: 5
+ID: 1978, Name: ユー・レイズ・ミー・アップ, Book ID: 218, Memo: , Grade: 5
+ID: 1979, Name: 歌劇 「アイーダ」 より 凱旋行進曲, Book ID: 218, Memo:  歌劇 『アイーダ』 より, Grade: 5
+ID: 1980, Name: 世界の車窓から, Book ID: 218, Memo: , Grade: 5
+ID: 1981, Name: テイク・ファイブ, Book ID: 218, Memo: , Grade: 5
+ID: 1982, Name: 美しく燃える森, Book ID: 219, Memo: , Grade: 5～3
+ID: 1983, Name: ホール イン ワン, Book ID: 219, Memo: , Grade: 5～3
+ID: 1984, Name: パンドラタイムズ, Book ID: 219, Memo: , Grade: 5～3
+ID: 1985, Name: 花ふぶき～愛だろ、愛っ。～, Book ID: 219, Memo: , Grade: 5～3
+ID: 1986, Name: ドキドキ TIME, Book ID: 219, Memo: , Grade: 5～3
+ID: 1987, Name: DOWN BEAT STOMP, Book ID: 219, Memo: , Grade: 5～3
+ID: 1988, Name: EPOCA DE ORO, Book ID: 220, Memo: , Grade: 5～3
+ID: 1989, Name: ビター・スウィート・ボンバ(ビター・スウィート・サ, Book ID: 220, Memo: , Grade: 5～3
+ID: 1990, Name: Splash!, Book ID: 220, Memo: , Grade: 5～3
+ID: 1991, Name: 踊りあかそう(マイ・フェア・レディ), Book ID: 220, Memo: , Grade: 5～3
+ID: 1992, Name: OBATALA, Book ID: 220, Memo: , Grade: 5～3
+ID: 1993, Name: ヴィーナス, Book ID: 220, Memo: , Grade: 5～3
+ID: 1994, Name: SAKURAドロップス, Book ID: 221, Memo: , Grade: 5～3
+ID: 1995, Name: traveling, Book ID: 221, Memo: , Grade: 5～3
+ID: 1996, Name: 光, Book ID: 221, Memo: , Grade: 5～3
+ID: 1997, Name: FINAL DISTANCE, Book ID: 221, Memo: , Grade: 5～3
+ID: 1998, Name: Deep River, Book ID: 221, Memo: , Grade: 5～3
+ID: 1999, Name: Letters, Book ID: 221, Memo: , Grade: 5～3
+ID: 2000, Name: ボーン・トゥ・ラブ・ユー, Book ID: 222, Memo: , Grade: 5～3
+ID: 2001, Name: ドント・ストップ・ミー・ナウ, Book ID: 222, Memo: , Grade: 5～3
+ID: 2002, Name: キラー・クイーン, Book ID: 222, Memo: , Grade: 5～3
+ID: 2003, Name: ウィ・ウィル・ロック・ユー, Book ID: 222, Memo: , Grade: 5～3
+ID: 2004, Name: ウィー・アー・ザ・チャンピオン(伝説のチャンピオン, Book ID: 222, Memo: , Grade: 5～3
+ID: 2005, Name: ボヘミアン・ラプソディ, Book ID: 222, Memo: , Grade: 5～3
+ID: 2006, Name: レット・イット・ビー, Book ID: 223, Memo: , Grade: 5～3
+ID: 2007, Name: ヘイ・ジュード, Book ID: 223, Memo: , Grade: 5～3
+ID: 2008, Name: ザ・ロング・アンド・ワインディング・ロード, Book ID: 223, Memo: , Grade: 5～3
+ID: 2009, Name: フール・オン・ザ・ヒル, Book ID: 223, Memo: , Grade: 5～3
+ID: 2010, Name: ゲット・バック, Book ID: 223, Memo: , Grade: 5～3
+ID: 2011, Name: ペニー・レイン, Book ID: 223, Memo: , Grade: 5～3
+ID: 2012, Name: TRUTH, Book ID: 224, Memo: , Grade: 5～3
+ID: 2013, Name: OMENS OF LOVE, Book ID: 224, Memo: , Grade: 5～3
+ID: 2014, Name: 宝島, Book ID: 224, Memo: , Grade: 5～3
+ID: 2015, Name: TWILIGHT IN UPPER WEST, Book ID: 224, Memo: , Grade: 5～3
+ID: 2016, Name: 明日への扉, Book ID: 224, Memo: , Grade: 5～3
+ID: 2017, Name: ADVENTURES～ALL ABOUT YOU～いとしのうなじ, Book ID: 224, Memo: , Grade: 5～3
+ID: 2018, Name: deja vuがにげる頃, Book ID: 225, Memo: , Grade: 5～3
+ID: 2019, Name: 過ぎ去りし永遠の日々, Book ID: 225, Memo: , Grade: 5～3
+ID: 2020, Name: SARA, Book ID: 225, Memo: , Grade: 5～3
+ID: 2021, Name: 愛しのジャクリーヌ, Book ID: 225, Memo: , Grade: 5～3
+ID: 2022, Name: TANGO～眠らない夜のために～, Book ID: 225, Memo: , Grade: 5～3
+ID: 2023, Name: ゆがんだ時計, Book ID: 225, Memo: , Grade: 5～3
+ID: 2024, Name: カンゲンガククミキョク「ポロネーズ」, Book ID: 226, Memo: , Grade: none
+ID: 2025, Name: メヌエット(ハイドン), Book ID: 226, Memo: , Grade: none
+ID: 2026, Name: モテット「アヴェ・ヴェルム・コルプス」 K.618, Book ID: 226, Memo: , Grade: none
+ID: 2027, Name: メヌエット(Lモーツァルト), Book ID: 226, Memo: , Grade: none
+ID: 2028, Name: ピアノソナタ OP.49－2, Book ID: 226, Memo: , Grade: none
+ID: 2029, Name: アヴェ・マリア, Book ID: 226, Memo: , Grade: none
+ID: 2030, Name: ハンガリー舞曲 第5番, Book ID: 226, Memo: , Grade: none
+ID: 2031, Name: 春の声, Book ID: 226, Memo: , Grade: none
+ID: 2032, Name: モルダウ, Book ID: 226, Memo: , Grade: none
+ID: 2033, Name: Asian Roses, Book ID: 227, Memo: , Grade: 5
+ID: 2034, Name: KAGEMUSHA, Book ID: 227, Memo: , Grade: 6
+ID: 2035, Name: 夢やぶれて, Book ID: 227, Memo:  I DREAMED A DREAM/From the Musical LES MISERABLES, Grade: 5
+ID: 2036, Name: 犬神家の一族 愛のバラード, Book ID: 227, Memo: , Grade: 6
+ID: 2037, Name: ネバー・エンディング・ストーリーのテーマ, Book ID: 227, Memo: , Grade: 7
+ID: 2038, Name: ハピネス・イズ・ヒア, Book ID: 227, Memo:  HAPINESS IS HERE/東京ディズニーランド30周年記念ソング, Grade: 7
+ID: 2039, Name: ジッパ・ディー・ドゥー・ダー, Book ID: 227, Memo:  ZIP-A-DEE-DOO-DAH/ディズニー映画『南部の唄』より, Grade: 6
+ID: 2040, Name: ひこうき雲, Book ID: 227, Memo: , Grade: 6
+ID: 2041, Name: テーマ・オブ・半沢直樹 ～ Main Title ～, Book ID: 227, Memo: , Grade: 5
+ID: 2042, Name: ウィリアム・テル序曲, Book ID: 227, Memo: , Grade: 5
+ID: 2043, Name: 僕らの音楽オープニング・テーマ, Book ID: 227, Memo: , Grade: 5
+ID: 2044, Name: 八重の桜メインテーマ, Book ID: 227, Memo: , Grade: 5
+ID: 2045, Name: theme of nightmare chang, Book ID: 227, Memo: , Grade: 5
+ID: 2046, Name: あまちゃん オープニングテーマ/ロングバージョン, Book ID: 227, Memo: , Grade: 7
+ID: 2047, Name: 花は咲く, Book ID: 227, Memo: , Grade: 7
+ID: 2048, Name: 暦の上ではディセンバー, Book ID: 227, Memo:  NHK 連続テレビ小説『あまちゃん』より, Grade: 7
+ID: 2049, Name: Endless Game, Book ID: 227, Memo: , Grade: 6
+ID: 2050, Name: Breathless, Book ID: 227, Memo: , Grade: 7
+ID: 2051, Name: EXILE PRIDE～こんな世界を愛するため～, Book ID: 227, Memo: , Grade: 6
+ID: 2052, Name: RPG, Book ID: 227, Memo: , Grade: 7
+ID: 2053, Name: Joy！！, Book ID: 227, Memo: , Grade: 6
+ID: 2054, Name: キミとのキセキ, Book ID: 227, Memo: , Grade: 6
+ID: 2055, Name: 永遠プレッシャー, Book ID: 227, Memo: , Grade: 7
+ID: 2056, Name: ヒカリヘ, Book ID: 227, Memo: , Grade: 7
+ID: 2057, Name: ミュージック, Book ID: 227, Memo: , Grade: 6
+ID: 2058, Name: 女々しくて, Book ID: 227, Memo: , Grade: 7
+ID: 2059, Name: サラバ、愛しき悲しみたちよ, Book ID: 227, Memo: , Grade: 7
+ID: 2060, Name: にんじゃりばんばん, Book ID: 227, Memo: , Grade: 7
+ID: 2061, Name: 紅蓮の弓矢, Book ID: 227, Memo: , Grade: 6
+ID: 2062, Name: 千本桜, Book ID: 227, Memo: , Grade: 5
+ID: 2063, Name: チルドレンレコード, Book ID: 228, Memo: , Grade: 6
+ID: 2064, Name: 夜咄ディセイブ, Book ID: 228, Memo: , Grade: 6
+ID: 2065, Name: エレクトリック・スター, Book ID: 228, Memo: , Grade: 7
+ID: 2066, Name: 脳漿炸裂ガール, Book ID: 228, Memo: , Grade: 6
+ID: 2067, Name: 千本桜 -ピアノバラードVer.-, Book ID: 228, Memo: , Grade: 6
+ID: 2068, Name: 千本桜 -和楽器Ver.-, Book ID: 228, Memo: , Grade: 7
+ID: 2069, Name: 歌劇「椿姫」より 乾杯の歌, Book ID: 229, Memo: , Grade: 6
+ID: 2070, Name: 組曲「惑星」より 木星, Book ID: 229, Memo: , Grade: 7
+ID: 2071, Name: くるみ割り人形 メドレー 行進曲～こんぺい糖の踊り, Book ID: 229, Memo: , Grade: 6
+ID: 2072, Name: ピアノ・ソナタ第8番「悲愴」 第2楽章, Book ID: 229, Memo: , Grade: 7
+ID: 2073, Name: 「アルルの女」第2組曲より ファランドール, Book ID: 229, Memo: , Grade: 6
+ID: 2074, Name: 歌劇「ジャンニ・スキッキ」より 私のお父さん, Book ID: 229, Memo: , Grade: 7
+ID: 2075, Name: Arrietty's Song, Book ID: 230, Memo:  映画『借りぐらしのアリエッティ』より, Grade: 6
+ID: 2076, Name: 荒れた庭, Book ID: 230, Memo:  映画『借りぐらしのアリエッティ』より, Grade: 6
+ID: 2077, Name: シンフォニック・ジブリ メドレー, Book ID: 230, Memo:  となりのトトロ～君をのせて～崖の上のポニョ, Grade: 6
+ID: 2078, Name: さんぽ, Book ID: 230, Memo: , Grade: 7
+ID: 2079, Name: アシタカせっ記, Book ID: 230, Memo: , Grade: 6
+ID: 2080, Name: 海の見える街, Book ID: 230, Memo:  スタジオジブリ作品「魔女の宅急」, Grade: 7
+ID: 2081, Name: 「風の谷のナウシカ」～オープニング, Book ID: 230, Memo: , Grade: 7
+ID: 2082, Name: 天空の城ラピュタ, Book ID: 230, Memo:  スタジオジブリ映画『天空の城ラピュタ』より, Grade: 7
+ID: 2083, Name: ひこうき雲, Book ID: 231, Memo:  スタジオジブリ『風立ちぬ』より, Grade: 7
+ID: 2084, Name: いのちの記憶, Book ID: 231, Memo:  スタジオジブリ『かぐや姫の物語』より, Grade: 7
+ID: 2085, Name: ねこバス, Book ID: 231, Memo:  スタジオジブリ『となりのトトロ』より, Grade: 6
+ID: 2086, Name: 風のとおり道, Book ID: 231, Memo:  スタジオジブリ『となりのトトロ』より, Grade: 6
+ID: 2087, Name: やさしさに包まれたなら, Book ID: 231, Memo:  スタジオジブリ『魔女の宅急便』より, Grade: 7
+ID: 2088, Name: 晴れた日に…, Book ID: 231, Memo:  スタジオジブリ『魔女の宅急便』より, Grade: 7
+ID: 2089, Name: アシタカとサン, Book ID: 231, Memo:  スタジオジブリ『もののけ姫』より, Grade: 7
+ID: 2090, Name: ふたたび, Book ID: 231, Memo:  スタジオジブリ『千と千尋の神隠し』より, Grade: 6
+ID: 2091, Name: まかせて★スプラッシュ☆スター★, Book ID: 232, Memo:  『ふたりはプリキュアSplash★Star』より, Grade: 6
+ID: 2092, Name: 風待ちジェット, Book ID: 232, Memo:  『ツバサ・クロニクル』より, Grade: 7
+ID: 2093, Name: 100もの扉, Book ID: 232, Memo:  『名探偵コナン』より, Grade: 7
+ID: 2094, Name: Re:member, Book ID: 232, Memo:  『NARUTO-ナルト-』より, Grade: 6
+ID: 2095, Name: スパート!, Book ID: 232, Memo:  『ポケットモンスターアドバンスジェネレーション』より, Grade: 7
+ID: 2096, Name: BRAND NEW WORLD, Book ID: 232, Memo:  『ワンピース』より, Grade: 6
+ID: 2097, Name: 真夏の果実, Book ID: 233, Memo: , Grade: 7
+ID: 2098, Name: I AM YOUR SINGER, Book ID: 233, Memo:  au『LISMO』CM曲, Grade: 6
+ID: 2099, Name: 涙のキッス, Book ID: 233, Memo: , Grade: 7
+ID: 2100, Name: TSUNAMI, Book ID: 233, Memo: , Grade: 6
+ID: 2101, Name: Ya Ya（あの時代を忘れない）, Book ID: 233, Memo: , Grade: 7
+ID: 2102, Name: 希望の轍, Book ID: 233, Memo: , Grade: 6
+ID: 2103, Name: 勝手にシンドバッド, Book ID: 233, Memo: , Grade: 6
+ID: 2104, Name: いとしのエリー, Book ID: 233, Memo: , Grade: 7
+ID: 2105, Name: Dragon Night, Book ID: 234, Memo: , Grade: 6
+ID: 2106, Name: ムーンライトステーション, Book ID: 234, Memo: , Grade: 6
+ID: 2107, Name: RPG, Book ID: 234, Memo: , Grade: 7
+ID: 2108, Name: スノーマジックファンタジー, Book ID: 234, Memo: , Grade: 7
+ID: 2109, Name: 炎と森のカーニバル, Book ID: 234, Memo: , Grade: 6
+ID: 2110, Name: プレゼント, Book ID: 234, Memo: , Grade: 6
+ID: 2111, Name: 風の谷のナウシカ～オープニング, Book ID: 235, Memo:  映画『風の谷のナウシカ』より, Grade: 8
+ID: 2112, Name: 君をのせて, Book ID: 235, Memo:  映画『天空の城 ラピュタ』より, Grade: 9
+ID: 2113, Name: となりのトトロ, Book ID: 235, Memo:  映画『となりのトトロ』より, Grade: 9
+ID: 2114, Name: アシタカせっ記, Book ID: 235, Memo:  映画『もののけ姫』より, Grade: 8
+ID: 2115, Name: 世界の約束, Book ID: 235, Memo:  映画『ハウルの動く城』より, Grade: 9
+ID: 2116, Name: Arrietty's Song, Book ID: 235, Memo:  映画『借りぐらしのアリエッティ』より, Grade: 8
+ID: 2117, Name: スター・ウォーズ メイン・タイトル～帝国のマーチ, Book ID: 236, Memo: , Grade: 5～3
+ID: 2118, Name: レイダース・マーチ, Book ID: 236, Memo:  映画『インディー・ジョーンズ/レイダース 失われたアーク《聖櫃》』より, Grade: 5～3
+ID: 2119, Name: E.T. フライング・テーマ, Book ID: 236, Memo: , Grade: 5～3
+ID: 2120, Name: ジュラシックパーク テーマ, Book ID: 236, Memo:  映画「ジュラシックパーク」より, Grade: 5～3
+ID: 2121, Name: JAWS メイン・タイトル, Book ID: 236, Memo: , Grade: 5～3
+ID: 2122, Name: スイートプリキュアメドレー, Book ID: 237, Memo:  スイートプリキュア♪より, Grade: 中
+ID: 2123, Name: 残酷な天使のテーゼ, Book ID: 237, Memo: , Grade: 中
+ID: 2124, Name: SPACE BATTLESHIPヤマトOPENING TITLE, Book ID: 237, Memo: , Grade: 中
+ID: 2125, Name: 翔べ!ガンダム, Book ID: 237, Memo: , Grade: 中
+ID: 2126, Name: ルパン三世'80, Book ID: 237, Memo: , Grade: 中
+ID: 2127, Name: 魔女の宅急便 メドレー (4台用), Book ID: 238, Memo:  (晴れた日に・・・ ～仕事はじめ ～とべない! ～海の見える街/映画 『魔女の宅急便』 より), Grade: 初中
+ID: 2128, Name: ハウルの動く城 メドレー (3台用), Book ID: 238, Memo:  (オープニング ～陽気な軽騎兵 ～世界の約束 ～人生のメリーゴーランド/映画 『ハウルの動く城』 より), Grade: 初中
+ID: 2129, Name: 天空の城ラピュタ メドレー (3台用), Book ID: 238, Memo:  (天空の城ラピュタ ～君をのせて/映画 『天空の城ラピュタ』 より), Grade: 初中
+ID: 2130, Name: ゲド戦記 メドレー (4台用), Book ID: 238, Memo:  (旅路 ～街 ～異変 ～命の火 ～テルーの唄/映画 『ゲド戦記』 より), Grade: 初中
+ID: 2131, Name: 「塔の上のラプンツェル」メドレー, Book ID: 239, Memo:  輝く未来～自由への扉 / ディズニー映画「塔の上のラプンツェル」より (I SEE THE LIGHT～WHEN WILL MY LIFE BEGIN？), Grade: 初
+ID: 2132, Name: サークル・オブ・ライフ, Book ID: 239, Memo:  (CIRCLE OF LIFE) / ディズニー映画「ライオン・キング」より, Grade: 初
+ID: 2133, Name: 「美女と野獣」メドレー, Book ID: 239, Memo:  ひとりぼっちの晩餐会～美女と野獣 / ディズニー映画「美女と野獣」より (BE OUR GUEST～BEAUTY AND THE BEAST), Grade: 初
+ID: 2134, Name: 東京ディズニーランド(R)・エレクトリカルパレード・ドリームライツ, Book ID: 239, Memo:  エレクトリック・ファンファーレ～バロック・ホウダウン (ELECTRIC FANFARE～BAROQUE HOEDOWN), Grade: 初
+ID: 2135, Name: スーパーカリフラジリスティックエクスピアリドーシャス, Book ID: 239, Memo:  (SUPERCALIFRAGILISTICEXPIALIDOCIOUS) / ディズニー映画「メリー・ポピンズ」より, Grade: 初
+ID: 2136, Name: SAMBA DE 恋して, Book ID: 240, Memo: , Grade: 中上
+ID: 2137, Name: Crush!, Book ID: 240, Memo: , Grade: 中上
+ID: 2138, Name: I'M A SLUGGER, Book ID: 240, Memo: , Grade: 中上
+ID: 2139, Name: SPAIN, Book ID: 240, Memo: , Grade: 中上
+ID: 2140, Name: BANG! BANG! バカンス! ～Dear WOMAN ～“shake” REMIX, Book ID: 240, Memo: , Grade: 中上
+ID: 2141, Name: Driving Power, Book ID: 241, Memo: , Grade: 中上
+ID: 2142, Name: ケルティック・ロマンス, Book ID: 241, Memo:  調子のよい鍛冶屋～ロンドンデリー・エアー～ユー・レイズ・ミー・アップ, Grade: 中上
+ID: 2143, Name: Happy-Go-Lucky, Book ID: 241, Memo: , Grade: 中上
+ID: 2144, Name: Emotion・・・Songs for You, Book ID: 241, Memo:  とどかぬ想い～Romance～Starry Night～陽の光を浴びて, Grade: 中上
+ID: 2145, Name: 君にデジャ・ヴ, Book ID: 241, Memo:  ～20th Anniversary Symphonic Version～, Grade: 中上
+ID: 2146, Name: 情熱大陸2007, Book ID: 242, Memo: , Grade: 中上
+ID: 2147, Name: Tank！, Book ID: 242, Memo: , Grade: 中上
+ID: 2148, Name: サークル・オブ・ライフ, Book ID: 242, Memo:  CIRCLE OF LIFE, Grade: 中
+ID: 2149, Name: 大江戸捜査網テーマ, Book ID: 242, Memo: , Grade: 中上
+ID: 2150, Name: ボレロ, Book ID: 242, Memo: , Grade: 中上
+ID: 2151, Name: 交響詩「フィンランディア」より, Book ID: 242, Memo: , Grade: 中上
+ID: 2152, Name: そりすべり, Book ID: 242, Memo:  SLEIGH RIDE, Grade: 中上
+ID: 2153, Name: 恋, Book ID: 242, Memo: , Grade: 中上
+ID: 2154, Name: 行進曲「威風堂々」第1番より, Book ID: 243, Memo: , Grade: 中上
+ID: 2155, Name: ミッキーマウス・マーチ(ユーロビート・バージョン), Book ID: 243, Memo: , Grade: 中上
+ID: 2156, Name: 可愛いアイシャ～心の愛～サンシャイン, Book ID: 243, Memo: , Grade: 中上
+ID: 2157, Name: バック・トゥ・ザ・フューチャー, Book ID: 243, Memo: , Grade: 中上
+ID: 2158, Name: スペイン, Book ID: 243, Memo: , Grade: 中上
+ID: 2159, Name: ルパン・ザ・サード, Book ID: 243, Memo: , Grade: 中上
+ID: 2160, Name: セプテンバー(ラテン・ジャズ・バージョン), Book ID: 243, Memo: , Grade: 中上
+ID: 2161, Name: ウィリアム・テル 序曲, Book ID: 243, Memo: , Grade: 中上
+ID: 2162, Name: 東京ディズニーランド®・エレクトリカル・パレード・ドリームライツ, Book ID: 244, Memo:  エレクトリック・ファンファーレ～バロック・ホウダウン～ハイ・ホー～美女と野獣 ～白鳥の湖～小さな世界, Grade: 中上
+ID: 2163, Name: 「リロ&スティチ」 メドレー, Book ID: 244, Memo:  ハワイアン・ローラーコースター・ライド～アロハ・エ・コモ・マイ, Grade: 中上
+ID: 2164, Name: 「リトル・マーメイド」 メドレー, Book ID: 244, Memo:  アンダー・ザ・シー～キス・ザ・ガール～パート・オブ・ユア・ワールド, Grade: 中上
+ID: 2165, Name: ビッグ・バンド・ディズニー メドレー, Book ID: 244, Memo:  いつか王子様が～星に願いを, Grade: 中上
+ID: 2166, Name: 東京ディズニーランド®・エレクトリカル・パレード・ドリームライツ, Book ID: 245, Memo:  エレクトリック・ファンファーレ～バロック・ホウダウン～ハイ・ホー～美女と野獣 ～白鳥の湖～小さな世界, Grade: 中上
+ID: 2167, Name: 「リロ&スティチ」 メドレー, Book ID: 245, Memo:  ハワイアン・ローラーコースター・ライド～アロハ・エ・コモ・マイ, Grade: 中上
+ID: 2168, Name: 「リトル・マーメイド」 メドレー, Book ID: 245, Memo:  アンダー・ザ・シー～キス・ザ・ガール～パート・オブ・ユア・ワールド, Grade: 中上
+ID: 2169, Name: ビッグ・バンド・ディズニー メドレー, Book ID: 245, Memo:  いつか王子様が～星に願いを, Grade: 中上
+ID: 2170, Name: 祝典序曲「1812年」, Book ID: 246, Memo: , Grade: 中上
+ID: 2171, Name: 狂詩曲「スペイン」, Book ID: 246, Memo: , Grade: 中上
+ID: 2172, Name: 星条旗よ永遠なれ, Book ID: 246, Memo: , Grade: 中上
+ID: 2173, Name: 英雄ポロネーズ, Book ID: 246, Memo: , Grade: 中上
+ID: 2174, Name: 「スター・ウォーズ」メドレー, Book ID: 247, Memo:  メイン・タイトル～レイア姫のテーマ～王座の間のフィナーレ STAR WARS MAIN TITLE～PRINCESS LEIA'S THEME(PRINCESS THEME)～THRONE ROOM AND END TITLE,THE, Grade: 中上
+ID: 2175, Name: 「ハリー・ポッターと賢者の石」メドレー, Book ID: 247, Memo:  プロローグ～ハリーの不思議な世界～ヘドウィグのテーマ PROLOGUE～HARRY'S WONDROUS WORLD～HEDWIG'S THEME, Grade: 中上
+ID: 2176, Name: バック・トゥ・ザ・フューチャー, Book ID: 247, Memo:  BACK TO THE FUTURE / 映画「バック・トゥ・ザ・フューチャー」より, Grade: 中上
+ID: 2177, Name: キャラバンの到着, Book ID: 247, Memo:  ARRIVEE DES CAMIONNEURS,L' / 映画「ロシュフォールの恋人たち」より, Grade: 中上
+ID: 2178, Name: 龍馬伝, Book ID: 248, Memo:  NHK大河ドラマ『龍馬伝』テーマ曲, Grade: 中上
+ID: 2179, Name: 伝説、そして神話へ～メイン・テーマ～, Book ID: 248, Memo: , Grade: 中上
+ID: 2180, Name: 巧名が辻メインテーマ, Book ID: 248, Memo:  NHK大河ドラマ『巧名が辻』メインテーマ, Grade: 中上
+ID: 2181, Name: 天地人～オープニングテーマ, Book ID: 248, Memo:  NHK大河ドラマ『天地人』メインテーマ, Grade: 中上
+ID: 2182, Name: 風林火山－メイン・テーマ－, Book ID: 248, Memo:  NHK大河ドラマ『風林火山』メインテーマ, Grade: 中上
+ID: 2183, Name: 「新選組!」メイン・テーマ, Book ID: 248, Memo: , Grade: 中上
+ID: 2184, Name: TRUTH, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2185, Name: BIG CITY, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2186, Name: 宝島, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2187, Name: TWILIGHT IN UPPER WEST, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2188, Name: GO FOR IT, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2189, Name: DAISY FIELD, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2190, Name: MEGALITH, Book ID: 249, Memo: None, Grade: 5～3
+ID: 2191, Name: モーニングコーヒー, Book ID: 250, Memo: None, Grade: 7
+ID: 2192, Name: サマーナイトタウン, Book ID: 250, Memo: None, Grade: 7
+ID: 2193, Name: Ｍｅｍｏｒｙ青春の光, Book ID: 250, Memo: None, Grade: 7
+ID: 2194, Name: 真夏の光線, Book ID: 250, Memo: None, Grade: 6
+ID: 2195, Name: 抱いてＨＯＬＤ ＯＮ ＭＥ！, Book ID: 250, Memo: None, Grade: 6
+ID: 2196, Name: ＬＯＶＥマシーン, Book ID: 250, Memo: None, Grade: 7
+ID: 2197, Name: 恋のダンスサイト, Book ID: 250, Memo: None, Grade: 6
+ID: 2198, Name: ハイウェイ・スター, Book ID: 251, Memo: , Grade: 5~3
+ID: 2199, Name: ワイルド・アングル, Book ID: 251, Memo: , Grade: 5~3
+ID: 2200, Name: ノー・マンズ・ランド, Book ID: 251, Memo: , Grade: 5~3
+ID: 2201, Name: サヴォイ, Book ID: 251, Memo: , Grade: 5~3
+ID: 2202, Name: レディ・バイオレッタ, Book ID: 251, Memo: , Grade: 5~3
+ID: 2203, Name: 天国への階段, Book ID: 251, Memo: , Grade: 5~3
+ID: 2204, Name: ティズニー・ファンティリュージョン！, Book ID: 252, Memo: , Grade: 6
+ID: 2205, Name: 古畑任三郎のテーマ, Book ID: 252, Memo: 警部補・古畑任三郎より, Grade: 6
+ID: 2206, Name: 王様のレストラン, Book ID: 252, Memo: 「王様のレストラン」より, Grade: 6
+ID: 2207, Name: 秀吉, Book ID: 252, Memo: 「NHK 大河ドラマ・秀吉」より, Grade: 6
+ID: 2208, Name: はるかなる大地, Book ID: 252, Memo: 「北の国から」より, Grade: 7
+ID: 2209, Name: 伽羅, Book ID: 252, Memo: 「NHK特集・海のシルクロード」より, Grade: 7
+ID: 2210, Name: ENDLESS RAIN, Book ID: 252, Memo: , Grade: 7
+ID: 2211, Name: 自由の大地, Book ID: 252, Memo: 「新世界紀行」より, Grade: 7
+ID: 2212, Name: ユーモレスク, Book ID: 253, Memo: , Grade: 
+ID: 2213, Name: 交響曲第40番第一楽章, Book ID: 253, Memo: , Grade: 
+ID: 2214, Name: バッハのメヌエット, Book ID: 253, Memo: , Grade: 
+ID: 2215, Name: ピアノ・ソナタ第８番「悲愴」第２楽章, Book ID: 253, Memo: , Grade: 
+ID: 2216, Name: トルコ行進曲（ピアノ・ソナタ第１１番第３楽章）, Book ID: 253, Memo: , Grade: 
+ID: 2217, Name: 美し青きドナウ, Book ID: 253, Memo: , Grade: 
+ID: 2218, Name: Miss You Like Crazy, Book ID: 254, Memo: ミス・ライク・クレイジー, Grade: 
+ID: 2219, Name: 70's Dance Mix, Book ID: 254, Memo: That's The Way (I Like it)~Sexy Bus Stop~ Fantasy ~ Dancing Queen ~ I'm In The Mood For Dancing, Grade: 
+ID: 2220, Name: Sweet Baby, Book ID: 254, Memo: , Grade: 
+ID: 2221, Name: Theme From "E.F.W, Book ID: 254, Memo: E.T.のテーマ, Grade: 
+ID: 2222, Name: 時計-Picuresque Time, Book ID: 254, Memo: Picturesque Time, Grade: 
+ID: 2223, Name: スーパーマリオワールド　タイトルBGM, Book ID: 255, Memo: , Grade: 7~5
+ID: 2224, Name: スーパーマリオワールド　地上BGM, Book ID: 255, Memo: , Grade: 7~5
+ID: 2225, Name: スーパーマリオワールド　コクッパBGM, Book ID: 255, Memo: , Grade: 7~5
+ID: 2226, Name: スーパーマリオワールド　エンディング, Book ID: 255, Memo: , Grade: 7~5
+ID: 2227, Name: Welcome to Mario World, Book ID: 255, Memo: スーパーマリオワールドタイトルBGM, Grade: 7~5
+ID: 2228, Name: Super Mario World., Book ID: 255, Memo: スーパーマリオワールド 地上BGM, Grade: 7~5
+ID: 2229, Name: Super Mario Bros, Book ID: 255, Memo: スーパーマリオプラザーズ 地上BGM, Grade: 7~5
+ID: 2230, Name: Shining Coral, Book ID: 255, Memo: スーパーマリオンフザース 水中BGM, Grade: 7~5
+ID: 2231, Name: Thank You, Mario!, Book ID: 255, Memo: スーパーマリオワールド エンディング, Grade: 7~5
+ID: 2232, Name: , Book ID: 255, Memo: , Grade: 
+ID: 2233, Name: 帝国のマーチ（ダース・ベイダーのテーマ）, Book ID: 256, Memo: 映画『スター・ウォーズ 帝国の逆襲」より, Grade: 5~3
+ID: 2234, Name: ヨーダのテーマ, Book ID: 256, Memo: 映画「スター・ウォーズ 帝国の逆襲」より, Grade: 5~3
+ID: 2235, Name: ルークとレイア〜イウォーク族のパレード（メドレー）, Book ID: 256, Memo: 映画『スター・ウォーズ ジェダイの復讐」より, Grade: 5~3
+ID: 2236, Name: 酒場のバンド, Book ID: 256, Memo: 映画『スター・ウォーズ」より, Grade: 5~3
+ID: 2237, Name: 王座の間, Book ID: 256, Memo: 映画『スター・ウォーズ」より, Grade: 5~3
+ID: 2238, Name: アラジン・メドレー, Book ID: 257, Memo: , Grade: 5~3
+ID: 2239, Name: メリー・ポピンズ・メドレー, Book ID: 257, Memo: , Grade: 5~3
+ID: 2240, Name: シンデレラ・メドレー, Book ID: 257, Memo: , Grade: 5~3
+ID: 2241, Name: ライオン・キング・メドレー, Book ID: 257, Memo: , Grade: 5~3
+ID: 2242, Name: エストレイヤ, Book ID: 258, Memo: , Grade: 5~3
+ID: 2243, Name: ムーンライト・セレナーデ, Book ID: 258, Memo: , Grade: 5~3
+ID: 2244, Name: スカボロー・フェア, Book ID: 258, Memo: , Grade: 5~3
+ID: 2245, Name: リトル・スコティッシュ・ファンタジー（ジョニーがいなくてがっかり）, Book ID: 258, Memo: , Grade: 5~3
+ID: 2246, Name: 星空につつまれて（TV-Size Edit）, Book ID: 258, Memo: , Grade: 5~3
+ID: 2247, Name: バトル2～ファンファーレ, Book ID: 259, Memo: , Grade: 5~3
+ID: 2248, Name: ク族の沼～クイナのテーマ, Book ID: 259, Memo: , Grade: 5~3
+ID: 2249, Name: 破滅への使者, Book ID: 259, Memo: , Grade: 5~3
+ID: 2250, Name: その扉の向こうに〜Final Fantasy, Book ID: 259, Memo: , Grade: 5~3
+ID: 2251, Name: Melodies Of Life, Book ID: 259, Memo: , Grade: 5~3
 
 Artists:
 ID: 1, Name: MY FIRST STORY×HYDE
@@ -2656,6 +3023,32 @@ ID: 507, Name: ゴンチチ
 ID: 508, Name: デビット・フォスター
 ID: 509, Name: 槇原 敬之
 ID: 510, Name: 中村 幸代
+ID: 511, Name: 葉加瀬 太郎 with 小松 亮太
+ID: 512, Name: ディズニ-
+ID: 513, Name: Celine Dion&ピーボ・ブライソン
+ID: 514, Name: ジグソー
+ID: 515, Name: G.ヴェルディ
+ID: 516, Name: 溝口 肇
+ID: 517, Name: デイブ・ブルーベック
+ID: 518, Name: 熱帯ジャズ楽団
+ID: 519, Name: Kawano Kei, Utada Hikaru
+ID: 520, Name: QUEEN
+ID: 521, Name: The Beatles
+ID: 522, Name: THE SQUARE (現・T-SQUARE)
+ID: 523, Name: T-SQUARE(旧・THE SQUARE)
+ID: 524, Name: COBA
+ID: 525, Name: 2CELLOS
+ID: 526, Name: アン・ハサウェイ
+ID: 527, Name: 大野 雄二
+ID: 528, Name: リマール
+ID: 529, Name: 花は咲くプロジェクト
+ID: 530, Name: miwa
+ID: 531, Name: Linked Horizon
+ID: 532, Name: 二階堂 和美
+ID: 533, Name: 坂本 真綾
+ID: 534, Name: FLOW
+ID: 535, Name: D-51
+ID: 536, Name: モーニング娘。
 
 Lyricists:
 ID: 1, Name: MY FIRST STORY
@@ -3245,6 +3638,25 @@ ID: 584, Name: Ned Washington
 ID: 585, Name: BILLY TOWNE
 ID: 586, Name: TONY HATCH
 ID: 587, Name: ANDREA MORRICONE
+ID: 588, Name: 日本語詞:島村 葉二
+ID: 589, Name: Larry Morey
+ID: 590, Name: 日本語詞:海野 洋司
+ID: 591, Name: 
+ID: 592, Name: 日本語詞:湯川れい子
+ID: 593, Name: NED WASHINGTON
+ID: 594, Name: A.J.Lerner
+ID: 595, Name: 宇多田ヒカル
+ID: 596, Name: Frederick Mercury
+ID: 597, Name: Brian May
+ID: 598, Name: John Lennon Paul McCartney
+ID: 599, Name: 坂本 真綾
+ID: 600, Name: 愛内 里菜
+ID: 601, Name: 三枝 夕夏
+ID: 602, Name: KOHSHI ASAKAWA
+ID: 603, Name: 戸田 昭吾
+ID: 604, Name: 吉田 安英
+ID: 605, Name: 井荻 麟
+ID: 606, Name: 三谷 幸喜
 
 Song Writers:
 ID: 1, Name: MY FIRST STORY
@@ -4412,6 +4824,125 @@ ID: 1162, Name: R.Rodgers
 ID: 1163, Name: 倉本 裕基
 ID: 1164, Name: 塩谷 哲
 ID: 1165, Name: 中村 幸代
+ID: 1166, Name: ak.homma
+ID: 1167, Name: 新藤 晴一
+ID: 1168, Name: Don Dorsey
+ID: 1169, Name: G.Kingsley
+ID: 1170, Name: J.Perrey
+ID: 1171, Name: LEIGH HARLINE
+ID: 1172, Name: P MASCAGNI
+ID: 1173, Name: C.K.Scott
+ID: 1174, Name: D.R.Dyer
+ID: 1175, Name: G.Verdi
+ID: 1176, Name: 溝口 肇
+ID: 1177, Name: 川上 つよし
+ID: 1178, Name: 蒲生 俊貴
+ID: 1179, Name: 青木 竜之
+ID: 1180, Name: 青木 達之
+ID: 1181, Name: 森村 献
+ID: 1182, Name: ソル・レイク
+ID: 1183, Name: 中路英明
+ID: 1184, Name: Frederick Loewe
+ID: 1185, Name: 中路 英明
+ID: 1186, Name: Robert Van Leeuwen
+ID: 1187, Name: 宇多田ヒカル
+ID: 1188, Name: Frederick Mercury
+ID: 1189, Name: John Lennon Paul McCartney
+ID: 1190, Name: coba
+ID: 1191, Name: J S バッハ
+ID: 1192, Name: F J ハイドン(HAYDN)
+ID: 1193, Name: W A モ-ツァルト
+ID: 1194, Name: L モ-ツァルト(PDサッカ)
+ID: 1195, Name: L V ベ-ト-ベン
+ID: 1196, Name: F P シュ-ベルト
+ID: 1197, Name: J シュトラウス(STRAUSS) II
+ID: 1198, Name: B.Smetana
+ID: 1199, Name: Stjepan Hauser
+ID: 1200, Name: Luka Sulic
+ID: 1201, Name: Hajime Uchiyama
+ID: 1202, Name: クロード・ミシェル・シェーンベルク
+ID: 1203, Name: MARK HAMMOND
+ID: 1204, Name: ジョアキーノ・ロッシーニ
+ID: 1205, Name: 武部 聡志
+ID: 1206, Name: 江藤 直子
+ID: 1207, Name: 高井 康生
+ID: 1208, Name: Chris Janey
+ID: 1209, Name: Dyce Taylor
+ID: 1210, Name: Christofer Erixon
+ID: 1211, Name: Joakim Bjornberg
+ID: 1212, Name: Sean"PHEKOO"Phekoo
+ID: 1213, Name: 津野 米咲
+ID: 1214, Name: ha-j
+ID: 1215, Name: miwa
+ID: 1216, Name: Revo
+ID: 1217, Name: G.Holst
+ID: 1218, Name: G.Puccini
+ID: 1219, Name: サイモン・キャビー
+ID: 1220, Name: セシル・コルベル
+ID: 1221, Name: 鈴木 祥子
+ID: 1222, Name: TAKESHI ASAKAWA
+ID: 1223, Name: たなかひろかず
+ID: 1224, Name: 吉田 安英
+ID: 1225, Name: IKUMA
+ID: 1226, Name: Nicky Romero
+ID: 1227, Name: Marcus Van Wattum
+ID: 1228, Name: Cecile Corbel
+ID: 1229, Name: Simon Caby
+ID: 1230, Name: 高梨 康治
+ID: 1231, Name: 久石 譲 ～木村 弓 ～久石 譲
+ID: 1232, Name: 寺嶋 民哉 ～谷山 浩子
+ID: 1233, Name: エルトン・ジョン
+ID: 1234, Name: ドン・ドーシー
+ID: 1235, Name: ジャン=ジャック・ペリー
+ID: 1236, Name: ガーション・キングスレイ
+ID: 1237, Name: リチャード.M.シャーマン
+ID: 1238, Name: ロバート.B.シャーマン
+ID: 1239, Name: C.COREA
+ID: 1240, Name: 小森田 実 ～平田 祥一郎 ～小森田 実
+ID: 1241, Name: 加曽利 康之
+ID: 1242, Name: 玉木 宏樹
+ID: 1243, Name: J.シベリウス
+ID: 1244, Name: ALAN SILVESTRI
+ID: 1245, Name: C COREA
+ID: 1246, Name: AL MCKAY
+ID: 1247, Name: ALLEE WILLIS
+ID: 1248, Name: 
+ID: 1249, Name: A.Silvestri
+ID: 1250, Name: M.K.Ho'omalu
+ID: 1251, Name: D.Jacob
+ID: 1252, Name: E.Chabrier
+ID: 1253, Name: Michel Legrand
+ID: 1254, Name: 岩代 太郎
+ID: 1255, Name: Roger Glover
+ID: 1256, Name: lan Paice
+ID: 1257, Name: Lan Gillan
+ID: 1258, Name: James Taylor
+ID: 1259, Name: Willmot
+ID: 1260, Name: Billy sheehan
+ID: 1261, Name: John Novello
+ID: 1262, Name: Jeff Beck
+ID: 1263, Name: Terry Bozzio
+ID: 1264, Name: Tony Hymas
+ID: 1265, Name: 森園 勝敏
+ID: 1266, Name: Jimmy Page
+ID: 1267, Name: Robert Plant
+ID: 1268, Name: Bruce Healey
+ID: 1269, Name: さだまさし
+ID: 1270, Name: S.E.N.S
+ID: 1271, Name: A.Dvarak
+ID: 1272, Name: W.A. Mozart
+ID: 1273, Name: J.S. Bach
+ID: 1274, Name: J.Strausell
+ID: 1275, Name: Gerry Goffin
+ID: 1276, Name: Preston Glass
+ID: 1277, Name: George Duke
+ID: 1278, Name: 川野憲一
+ID: 1279, Name: 喜多郎
+ID: 1280, Name: G. Miller
+ID: 1281, Name: Traditional British
+ID: 1282, Name: Arr. by V. Mae
+ID: 1283, Name: 東儀秀樹
+ID: 1284, Name: 植松伸夫
 
 Arrangers:
 ID: 1, Name: 黒崎 美保
@@ -4516,3 +5047,22 @@ ID: 99, Name: 山岡恭子
 ID: 100, Name: 鳥居 達子
 ID: 101, Name: WOODY PAYNE
 ID: 102, Name: 花野 恵理
+ID: 103, Name: 成田 恵飛
+ID: 104, Name: 安藤 まさひろ
+ID: 105, Name: 安藤 まさひろ
+ID: 106, Name: 安藤 まさひろ
+ID: 107, Name: つんく
+ID: 108, Name: つんく
+ID: 109, Name: 内海 源太
+ID: 110, Name: 戸田 有紀
+ID: 111, Name: 川野憲一
+ID: 112, Name: 
+ID: 113, Name: 森俊雄
+ID: 114, Name: 安藤禎央
+ID: 115, Name: 水野義子
+ID: 116, Name: 唐木忍
+ID: 117, Name: 峰村知子
+ID: 118, Name: 宮戸幸枝
+ID: 119, Name: 日下将太郎
+ID: 120, Name: 矢口理津子
+ID: 121, Name: 稲垣千章
