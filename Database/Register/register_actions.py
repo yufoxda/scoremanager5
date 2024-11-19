@@ -218,7 +218,7 @@ def main(code):
     
 
 if __name__ == '__main__':
-    filename = "Database/Register/datum/addbook.text"
+    filename = "Database/Register/datum/addbook.txt"
     f = open(filename, 'r')
     datalist = f.readlines()
     main(datalist[0].strip())
