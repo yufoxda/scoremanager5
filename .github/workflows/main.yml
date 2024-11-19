@@ -5,7 +5,7 @@ on:
     branches:
       - updatesql  # updatesqlブランチを監視
     paths:
-      - addbook.txt  # addbook.txtの変更のみをトリガー
+      - Database/Register/datum/addbook.txt  # addbook.txtの変更のみをトリガー
 
 jobs:
   merge-execute-push:
@@ -18,14 +18,6 @@ jobs:
         with:
           ref: updatesql
 
-      # releaseブランチをマージ
-      - name: Merge release into updatesql
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git fetch origin release
-          git merge origin/release --no-ff -m "Merged release into updatesql via GitHub Actions"
-
       # Pythonをセットアップ
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -35,27 +27,29 @@ jobs:
       # 必要なPythonパッケージをインストール
       - name: Install Python dependencies
         run: |
-          pip install -r requirements.txt
+          pip install flask
+          pip install flask-sqlalckemy
+          pip install bs4
 
       # Pythonプログラムを実行
       - name: Run Python program
         run: |
-          python your_program.py  # your_program.py を実行
+          python -m Database.Register.register_actions
         continue-on-error: false  # エラーが発生したらここで停止
 
-      # エラー時にメールを送信
-      - name: Send email on error
-        if: failure()  # このジョブが失敗した場合のみ実行
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com  # SMTPサーバーのアドレス
-          server_port: 587                  # SMTPポート（通常587）
-          username: ${{ secrets.EMAIL }}  # 送信元のメールアドレス
-          password: ${{ secrets.EMAIL_PASSWORD }}  # 秘密情報に保存したパスワード
-          subject: "GitHub Actions Error Notification"
-          body: "An error occurred during the workflow execution. Please check the logs."
-          to: ${{ secrets.EMAIL }}     # 受信者のメールアドレス
-          from: ${{ secrets.EMAIL }}      # 送信者のメールアドレス
+      # - name: Checkout updatesql branch
+      #   uses: actions/checkout@v2
+      #   with:
+      #     ref: release
+
+      # # releaseブランチをマージ
+      # - name: Merge updatesql into release
+      #   run: |
+      #     git config --global user.name "scoreadd"
+      #     git config --global user.email "ompooscoremanager@users.noreply.github.com"
+      #     git fetch origin updatesql
+      #     git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
+      
 
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
