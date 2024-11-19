@@ -5,7 +5,7 @@ on:
     branches:
       - updatesql  # updatesqlブランチを監視
     paths:
-      - addbook.txt  # addbook.txtの変更のみをトリガー
+      - Database/Register/datum/addbook.txt  # addbook.txtの変更のみをトリガー
 
 jobs:
   merge-execute-push:
@@ -27,23 +27,29 @@ jobs:
       # 必要なPythonパッケージをインストール
       - name: Install Python dependencies
         run: |
-          pip install -r requirements.txt
+          pip install flask
+          pip install flask-sqlalckemy
+          pip install bs4
 
       # Pythonプログラムを実行
       - name: Run Python program
         run: |
-          python your_program.py  # your_program.py を実行
+          python -m Database.Register.register_actions
         continue-on-error: false  # エラーが発生したらここで停止
 
+      - name: Checkout updatesql branch
+        uses: actions/checkout@v2
+        with:
+          ref: release
+
       # releaseブランチをマージ
-      - name: Merge release into updatesql
+      - name: Merge updatesql into release
         run: |
           git config --global user.name "scoreadd"
           git config --global user.email "ompooscoremanager@users.noreply.github.com"
-          git fetch origin release
-          git merge origin/release --no-ff -m "Merged release into updatesql via GitHub Actions"
-
-
+          git fetch origin updatesql
+          git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
+      
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
         if: failure()  # エラーが発生した場合にのみ実行
