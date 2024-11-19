@@ -1,0 +1,38 @@
+name: Scrape
+on:
+  workflow_dispatch:
+  branch_protection_rule:
+    types: [created, deleted]
+
+jobs:
+  Scrape:
+    runs-on: ubuntu-latest
+
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v2
+
+    # バージョン3.9でセットアップする
+  - name: Set up Python
+    uses: actions/setup-python@v2
+    with:
+      python-version: "3.12"
+      
+  - name: Install dependencies
+    run: |
+      pip install Flask
+      pip install Flask-SQLAlchemy
+
+    # robot.pyを実行する
+  - name: Run scraping script
+    run: |
+      python robot.py
+    
+    # 更新されたデータをdevelopブランチにプッシュする
+  - name: commit files
+    run: |
+      git config --global user.name "${{ github.actor }}"
+      git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+      git add BloodStock.csv
+      git commit -m 'update BloodStock.csv'
+      git push origin develop
