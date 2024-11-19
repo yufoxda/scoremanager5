@@ -1,38 +1,63 @@
-name: Scrape
+name: sqlupdate
+
 on:
-  workflow_dispatch:
-  branch_protection_rule:
-    types: [created, deleted]
+  push:
+    branches:
+      - updatesql  # updatesqlブランチを監視
+    paths:
+      - addbook.txt  # addbook.txtの変更のみをトリガー
 
 jobs:
-  Scrape:
+  merge-execute-push:
     runs-on: ubuntu-latest
 
-steps:
-  - name: Checkout repository
-    uses: actions/checkout@v2
+    steps:
+      # リポジトリをチェックアウト
+      - name: Checkout updatesql branch
+        uses: actions/checkout@v2
+        with:
+          ref: updatesql
 
-    # バージョン3.9でセットアップする
-  - name: Set up Python
-    uses: actions/setup-python@v2
-    with:
-      python-version: "3.12"
-      
-  - name: Install dependencies
-    run: |
-      pip install Flask
-      pip install Flask-SQLAlchemy
+      # releaseブランチをマージ
+      - name: Merge release into updatesql
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git fetch origin release
+          git merge origin/release --no-ff -m "Merged release into updatesql via GitHub Actions"
 
-    # robot.pyを実行する
-  - name: Run scraping script
-    run: |
-      python robot.py
-    
-    # 更新されたデータをdevelopブランチにプッシュする
-  - name: commit files
-    run: |
-      git config --global user.name "${{ github.actor }}"
-      git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-      git add BloodStock.csv
-      git commit -m 'update BloodStock.csv'
-      git push origin develop
+      # Pythonをセットアップ
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.12"
+
+      # 必要なPythonパッケージをインストール
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # Pythonプログラムを実行
+      - name: Run Python program
+        run: |
+          python your_program.py  # your_program.py を実行
+        continue-on-error: false  # エラーが発生したらここで停止
+
+      # エラー時にメールを送信
+      - name: Send email on error
+        if: failure()  # このジョブが失敗した場合のみ実行
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.example.com  # SMTPサーバーのアドレス
+          server_port: 587                  # SMTPポート（通常587）
+          username: your-email@example.com  # 送信元のメールアドレス
+          password: ${{ secrets.EMAIL_PASSWORD }}  # 秘密情報に保存したパスワード
+          subject: "GitHub Actions Error Notification"
+          body: "An error occurred during the workflow execution. Please check the logs."
+          to: target-email@example.com      # 受信者のメールアドレス
+          from: your-email@example.com      # 送信者のメールアドレス
+
+      # エラーが発生した場合はワークフローを終了
+      - name: Exit workflow on failure
+        if: failure()  # エラーが発生した場合にのみ実行
+        run: exit 1  # ワークフローを終了させる
