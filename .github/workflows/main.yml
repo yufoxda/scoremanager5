@@ -50,6 +50,7 @@ jobs:
       #     git fetch origin updatesql
       #     git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
       
+
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
         if: failure()  # エラーが発生した場合にのみ実行
