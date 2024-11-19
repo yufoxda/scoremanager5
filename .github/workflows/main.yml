@@ -48,14 +48,14 @@ jobs:
         if: failure()  # このジョブが失敗した場合のみ実行
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.example.com  # SMTPサーバーのアドレス
+          server_address: smtp.gmail.com  # SMTPサーバーのアドレス
           server_port: 587                  # SMTPポート（通常587）
-          username: your-email@example.com  # 送信元のメールアドレス
+          username: ${{ secrets.EMAIL }}  # 送信元のメールアドレス
           password: ${{ secrets.EMAIL_PASSWORD }}  # 秘密情報に保存したパスワード
           subject: "GitHub Actions Error Notification"
           body: "An error occurred during the workflow execution. Please check the logs."
-          to: target-email@example.com      # 受信者のメールアドレス
-          from: your-email@example.com      # 送信者のメールアドレス
+          to: ${{ secrets.EMAIL }}     # 受信者のメールアドレス
+          from: ${{ secrets.EMAIL }}      # 送信者のメールアドレス
 
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
