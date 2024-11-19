@@ -51,6 +51,7 @@ jobs:
           server_address: smtp.example.com  # SMTPサーバーのアドレス
           server_port: 587                  # SMTPポート（通常587）
           username: "${{ secrets.EMAIL }}" # 送信元のメールアドレス
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
           subject: "GitHub Actions Error Notification"
           body: "An error occurred during the workflow execution. Please check the logs."
           to: "${{ secrets.EMAIL }}"     # 受信者のメールアドレス
