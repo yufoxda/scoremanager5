@@ -50,11 +50,11 @@ jobs:
         with:
           server_address: smtp.example.com  # SMTPサーバーのアドレス
           server_port: 587                  # SMTPポート（通常587）
-          username: "${{ secrets.email }}" # 送信元のメールアドレス
+          username: "${{ secrets.EMAIL }}" # 送信元のメールアドレス
           subject: "GitHub Actions Error Notification"
           body: "An error occurred during the workflow execution. Please check the logs."
-          to: "${{ secrets.email }}"     # 受信者のメールアドレス
-          from: "${{ secrets.email }}"     # 送信者のメールアドレス
+          to: "${{ secrets.EMAIL }}"     # 受信者のメールアドレス
+          from: "${{ secrets.EMAIL }}"     # 送信者のメールアドレス
 
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
