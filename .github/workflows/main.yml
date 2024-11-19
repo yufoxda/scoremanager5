@@ -27,7 +27,7 @@ jobs:
       # 必要なPythonパッケージをインストール
       - name: Install Python dependencies
         run: |
-           pip install flask SQLAlchemy flask-sqlalchemy bs4
+           pip install SQLAlchemy bs4 requests
 
       # Pythonプログラムを実行
       - name: Run Python program
