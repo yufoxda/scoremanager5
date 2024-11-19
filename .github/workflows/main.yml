@@ -37,18 +37,18 @@ jobs:
           python -m Database.Register.register_actions
         continue-on-error: false  # エラーが発生したらここで停止
 
-      - name: Checkout updatesql branch
-        uses: actions/checkout@v2
-        with:
-          ref: release
+      # - name: Checkout updatesql branch
+      #   uses: actions/checkout@v2
+      #   with:
+      #     ref: release
 
-      # releaseブランチをマージ
-      - name: Merge updatesql into release
-        run: |
-          git config --global user.name "scoreadd"
-          git config --global user.email "ompooscoremanager@users.noreply.github.com"
-          git fetch origin updatesql
-          git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
+      # # releaseブランチをマージ
+      # - name: Merge updatesql into release
+      #   run: |
+      #     git config --global user.name "scoreadd"
+      #     git config --global user.email "ompooscoremanager@users.noreply.github.com"
+      #     git fetch origin updatesql
+      #     git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
       
       # エラーが発生した場合はワークフローを終了
       - name: Exit workflow on failure
