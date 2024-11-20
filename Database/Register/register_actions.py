@@ -9,18 +9,6 @@ from datetime import datetime
 from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger,Artist
 from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArtistAssociation
 
-import unicodedata
-
-import unicodedata
-
-def normalize_text(text):
-    # リストなら文字列に変換
-    if isinstance(text, list):
-        text = ' '.join(text)  # スペースで結合
-    
-    # Unicode正規化を行い、特殊文字を置換
-    return unicodedata.normalize('NFKC', text).replace('\u2012', '-')
-
 
 
 engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
@@ -35,26 +23,16 @@ def get_page(url):
     return response.text
 
 def splitartist(texts):
-    # texts が None や空のケースを考慮
-    if not texts:
-        return []
-
-    # 結果を格納するリスト
-    returnlists = []
-
-    # ignoreリストにある名前を処理
+    thistext = texts
+    retrunlists = []
     for edgename in ignoresplitlist:
-        if edgename in texts:
-            returnlists.append(edgename)
-            texts = texts.replace(edgename, "")
-
-    # 残りのテキストを分割・正規化
-    normalized_text = normalize_text(texts)
-    if normalized_text.strip():  # 空文字列でない場合のみ
-        returnlists.extend(normalized_text.split('/'))
-
-    return returnlists
-
+        if edgename in thistext:
+            retrunlists.append(edgename)
+            thistext = thistext.replace(edgename,"")
+            
+    if(not thistext == ""):
+        retrunlists += list(thistext.split('/'))
+    return retrunlists
 
 
 def parse_html(html):
@@ -66,7 +44,7 @@ def parse_html(html):
     num_tracks = int(num_tracks_element.text.strip()) if num_tracks_element else 0
     
     name = soup.find('span',itemprop="name")
-    bookname = normalize_text(re.sub(r"\s", "", name.get_text()))
+    bookname = re.sub(r"\s", "", name.get_text())
     print(bookname)
     # 各曲の情報を抽出
     for track in soup.select('tr[itemprop="track"]'):
@@ -75,7 +53,7 @@ def parse_html(html):
         artist = ""
         try:
             artist = (track.find('a', {'itemprop': 'byArtist'}).text.strip())
-        except:
+        except BaseException:
             artist = "none"
         # 主題歌や追加情報を取得
         additional_info_element = track.select_one('.main')
@@ -117,8 +95,8 @@ def parse_html(html):
         
 
         tracks.append({
-            '曲名': normalize_text(song_name),
-            'メモ': normalize_text(additional_info),
+            '曲名': song_name,
+            'メモ': additional_info,
             'アーティスト':splitartist(artist),
             '作詞者': list(lyricist.split('/')),
             '作曲者': list(composer.split('/')),
@@ -240,10 +218,15 @@ def main(code):
     
 
 if __name__ == '__main__':
-    filename = "Database/Register/datum/lists.text"
+    filename = "Database/Register/datum/addbook.txt"
     f = open(filename, 'r')
 
     datalist = f.readlines()
     for i in datalist:
         print(i)
         main(i.strip())
+    
+
+    
+
+
