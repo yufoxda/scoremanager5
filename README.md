@@ -1,11 +1,10 @@
 # scoremanager
-TUAT electoneサークル用　楽譜マネージャー：楽譜館
+TUAT electoneサークル用　楽譜マネージャー：楽譜館\
 部室所蔵の楽譜が載っている本の検索と、そこに掲載されている楽譜が検索できます。
 
 # stack
-flamework flask
-html jinja in flask
-css tailwind
+flamework flask\
+css tailwind\
 db sqlite
 
 ## tailwind
@@ -22,6 +21,7 @@ flask run --debug
 ## db
 スキーマ
 ```./Database/Schema/schema.py```
+
 初回登録
 ```
 python -m Database.database_init_
