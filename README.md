@@ -2,7 +2,7 @@
 TUAT electoneサークル用　楽譜マネージャー：楽譜館
 部室所蔵の楽譜が載っている本の検索と、そこに掲載されている楽譜が検索できます。
 
-# stak
+# stack
 flamework flask
 html jinja in flask
 css tailwind
