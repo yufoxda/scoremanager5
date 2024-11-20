@@ -60,6 +60,8 @@ jobs:
       # 2. Fetch and merge updatesql into release
       - name: Merge updatesql into release
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin updatesql
           git merge origin/updatesql --no-ff --allow-unrelated-histories -m "Merged updatesql into release"
           git push origin release
