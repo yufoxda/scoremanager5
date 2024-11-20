@@ -52,8 +52,9 @@ jobs:
       # releaseブランチをマージ
       - name: Merge updatesql into release
         run: |
-          git fetch origin updatesql
+          git pull origin
           git merge origin/updatesql --no-ff -m "add book"
+          git push origin
       
 
       # エラーが発生した場合はワークフローを終了
