@@ -54,6 +54,7 @@ jobs:
         run: |
           git pull origin
           git merge origin/updatesql --no-ff -m "add book"
+          git add .
           git push origin
       
 
