@@ -53,8 +53,8 @@ jobs:
       - name: Merge updatesql into release
         run: |
           git pull origin
-          git fetch origin updatesql
           git merge origin/updatesql --no-ff -m "add book"
+          git push origin
       
 
       # エラーが発生した場合はワークフローを終了
