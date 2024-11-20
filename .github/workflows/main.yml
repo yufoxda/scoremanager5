@@ -52,16 +52,19 @@ jobs:
       contents: write
     steps:
       # 1. Checkout release branch
-      - name: Checkout release branch
+      - name: Checkout updatesql branch
         uses: actions/checkout@v2
         with:
-          ref: release
+          ref: updatesql
 
-      # 2. Fetch and merge updatesql into release
-      - name: Merge updatesql into release
+      # 3. release ブランチにファイルをコピーして push
+      - name: Push ompooscore.db to release
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin updatesql
-          git merge origin/updatesql --no-ff --allow-unrelated-histories -m "Merged updatesql into release"
+          git fetch origin release
+          git checkout release
+          cp Database/ompooscores.db Database/ompooscores.db
+          git add Database/ompooscores.db
+          git commit -m "Update ompooscores.db"
           git push origin release
