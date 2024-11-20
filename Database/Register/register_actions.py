@@ -220,8 +220,13 @@ def main(code):
 if __name__ == '__main__':
     filename = "Database/Register/datum/addbook.txt"
     f = open(filename, 'r')
+
     datalist = f.readlines()
-    main(datalist[0].strip())
+    for i in datalist:
+        print(i)
+        main(i.strip())
+    
+
     
 
 

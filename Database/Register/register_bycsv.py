@@ -17,7 +17,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 
-f =  open('./Database/Register/datum/songs.csv',encoding='utf-8')
+f =  open('./Database/Register/datum/has_not_code.csv',encoding='utf-8')
 # readerでCSVファイルとして呼び出す
 reader = csv.reader(f)
 bookname = ""
