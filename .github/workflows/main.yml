@@ -10,7 +10,8 @@ on:
 jobs:
   merge-execute-push:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       # リポジトリをチェックアウト
       - name: Checkout updatesql branch
