@@ -44,19 +44,16 @@ jobs:
           git commit -m "Automated update via GitHub Actions" || echo "No changes to commit"
           git push origin updatesql
 
+      - name: Checkout updatesql branch
+        uses: actions/checkout@v2
+        with:
+          ref: release
 
-      # - name: Checkout updatesql branch
-      #   uses: actions/checkout@v2
-      #   with:
-      #     ref: release
-
-      # # releaseブランチをマージ
-      # - name: Merge updatesql into release
-      #   run: |
-      #     git config --global user.name "scoreadd"
-      #     git config --global user.email "ompooscoremanager@users.noreply.github.com"
-      #     git fetch origin updatesql
-      #     git merge origin/updatesql --no-ff -m "Merged updatesql into updatesql via GitHub Actions"
+      # releaseブランチをマージ
+      - name: Merge updatesql into release
+        run: |
+          git fetch origin updatesql
+          git merge origin/updatesql --no-ff -m "add book"
       
 
       # エラーが発生した場合はワークフローを終了
