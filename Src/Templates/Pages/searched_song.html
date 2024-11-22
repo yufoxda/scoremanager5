@@ -66,9 +66,9 @@
         {% set total_pages = songs.pages %}
         {% set has_prev = songs.has_prev %}
         {% set has_next = songs.has_next %}
-        {% set query = que %}
+        {% set query = {'query': que} %}
 
-        {% include 'Compornents/pagination.html' %}
+        {% include 'Containers/pagenation.html' %}
 
 </div>
 {% endblock %}
