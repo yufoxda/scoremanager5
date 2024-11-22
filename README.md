@@ -27,8 +27,8 @@ flask run --debug
 python -m Database.database_init_
 python -m Database.Register.register_bytext
 ```
-Database/Register/datum/lists.textに記載されている商品コードに含まれる楽譜を登録します。
-エラーが出る場合は手動登録。
+Database/Register/datum/lists.textに記載されている商品コードに含まれる楽譜を登録します。\
+エラーが出る場合は手動登録。\
 ```./Database/Register/register_bycsv.py```、```./Database/Register/register_special_book.py```を参考に適宜変更して登録。
 
 
