@@ -258,6 +258,10 @@ ID: 256, Name: スター・ウォーズ　トリロジー, Product Code: 「ス�
 ID: 257, Name: ディズニーメドレー~映画作品集~, Product Code: 美女と野獣・メドレー
 ID: 258, Name: リラクセーション・ミュージック４, Product Code: オリノコ・フロウ
 ID: 259, Name: ゲームミュージック 2 ファイナルファンタジー Ⅸ, Product Code: ビビのテーマ
+ID: 260, Name: 月刊エレクトーン2024年9月号, Product Code: GTM01101995
+ID: 261, Name: 月刊エレクトーン2024年10月号, Product Code: GTM01101996
+ID: 262, Name: 月刊エレクトーン2024年12月号, Product Code: GTM01102179
+ID: 263, Name: 月刊エレクトーン2024年11月号, Product Code: GTM01102178
 
 Songs:
 ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
@@ -2511,6 +2515,55 @@ ID: 2248, Name: ク族の沼～クイナのテーマ, Book ID: 259, Memo: , Grad
 ID: 2249, Name: 破滅への使者, Book ID: 259, Memo: , Grade: 5~3
 ID: 2250, Name: その扉の向こうに〜Final Fantasy, Book ID: 259, Memo: , Grade: 5~3
 ID: 2251, Name: Melodies Of Life, Book ID: 259, Memo: , Grade: 5~3
+ID: 2252, Name: Sharon, Book ID: 260, Memo:  カンテレ・フジテレビ系 月10ドラマ『マウンテンドクター』主題歌, Grade: 6
+ID: 2253, Name: UNDEAD, Book ID: 260, Memo:  『〈物語〉シリーズ オフ&モンスターシーズン』主題歌, Grade: 6
+ID: 2254, Name: 月並みに輝け, Book ID: 260, Memo:  『劇場総集編ぼっち・ざ・ろっく!Re:』オープニングテーマ, Grade: 6
+ID: 2255, Name: オレンジ, Book ID: 260, Memo:  『劇場版ハイキュー!! ゴミ捨て場の決戦』主題歌, Grade: 6
+ID: 2256, Name: I wonder, Book ID: 260, Memo:  TBS系火曜ドラマ『くるり～誰が私と恋をした?～』主題歌, Grade: 6
+ID: 2257, Name: 星降る街角, Book ID: 260, Memo: , Grade: 7
+ID: 2258, Name: 愛はきらめきの中に, Book ID: 260, Memo: , Grade: 7
+ID: 2259, Name: 私を野球につれてって, Book ID: 260, Memo: , Grade: 8
+ID: 2260, Name: 夢をかなえてドラえもん, Book ID: 260, Memo: , Grade: 8
+ID: 2261, Name: Aqua, Book ID: 260, Memo: , Grade: 6
+ID: 2262, Name: スラブ舞曲 作品72-2, Book ID: 260, Memo: , Grade: 5
+ID: 2263, Name: 聖者の行進, Book ID: 260, Memo: , Grade: 6
+ID: 2264, Name: 名探偵コナンメインテーマ (100万ドルの五稜星ヴァージョン)(エレクトーン&エレクトーン), Book ID: 260, Memo:  劇場版『名探偵コナン 100万ドルの五稜星(みちしるべ)』より, Grade: 中上
+ID: 2265, Name: 舞台に立って, Book ID: 261, Memo:  NHKスポーツテーマ2024, Grade: 5
+ID: 2266, Name: 水金地火木土天アーメン, Book ID: 261, Memo:  映画『きみの色』劇中歌, Grade: 6
+ID: 2267, Name: ファタール, Book ID: 261, Memo:  アニメ『【推しの子】』第2期オープニング主題歌, Grade: 5
+ID: 2268, Name: にじ, Book ID: 261, Memo: , Grade: 6
+ID: 2269, Name: ブラックペアン -Main Theme-, Book ID: 261, Memo:  TBS系日曜劇場『ブラックペアン』オリジナル・サウンドトラックより, Grade: 5
+ID: 2270, Name: そよ風の誘惑, Book ID: 261, Memo: , Grade: 6
+ID: 2271, Name: 自動車ショー歌, Book ID: 261, Memo: , Grade: 7
+ID: 2272, Name: 愛の讃歌, Book ID: 261, Memo: , Grade: 8
+ID: 2273, Name: il vento d'oro, Book ID: 261, Memo:  TVアニメ『ジョジョの奇妙な冒険 黄金の風』より, Grade: 5
+ID: 2274, Name: ハバネラ 歌劇「カルメン」より, Book ID: 261, Memo: , Grade: 5
+ID: 2275, Name: アシタカとサン(ピアノ&エレクトーン), Book ID: 261, Memo:  スタジオジブリ映画『もののけ姫』より, Grade: 中
+ID: 2276, Name: ロンドンデリー・エア, Book ID: 261, Memo: , Grade: 5
+ID: 2277, Name: 讃美歌メドレー (きよしこの夜～ひいらぎ飾ろう～もろびとこぞりて), Book ID: 262, Memo: , Grade: 6
+ID: 2278, Name: 君は僕のもの, Book ID: 262, Memo:  テレビ朝日系オシドラサタデー『青島くんはいじわる』主題歌, Grade: 6
+ID: 2279, Name: モノトーン, Book ID: 262, Memo:  映画『ふれる。』主題歌, Grade: 5
+ID: 2280, Name: 白い恋人達, Book ID: 262, Memo: , Grade: 6
+ID: 2281, Name: 天使のささやき, Book ID: 262, Memo: , Grade: 7
+ID: 2282, Name: サーフ天国、スキー天国, Book ID: 262, Memo: , Grade: 7
+ID: 2283, Name: Bling-Bang-Bang-Born, Book ID: 262, Memo:  TVアニメ『マッシュル-MASHLE-神覚者候補選抜試験編』オープニングテーマ, Grade: 8
+ID: 2284, Name: Love so sweet(弾き歌い), Book ID: 262, Memo:  TBS系金曜ドラマ『花より男子2』主題歌, Grade: 中
+ID: 2285, Name: 夕焼け小焼け, Book ID: 262, Memo: , Grade: 5
+ID: 2286, Name: すてきなホリデイ(ピアノ&エレクトーン), Book ID: 262, Memo: , Grade: 中
+ID: 2287, Name: 「くるみ割り人形」より 花のワルツ, Book ID: 262, Memo: , Grade: 5
+ID: 2288, Name: FORGOTTEN SAGA, Book ID: 262, Memo: , Grade: 5
+ID: 2289, Name: familie, Book ID: 263, Memo:  Honda 新型「FREED」CMソング, Grade: 6
+ID: 2290, Name: 新しい恋人達に, Book ID: 263, Memo:  フジテレビ系ドラマ『海のはじまり』主題歌, Grade: 6
+ID: 2291, Name: Grow Up, Book ID: 263, Memo:  ユニリーバ・ジャパン60周年記念『#GROW_UP_YOURSELF』キャンペーンソング, Grade: 6
+ID: 2292, Name: はいよろこんで, Book ID: 263, Memo: , Grade: 6
+ID: 2293, Name: 君のうた, Book ID: 263, Memo: , Grade: 6
+ID: 2294, Name: ロック・ウィズ・ユー, Book ID: 263, Memo: , Grade: 5
+ID: 2295, Name: さよならの向う側, Book ID: 263, Memo: , Grade: 7
+ID: 2296, Name: 赤とんぼ, Book ID: 263, Memo: , Grade: 8
+ID: 2297, Name: Adria Blue, Book ID: 263, Memo: , Grade: 5～4
+ID: 2298, Name: Tank!(エレクトーン&エレクトーン), Book ID: 263, Memo:  アニメ『カウボーイビバップ』OPテーマ, Grade: 中上
+ID: 2299, Name: ザ・トラベルナースのテーマ, Book ID: 263, Memo:  テレビ朝日系木曜ドラマ『 ザ・トラベルナース』より, Grade: 5
+ID: 2300, Name: アニー・ローリー, Book ID: 263, Memo: , Grade: 5
 
 Artists:
 ID: 1, Name: MY FIRST STORY×HYDE
@@ -3049,6 +3102,19 @@ ID: 533, Name: 坂本 真綾
 ID: 534, Name: FLOW
 ID: 535, Name: D-51
 ID: 536, Name: モーニング娘。
+ID: 537, Name: SPYAIR
+ID: 538, Name: Da-iCE
+ID: 539, Name: 杉本 豊之
+ID: 540, Name: ビー・ジーズ
+ID: 541, Name: しろねこ堂
+ID: 542, Name: GEMN
+ID: 543, Name: オリビア・ニュートン・ジョン
+ID: 544, Name: 小林 旭
+ID: 545, Name: 桑田 佳祐
+ID: 546, Name: スリー・ディグリーズ
+ID: 547, Name: こっちのけんと
+ID: 548, Name: 山口 百恵
+ID: 549, Name: bohemianvoodoo
 
 Lyricists:
 ID: 1, Name: MY FIRST STORY
@@ -3657,6 +3723,29 @@ ID: 603, Name: 戸田 昭吾
 ID: 604, Name: 吉田 安英
 ID: 605, Name: 井荻 麟
 ID: 606, Name: 三谷 幸喜
+ID: 607, Name: MOMIKEN
+ID: 608, Name: 工藤大輝
+ID: 609, Name: 花村想太
+ID: 610, Name: MEG.ME
+ID: 611, Name: 日高 仁
+ID: 612, Name: Barry Gibb
+ID: 613, Name: Maurice Gibb
+ID: 614, Name: Robin Gibb
+ID: 615, Name: 黒須 克彦
+ID: 616, Name: 山田 尚子
+ID: 617, Name: John Farrar
+ID: 618, Name: 星野 哲郎
+ID: 619, Name: Edith Piaf
+ID: 620, Name: Henry Meilhac
+ID: 621, Name: Ludovic Halevy
+ID: 622, Name: Josedh Mohr
+ID: 623, Name: Traditional
+ID: 624, Name: Issac Watts
+ID: 625, Name: Kenneth Gamble
+ID: 626, Name: Leon A.Huff
+ID: 627, Name: LOAR
+ID: 628, Name: こっちのけんと
+ID: 629, Name: William Douglas
 
 Song Writers:
 ID: 1, Name: MY FIRST STORY
@@ -4943,6 +5032,33 @@ ID: 1281, Name: Traditional British
 ID: 1282, Name: Arr. by V. Mae
 ID: 1283, Name: 東儀秀樹
 ID: 1284, Name: 植松伸夫
+ID: 1285, Name: 音羽-otoha-
+ID: 1286, Name: UZ
+ID: 1287, Name: 花村想太
+ID: 1288, Name: MEG.ME
+ID: 1289, Name: Louis
+ID: 1290, Name: 日高 仁
+ID: 1291, Name: Barry Gibb
+ID: 1292, Name: Maurice Gibb
+ID: 1293, Name: Robin Gibb
+ID: 1294, Name: ドヴォルザーク
+ID: 1295, Name: 牛尾 憲輔
+ID: 1296, Name: John Farrar
+ID: 1297, Name: 叶 弦大
+ID: 1298, Name: Franz Gruber
+ID: 1299, Name: Traditional
+ID: 1300, Name: Lowell Mason
+ID: 1301, Name: Kenneth Gamble
+ID: 1302, Name: Leon A.Huff
+ID: 1303, Name: MONJOE
+ID: 1304, Name: LOAR
+ID: 1305, Name: こっちのけんと
+ID: 1306, Name: GRP
+ID: 1307, Name: AK.Janeway
+ID: 1308, Name: 宇崎 竜童
+ID: 1309, Name: 木村 イオリ
+ID: 1310, Name: bashiry
+ID: 1311, Name: Lady J.D. Alicia Scott
 
 Arrangers:
 ID: 1, Name: 黒崎 美保
@@ -5066,3 +5182,5 @@ ID: 118, Name: 宮戸幸枝
 ID: 119, Name: 日下将太郎
 ID: 120, Name: 矢口理津子
 ID: 121, Name: 稲垣千章
+ID: 122, Name: 敏いとうとハッピー&ブルー
+ID: 123, Name: 大木裕一郎

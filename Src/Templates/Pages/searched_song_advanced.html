@@ -65,8 +65,7 @@
         {% set total_pages = songs.pages %}
         {% set has_prev = songs.has_prev %}
         {% set has_next = songs.has_next %}
-        {% set query = que %}
-
+        {% set query = {'book': book, 'song': song, 'artist': artist, 'lyricist': lyricist, 'songWriter': songWriter, 'arranger': arranger, 'grade': grade, 'memo': memo} %}
         {% include 'Containers/pagenation.html' %}
 
 </div>
