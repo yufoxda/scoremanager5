@@ -587,8 +587,32 @@ video {
   bottom: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-0 {
   inset-inline-end: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-1 {
@@ -692,8 +716,12 @@ video {
   height: 1.5rem;
 }
 
-.h-\[30vw\] {
-  height: 30vw;
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
 }
 
 .h-fit {
@@ -705,8 +733,20 @@ video {
   height: 100%;
 }
 
+.max-h-32 {
+  max-height: 8rem;
+}
+
 .max-h-\[30vh\] {
   max-height: 30vh;
+}
+
+.max-h-\[65\%\] {
+  max-height: 65%;
+}
+
+.max-h-\[80\%\] {
+  max-height: 80%;
 }
 
 .min-h-screen {
@@ -737,6 +777,10 @@ video {
   width: 150%;
 }
 
+.w-\[36px\] {
+  width: 36px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -745,12 +789,48 @@ video {
   min-width: 750px;
 }
 
+.max-w-\[25\%\] {
+  max-width: 25%;
+}
+
+.max-w-\[30\%\] {
+  max-width: 30%;
+}
+
 .max-w-\[350px\] {
   max-width: 350px;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.max-w-screen-md {
+  max-width: 768px;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-\[390px\] {
+  max-width: 390px;
+}
+
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .flex-1 {
@@ -1166,6 +1246,15 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .sm\:max-h-\[20vh\] {
+    max-height: 20vh;
+  }
+
   .sm\:grid-flow-col {
     grid-auto-flow: column;
   }
@@ -1216,8 +1305,28 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-\[15vw\] {
-    height: 15vw;
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-\[15vh\] {
+    height: 15vh;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:py-12 {
