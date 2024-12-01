@@ -1,4 +1,4 @@
-<div class="relative w-full h-16 overflow-hidden">
+{# <div class="relative w-full h-16 overflow-hidden">
   <img src="{{ url_for('static', filename='bask.jpg') }}" alt="画像" class="w-full h-full object-cover"/>
   <div class="absolute inset-0 flex items-center">
     <div class="flex items-center">
@@ -6,4 +6,38 @@
     </div>
     <h1 class="text-2xl font-bold">TUAT electone</h1>
   </div>
+</div> #}
+
+<div class="relative w-full mx-auto h-16 overflow-hidden">
+  <!-- 左上の画像 -->
+  <img 
+    src="{{ url_for('static', filename='back_left.jpg') }}" 
+    alt="画像" 
+    class="max-w-[30%] max-h-[200%] absolute top-0 left-0"
+  >
+  
+  <!-- 中央のテキスト部分 -->
+  <div class="absolute inset-0 flex items-center mx-3 z-10">
+  
+    
+    <h2 class="flex items-center">
+      <a href="/">
+      <img 
+        class="w-[36px] " 
+        src="{{ url_for('static', filename='logo.jpg') }}" 
+        alt="logo"
+      >
+      </a>
+      <h1 class="text-2xl mx-3 lg:mx-7 font-bold">TUAT electone</h1>
+      <span class="text-2xl font-bold">音風</span>
+    </h2>
+  </div>
+  
+  <!-- 右下の画像 -->
+  <img 
+    src="{{ url_for('static', filename='back_right.jpg') }}" 
+    alt="画像" 
+    class="max-w-[30%] max-h-[130%] sm:max-h-[200%] absolute top-3 right-3 z-0"
+  >
 </div>
+
