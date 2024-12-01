@@ -30,7 +30,11 @@
             <tbody class=" divide-y divide-gray-100 border-t border-gray-100 text-gray-700">
                 {% for song in songs %}
                     <tr class="hover:bg-gray-50">
-                        <td class="px-6 py-4 font-medium">{{ song.song_name }}</td>
+                        <td class="px-6 py-4 font-medium">{{ song.song_name }}
+                        {% if song.memo %}
+                            <br>&nbsp;<span class="text-xs text-gray-500">{{song.memo}}</span>
+                        {%endif%}
+                        </td>
                         <td class="px-6 py-4 font-medium text-blue-800 hover:underline dark:text-blue-500">
                             <a href="/book/{{ song.book_id }}">{{ song.parent_book.book_name }}</a>
                         </td>
@@ -54,7 +58,7 @@
                                 {{ arranger.arranger_name }}{% if not loop.last %}<wbr>&nbsp;{% endif %}
                             {% endfor %}
                         </td>   
-                        <td class="whitespace-nowrap px-6 py-4">{{ song.grade }}級</td>
+                        <td class="whitespace-nowrap px-6 py-4">{{ song.grade }}{% if song.grade != 'none' %} 級 {% endif%}</td>
                     </tr>
                 {% endfor %}
             </tbody>
