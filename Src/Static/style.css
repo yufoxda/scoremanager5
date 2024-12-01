@@ -2,11 +2,13 @@
     width: 100%;
     overflow-x: auto;
 }
-
 #searchsongid > table {
     table-layout: fixed;
     width: 350%;
+    
 }
+
+
 #song ,#details{
     width: 14%;
 }
@@ -22,4 +24,14 @@
     width: 75px; /* サイズを小さく設定 */
     max-width: 75px; /* 最大幅を指定 */
     white-space: nowrap; /* テキストを折り返さず表示 */
+}
+@media screen and (min-width:960px){
+    #searchsongid > table {
+        table-layout: fixed;
+        width: 200%;
+        
+    }
+    #song {
+        width: 25%;
+    }
 }

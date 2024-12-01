@@ -1,4 +1,4 @@
-<div class="relative w-full">
+{# <div class="relative w-full">
   <img src="{{ url_for('static', filename='bask.jpg') }}"  alt="画像" class="w-full max-h-[30vh] object-contain md:object-cover">
   <div class="absolute inset-0 flex flex-col items-center justify-center">
     <h1 class = "text-3xl font-bold">TUAT electone</h1>
@@ -7,4 +7,34 @@
       <span class="ml-7 text-3xl font-bold">音風</span>
     </h2>
   </div>
+</div> #}
+
+<div class="relative w-full mx-auto h-[30vh] max-h-32 sm:max-h-[20vh]">
+  <!-- 左上の画像 -->
+  <img 
+    src="{{ url_for('static', filename='back_left.jpg') }}" 
+    alt="画像" 
+    class="max-w-[30%] max-h-[80%] absolute top-0 left-0  z-0 object-contain"
+  >
+  
+  <!-- 中央のテキスト部分 -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center z-10">
+    <h1 class="text-3xl font-bold">TUAT electone</h1>
+    <h2 class="flex items-center">
+      <img 
+        class="w-[36px] " 
+        src="{{ url_for('static', filename='logo.jpg') }}" 
+        alt="logo"
+      >
+      <span class="ml-7 text-3xl font-bold">音風</span>
+    </h2>
+  </div>
+  
+  <!-- 右下の画像 -->
+  <img 
+    src="{{ url_for('static', filename='back_right.jpg') }}" 
+    alt="画像" 
+    class="max-w-[25%] max-h-[65%] absolute bottom-0 right-0 z-0  object-contain"
+  >
 </div>
+
