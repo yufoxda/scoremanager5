@@ -1,0 +1,233 @@
+Books:
+ID: 1, Name: 月刊エレクトーン2024年8月号, Product Code: GTM01101994
+ID: 2, Name: 月刊エレクトーン2024年7月号, Product Code: GTM01101878
+ID: 3, Name: 月刊エレクトーン2024年6月号, Product Code: GTM01101877
+ID: 4, Name: 月刊エレクトーン2024年5月号, Product Code: GTM01101876
+
+Songs:
+ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
+ID: 2, Name: 華麗なるサーカス ～怪盗キッド登場～, Book ID: 1, Memo: 劇場版『名探偵コナン100万ドルの五稜星(みちしるべ)』より, Grade: 5
+ID: 3, Name: You are so amazing (『虎に翼』メインテーマ), Book ID: 1, Memo: NHK連続テレビ小説『虎に翼』劇中歌, Grade: 6
+ID: 4, Name: ビビデバ, Book ID: 1, Memo: , Grade: 5
+ID: 5, Name: プレゼント, Book ID: 1, Memo: , Grade: 6
+ID: 6, Name: 君はロックを聴かない, Book ID: 1, Memo: , Grade: 7
+ID: 7, Name: We Are The World, Book ID: 1, Memo: , Grade: 6
+ID: 8, Name: シーズン・イン・ザ・サン, Book ID: 1, Memo: , Grade: 7
+ID: 9, Name: やさしさに包まれたなら, Book ID: 1, Memo: , Grade: 9
+ID: 10, Name: リパブリック讃歌, Book ID: 1, Memo: , Grade: 6
+ID: 11, Name: Zoltraak, Book ID: 1, Memo: TVアニメ『葬送のフリーレン』より, Grade: 5
+ID: 12, Name: 道(ピアノ&エレクトーン), Book ID: 1, Memo: , Grade: 中
+ID: 13, Name: 水の戯れ-Contemporary Jazz ver.-, Book ID: 1, Memo: , Grade: 5～4
+ID: 14, Name: さよーならまたいつか!, Book ID: 2, Memo: NHK連続テレビ小説『虎に翼』主題歌, Grade: 6
+ID: 15, Name: ライラック, Book ID: 2, Memo: TVアニメ『忘却バッテリー』オープニング・テーマ, Grade: 5
+ID: 16, Name: 相思相愛, Book ID: 2, Memo: 劇場版『名探偵コナン100万ドルの五稜星(みちしるべ)』主題歌, Grade: 6
+ID: 17, Name: Click, Book ID: 2, Memo: GalaxyS24Ultra「GalaxyAIwithME:I」篇CMソング, Grade: 6
+ID: 18, Name: FREEDOM, Book ID: 2, Memo: 劇場版『機動戦士ガンダムSEEDFREEDOM』主題歌, Grade: 6
+ID: 19, Name: Woman “Wの悲劇”より, Book ID: 2, Memo: , Grade: 5
+ID: 20, Name: 愛のコリーダ, Book ID: 2, Memo: , Grade: 7
+ID: 21, Name: 爆上戦隊ブンブンジャー, Book ID: 2, Memo: 『爆上戦隊ブンブンジャー』オープニング・テーマ, Grade: 8
+ID: 22, Name: ソーラン節, Book ID: 2, Memo: , Grade: 5
+ID: 23, Name: 浜辺の歌, Book ID: 2, Memo: , Grade: 6
+ID: 24, Name: Paradise Has No Border(エレクトーン&エレクトーン), Book ID: 2, Memo: , Grade: 中
+ID: 25, Name: 鬼ノ宴, Book ID: 3, Memo: , Grade: 6
+ID: 26, Name: さよならマエストロ ～愛のテーマ～, Book ID: 3, Memo: TBS系日曜劇場『さよならマエストロ～父と私のアパッシオナート～』より, Grade: 6
+ID: 27, Name: 晴る, Book ID: 3, Memo: TVアニメ『葬送のフリーレン』第2クールオープニングテーマ, Grade: 6
+ID: 28, Name: ケセラセラ, Book ID: 3, Memo: ABCテレビ・テレビ朝日系連続ドラマ『日曜の夜ぐらいは...』主題歌, Grade: 6
+ID: 29, Name: FUN☆FUN☆わんだふるDAYS!, Book ID: 3, Memo: TVアニメ『わんだふるぷりきゅあ!』エンディング主題歌, Grade: 8
+ID: 30, Name: POISON, Book ID: 3, Memo: カンテレ・フジテレビ開局65周年特別ドラマ『GTOリバイバル』主題歌, Grade: 8
+ID: 31, Name: リヴィン・オン・ア・プレイヤー, Book ID: 3, Memo: , Grade: 7
+ID: 32, Name: ミ・アモーレ, Book ID: 3, Memo: , Grade: 7
+ID: 33, Name: シチリアーノ, Book ID: 3, Memo: , Grade: 5
+ID: 34, Name: 線路は続くよどこまでも, Book ID: 3, Memo: , Grade: 6
+ID: 35, Name: 光る君へ メインテーマ Amethyst, Book ID: 3, Memo: NHK大河ドラマ『光る君へ』より, Grade: 5
+ID: 36, Name: ハロ(ピアノ&エレクトーン), Book ID: 3, Memo: TVアニメ『ポケットモンスター』第2章「テラパゴスのかがやき」編オープニングテーマ, Grade: 初中
+ID: 37, Name: We'll go together, Book ID: 4, Memo: 日本テレビ2024年1月期シンドラ『先生さようなら』主題歌, Grade: 6
+ID: 38, Name: Bling-Bang-Bang-Born, Book ID: 4, Memo: TVアニメ『マッシュル-MASHLE-神覚者候補選抜試験編』オープニングテーマ, Grade: 7
+ID: 39, Name: 幾億光年, Book ID: 4, Memo: TBS系火曜ドラマ『EyeLoveYou』主題歌, Grade: 6
+ID: 40, Name: ラッパと娘, Book ID: 4, Memo: NHK連続テレビ小説『ブギウギ』劇中歌, Grade: 6
+ID: 41, Name: NIGHT DANCER, Book ID: 4, Memo: , Grade: 6
+ID: 42, Name: ニューヨーク・シティ・セレナーデ, Book ID: 4, Memo: , Grade: 6
+ID: 43, Name: パジャマパーティーズのうた, Book ID: 4, Memo: TVアニメ『ちいかわ』挿入歌, Grade: 8
+ID: 44, Name: Dubidubidu, Book ID: 4, Memo: , Grade: 9
+ID: 45, Name: 峠の我が家, Book ID: 4, Memo: , Grade: 6
+ID: 46, Name: ワルツ 作品39-15, Book ID: 4, Memo: , Grade: 5
+ID: 47, Name: The Last Ninja, Book ID: 4, Memo: 映画『身代わり忠臣蔵』テーマ曲, Grade: 5
+ID: 48, Name: 366日, Book ID: 4, Memo: , Grade: 5
+ID: 49, Name: 『ピーター・パン』メドレー(右から2番目の星～きみもとべるよ!)(エレクトーン&エレクトーン), Book ID: 4, Memo: ディズニー映画『ピーター・パン』より, Grade: 中
+
+Artists:
+ID: 1, Name: MY FIRST STORY×HYDE
+ID: 2, Name: 菅野 祐悟
+ID: 3, Name: none
+ID: 4, Name: 星街 すいせい
+ID: 5, Name: SEKAI NO OWARI
+ID: 6, Name: あいみょん
+ID: 7, Name: U.S.A. For Africa
+ID: 8, Name: TUBE
+ID: 9, Name: 荒井 由実
+ID: 10, Name: Evan Call
+ID: 11, Name: 松田 昌
+ID: 12, Name: ラヴェル
+ID: 13, Name: 米津 玄師
+ID: 14, Name: Mrs. GREEN APPLE
+ID: 15, Name: aiko
+ID: 16, Name: ME:I
+ID: 17, Name: 西川貴教 with t.komuro
+ID: 18, Name: 薬師丸 ひろ子
+ID: 19, Name: クインシー・ジョーンズ
+ID: 20, Name: 遠藤 正明
+ID: 21, Name: 東京スカパラダイスオーケストラ
+ID: 22, Name: 友成 空
+ID: 23, Name: ヨルシカ
+ID: 24, Name: 石井あみ&後本萌葉
+ID: 25, Name: BLUE ENCOUNT × Takashi Sorimachi
+ID: 26, Name: ボン・ジョヴィ
+ID: 27, Name: 中森 明菜
+ID: 28, Name: フォーレ
+ID: 29, Name: 冬野 ユミ
+ID: 30, Name: yama × ぼっちぼろまる
+ID: 31, Name: Snow Man
+ID: 32, Name: Creepy Nuts
+ID: 33, Name: Omoinotake
+ID: 34, Name: 福来スズ子(趣里)
+ID: 35, Name: imase
+ID: 36, Name: クリストファー・クロス
+ID: 37, Name: パジャマパーティーズ
+ID: 38, Name: Christell
+ID: 39, Name: ブラームス
+ID: 40, Name: 丹澤 誠二
+
+Lyricists:
+ID: 1, Name: MY FIRST STORY
+ID: 2, Name: CHIMERAZ
+ID: 3, Name: none
+ID: 4, Name: 森 優太
+ID: 5, Name: ツミキ
+ID: 6, Name: Saori
+ID: 7, Name: あいみょん
+ID: 8, Name: Lionel Richie
+ID: 9, Name: Michael Jackson
+ID: 10, Name: 亜蘭 知子
+ID: 11, Name: 荒井 由実
+ID: 12, Name: Julia Ward Howe
+ID: 13, Name: 米津 玄師
+ID: 14, Name: 大森 元貴
+ID: 15, Name: aiko
+ID: 16, Name: Rose Blueming
+ID: 17, Name: 柿沼雅美(Relic Lyric,inc.)
+ID: 18, Name: 小室 哲哉
+ID: 19, Name: 松本 隆
+ID: 20, Name: Chaz Jankel
+ID: 21, Name: Kenny Young
+ID: 22, Name: 武田 将弥
+ID: 23, Name: 北海道民謡
+ID: 24, Name: 林 古渓
+ID: 25, Name: 友成 空
+ID: 26, Name: n-buna
+ID: 27, Name: マイクスギヤマ
+ID: 28, Name: 反町 隆史
+ID: 29, Name: Jon Bon Jovi
+ID: 30, Name: Richie Sambora
+ID: 31, Name: Desmond Child
+ID: 32, Name: 康 珍化
+ID: 33, Name: ぼっちぼろまる
+ID: 34, Name: yama
+ID: 35, Name: Nobuhiro Tahara
+ID: 36, Name: R-指定
+ID: 37, Name: 福島 智朗
+ID: 38, Name: 服部 良一
+ID: 39, Name: imase
+ID: 40, Name: Burt Bacharach
+ID: 41, Name: Carole Bayer Sager
+ID: 42, Name: Christopher Cross
+ID: 43, Name: Peter Allen
+ID: 44, Name: ナガノ
+ID: 45, Name: Claudio Prado
+ID: 46, Name: Izumi Nakasone
+ID: 47, Name: Sammy Cahn
+
+Song Writers:
+ID: 1, Name: MY FIRST STORY
+ID: 2, Name: CHIMERAZ
+ID: 3, Name: 菅野 祐悟
+ID: 4, Name: 森 優太
+ID: 5, Name: ツミキ
+ID: 6, Name: Nakajin
+ID: 7, Name: あいみょん
+ID: 8, Name: Lionel Richie
+ID: 9, Name: Michael Jackson
+ID: 10, Name: 織田 哲郎
+ID: 11, Name: 荒井 由実
+ID: 12, Name: William Steffe
+ID: 13, Name: Evan Call
+ID: 14, Name: 松田 昌
+ID: 15, Name: M.Ravel
+ID: 16, Name: 米津 玄師
+ID: 17, Name: 大森 元貴
+ID: 18, Name: aiko
+ID: 19, Name: Timothy Tan
+ID: 20, Name: Daniel Roughley
+ID: 21, Name: Ciara Muscat
+ID: 22, Name: JAR (153
+ID: 23, Name: Joombas)
+ID: 24, Name: 小室 哲哉
+ID: 25, Name: 呉田 軽穂
+ID: 26, Name: Chaz Jankel
+ID: 27, Name: Kenny Young
+ID: 28, Name: 武田 将弥
+ID: 29, Name: 北海道民謡
+ID: 30, Name: 成田 為三
+ID: 31, Name: NARGO
+ID: 32, Name: 友成 空
+ID: 33, Name: n-buna
+ID: 34, Name: ヒゲドライバー
+ID: 35, Name: 井上 慎二郎
+ID: 36, Name: Jon Bon Jovi
+ID: 37, Name: Richie Sambora
+ID: 38, Name: Desmond Child
+ID: 39, Name: 松岡 直也
+ID: 40, Name: G.U.Faure
+ID: 41, Name: アメリカ民謡
+ID: 42, Name: 冬野 ユミ
+ID: 43, Name: ぼっちぼろまる
+ID: 44, Name: yama
+ID: 45, Name: Nobuhiro Tahara
+ID: 46, Name: DJ松永
+ID: 47, Name: 藤井 怜央
+ID: 48, Name: 服部 良一
+ID: 49, Name: imase
+ID: 50, Name: Burt Bacharach
+ID: 51, Name: Carole Bayer Sager
+ID: 52, Name: Christopher Cross
+ID: 53, Name: Peter Allen
+ID: 54, Name: 立山 秋航
+ID: 55, Name: Claudio Prado
+ID: 56, Name: TRADITIONAL
+ID: 57, Name: Johannes Brahms
+ID: 58, Name: 沖 祐市
+ID: 59, Name: Izumi Nakasone
+ID: 60, Name: Sammy Fain
+
+Arrangers:
+ID: 1, Name: 黒崎 美保
+ID: 2, Name: 坂本 有正
+ID: 3, Name: 大木 裕一郎
+ID: 4, Name: 平倉 由美
+ID: 5, Name: 内田 誠
+ID: 6, Name: 和田 侑記
+ID: 7, Name: 佐々木 毬奈
+ID: 8, Name: 松内 愛
+ID: 9, Name: 島田 聖子
+ID: 10, Name: AYAKI
+ID: 11, Name: 文字 みゆき
+ID: 12, Name: 山崎 雅也
+ID: 13, Name: 日下 将太郎
+ID: 14, Name: 花野 恵里
+ID: 15, Name: 中野 正英
+ID: 16, Name: 笹山 由紀子
+ID: 17, Name: 小林 武
+ID: 18, Name: 杉本 豊之
+ID: 19, Name: 岩崎 孝昭
+ID: 20, Name: 山岡 恭子
+ID: 21, Name: 文字みゆき
+ID: 22, Name: 川島 容子
