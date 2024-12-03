@@ -110,6 +110,7 @@ def main(code):
 
     existcode = session.query(Book).filter_by(product_code = code).first()
     if existcode:
+        print(existcode + "ありました")
         return
 
     base_url = 'https://www.ymm.co.jp/p/detail.php?code='+code+'&dm=d&o='
