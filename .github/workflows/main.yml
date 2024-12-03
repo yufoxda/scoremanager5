@@ -35,6 +35,25 @@ jobs:
         run: |
           python -m Database.Register.register_actions
         continue-on-error: false
+          
+  merge-to-release:
+    runs-on: ubuntu-latest
+    needs: process-updatesql  # `process-updatesql` ジョブが完了してから実行
+    permissions:
+      contents: write
+    steps:
+      # 1. Checkout release branch
+      - name: Checkout updatesql branch
+        uses: actions/checkout@v2
+        with:
+          ref: updatesql
+      # 3. release ブランチにファイルをコピーして push
+      - name: Push ompooscore.db to release
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin release
+        
 
       # 5. Commit changes
       - name: Commit changes
