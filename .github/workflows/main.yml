@@ -8,16 +8,15 @@ on:
       - Database/Register/datum/addbook.txt
 
 jobs:
-  process-updatesql:
+  update-db:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      # 1. Checkout updatesql branch
+      # 1. Checkout the `updatesql` branch
       - name: Checkout updatesql branch
         uses: actions/checkout@v2
         with:
           ref: updatesql
+          fetch-depth: 0
 
       # 2. Set up Python
       - name: Set up Python
@@ -30,24 +29,27 @@ jobs:
         run: |
           pip install SQLAlchemy bs4 requests
 
-      # 4. Run Python script
+      # 4. Run the Python script
       - name: Run Python program
         run: |
           python -m Database.Register.register_actions
-        continue-on-error: false
 
-      # 5. Commit changes
-      - name: Commit changes
+      # 5. Checkout the `release` branch
+      - name: Checkout release branch
+        run: |
+          git fetch origin release
+          git checkout release
+
+      # 6. Copy `Database/ompooscores.db` from `updatesql` branch
+      - name: Copy updated ompooscores.db from updatesql
+        run: |
+          git checkout updatesql -- Database/ompooscores.db
+
+      # 7. Commit and push changes to `release`
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Automated update via GitHub Actions" || echo "No changes to commit"
-          git push origin updatesql
-
-      # 3. release ブランチにファイルをコピーして push
-      - name: Push ompooscore.db to release
-        run: |
           git add Database/ompooscores.db
-          git commit -m "Update ompooscores.db"
+          git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
           git push origin release
