@@ -38,12 +38,7 @@ jobs:
       - name: Checkout release branch
         run: |
           git fetch origin release
-          git checkout release
-
-      # 6. Copy `Database/ompooscores.db` from `updatesql` branch
-      - name: Copy updated ompooscores.db from updatesql
-        run: |
-          git checkout updatesql -- Database/ompooscores.db
+          git checkout release -- Database/ompooscores.db
 
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
@@ -52,5 +47,4 @@ jobs:
           git config --global user.email "${{ secrets.EMAIL }}"
           git add Database/ompooscores.db
           git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
-
           git push origin release
