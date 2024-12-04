@@ -39,9 +39,9 @@
     {% set total_pages = books.pages %}
     {% set has_prev = books.has_prev %}
     {% set has_next = books.has_next %}
-    {% set query = que %}
+    {% set query = {'query': que} %}
 
-    {% include 'Compornents/pagination.html' %}
+    {% include 'Containers/pagenation.html' %}
 
 
 </div>

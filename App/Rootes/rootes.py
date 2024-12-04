@@ -62,7 +62,7 @@ def advancedsearch():
     if search_params['arranger']:
         query = query.join(Song.arrangers).filter(Arranger.arranger_name.contains(search_params['arranger'])).options(contains_eager(Song.arrangers))
     if search_params['grade']:
-        query = query.filter(Song.grade == search_params['grade'])
+        query = query.filter(Song.grade.contains(search_params['grade']))
     if search_params['memo']:
         query = query.filter(Song.memo.like(f"%{search_params['memo']}%"))
 
