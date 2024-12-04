@@ -37,7 +37,7 @@ jobs:
       # 5. Checkout the `release` branch
       - name: Checkout release branch
         run: |
-          git fetch origin release
+          git pull origin release
           git checkout release -- Database/ompooscores.db
 
       # 7. Commit and push changes to `release`
