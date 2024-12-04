@@ -46,9 +46,9 @@ jobs:
       - name: Checkout release branch
         run: |
           git fetch origin
-          git checkout origin/release -- .  # releaseブランチのファイルを作業ツリーに反映
-          git checkout origin/updatesql -- Database/ompooscores.db  # updatesqlのDBファイルを反映
-
+          git checkout -b release origin/release 
+          git checkout origin/updatesql -- Database/ompooscores.db
+    
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
         run: |
