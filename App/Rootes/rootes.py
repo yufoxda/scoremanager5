@@ -3,7 +3,8 @@ from App.app_init_ import Book, Song,Artist,Lyricist,SongWriter,Arranger
 from flask import render_template, request
 from flask_sqlalchemy import pagination
 from sqlalchemy.orm import contains_eager
-import random,json
+import random
+import json
 
 @app.route("/")
 def home():
