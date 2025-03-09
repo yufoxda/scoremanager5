@@ -262,6 +262,7 @@ ID: 260, Name: 月刊エレクトーン2024年9月号, Product Code: GTM01101995
 ID: 261, Name: 月刊エレクトーン2024年10月号, Product Code: GTM01101996
 ID: 262, Name: 月刊エレクトーン2024年12月号, Product Code: GTM01102179
 ID: 263, Name: 月刊エレクトーン2024年11月号, Product Code: GTM01102178
+ID: 264, Name: STAGEAディズニー5～3級Vol.20オーケストラで彩るディズニーの名曲たち2, Product Code: GTE01101952
 
 Songs:
 ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
@@ -2564,6 +2565,12 @@ ID: 2297, Name: Adria Blue, Book ID: 263, Memo: , Grade: 5～4
 ID: 2298, Name: Tank!(エレクトーン&エレクトーン), Book ID: 263, Memo:  アニメ『カウボーイビバップ』OPテーマ, Grade: 中上
 ID: 2299, Name: ザ・トラベルナースのテーマ, Book ID: 263, Memo:  テレビ朝日系木曜ドラマ『 ザ・トラベルナース』より, Grade: 5
 ID: 2300, Name: アニー・ローリー, Book ID: 263, Memo: , Grade: 5
+ID: 2301, Name: スペクタキュラー・ディズニー メドレー(ミッキーマウス・マーチ～ハイ・ホー～ホール・ニュー・ワールド～彼こそが海賊～星に願いを～小さな世界～), Book ID: 264, Memo: , Grade: 5～3
+ID: 2302, Name: レット・イット・ゴー～ありのままで～, Book ID: 264, Memo: , Grade: 5～3
+ID: 2303, Name: 輝く未来, Book ID: 264, Memo: , Grade: 5～3
+ID: 2304, Name: 「シンデレラ」 メドレー(シンデレラ ～仕事のうた ～ビビディ・バビディ・ブー ～宮殿での舞踏会 ～これが恋かしら ～夢はひそかに), Book ID: 264, Memo: , Grade: 5～3
+ID: 2305, Name: 「メリー・ポピンズ」 メドレー(お砂糖ひとさじで～ステップ・イン・タイム～チム・チム・チェリー～スーパーカリフラジリスティックエクスピアリドーシャス), Book ID: 264, Memo: , Grade: 5～3
+
 
 Artists:
 ID: 1, Name: MY FIRST STORY×HYDE
@@ -5059,6 +5066,8 @@ ID: 1308, Name: 宇崎 竜童
 ID: 1309, Name: 木村 イオリ
 ID: 1310, Name: bashiry
 ID: 1311, Name: Lady J.D. Alicia Scott
+ID: 1312, Name: Oliver Wallace
+ID: 1313, Name: Paul Smith
 
 Arrangers:
 ID: 1, Name: 黒崎 美保
