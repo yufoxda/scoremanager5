@@ -45,15 +45,14 @@ jobs:
       # 5. Checkout the `release` branch
       - name: Checkout release branch
         run: |
-          git fetch origin
-          git checkout -b release origin/release 
-          git checkout origin/updatesql -- Database/ompooscores.db
-    
+          git fetch origin release
+          git checkout release -- Database/ompooscores.db -- Src/Static/notice.json
+
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
         run: |
           git config --global user.name "${{ secrets.GITHUBNAME }}"
           git config --global user.email "${{ secrets.EMAIL }}"
-          git add Database/ompooscores.db
+          git add Database/ompooscores.db Src/Static/notice.json
           git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
           git push origin release
