@@ -27,9 +27,9 @@
             </tr>
         </tbody>
     </table> #}
-    <p>2025.03.06&nbsp;月刊エレクトーン追加されました</p>
+    {% for notice in notice_data %}
+        <p>{{ notice.date }}&nbsp;{{notice.content}}&nbsp;{{notice.end_txt}}</p>
+    {% endfor %}
     <p>2024.11.15&nbsp;部室の本追加完了しました！</p>
     <p class="break-keep">2024.11.12&nbsp;意外とみんな使ってくれてるみたいで<wbr>ありがとうございます。詳細検索、若干不具合あります。<br>デザインとかほしい機能とか募集中です。</p>
-    <p>2024.11.06&nbsp;詳細検索実装</p>
-    <p>2024.10.31&nbsp;スマホ版リリース</p>
 </div>
