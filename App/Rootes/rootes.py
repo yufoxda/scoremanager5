@@ -4,13 +4,16 @@ from flask import render_template, request
 from flask_sqlalchemy import pagination
 from sqlalchemy.orm import contains_eager
 import random
+import json
 
 @app.route("/")
 def home():
+  json_open = open('Src/Static/notice.json', 'r',encoding="utf-8")
+  notice_data = json.load(json_open)
   num = db.session.query(Book).count()
   random_ids = random.sample(range(1, num), 4)
   picup = db.session.query(Book).filter(Book.id.in_(random_ids)).all()
-  return render_template('Pages/home.html',picup = picup)
+  return render_template('Pages/home.html',picup = picup,notice_data = notice_data) 
 
 
 @app.route("/searchbook",methods = ["GET"])
