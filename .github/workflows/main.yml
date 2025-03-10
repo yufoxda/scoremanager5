@@ -45,7 +45,7 @@ jobs:
         run: |
           git fetch origin
           git checkout -b release origin/release 
-          git checkout origin/updatesql -- Database/ompooscores.db -- Src/Static/notice.json
+          git checkout origin/updatesql -- Database/ompooscores.db Src/Static/notice.json
     
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
