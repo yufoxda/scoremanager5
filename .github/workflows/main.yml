@@ -38,7 +38,7 @@ jobs:
       - name: Checkout release branch
         run: |
           git fetch origin release
-          git checkout release -- Database/ompooscores.db -- Src/Static/notice.json
+          git switch release
 
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
