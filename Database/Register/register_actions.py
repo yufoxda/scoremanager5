@@ -9,7 +9,7 @@ from datetime import datetime
 from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger,Artist
 from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArtistAssociation
 
-from ...App import update_notice
+from App import update_notice
 
 engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 Session = sessionmaker(bind=engine)
