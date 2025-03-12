@@ -214,7 +214,7 @@ def main(code):
 
     # セッションをコミットしてデータベースに保存
     session.commit()
-    update_notice.update(datetime.now(),bookname,"追加されました")
+    update_notice.update(datetime.now().strftime('%Y.%m.%d'),bookname,"追加されました")
 
     print("データベースに楽譜集と曲を保存しました。")
 
