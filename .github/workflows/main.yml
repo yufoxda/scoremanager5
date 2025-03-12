@@ -38,7 +38,9 @@ jobs:
       - name: Checkout release branch
         run: |
           git fetch origin release
+          git stash
           git switch release
+          git stash pop
 
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
@@ -47,4 +49,4 @@ jobs:
           git config --global user.email "${{ secrets.EMAIL }}"
           git add Database/ompooscores.db Src/Static/notice.json
           git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
-          git push origin release
+          git push origin
