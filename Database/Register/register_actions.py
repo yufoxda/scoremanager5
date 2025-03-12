@@ -9,7 +9,7 @@ from datetime import datetime
 from ..Schema.schema import Book, Song, Lyricist, SongWriter, Arranger,Artist
 from ..Schema.schema import SongLyricistAssociation,SongWriterAssociation,SongArtistAssociation
 
-
+from ...App import update_notice
 
 engine = create_engine('sqlite:///Database/ompooscores.db', echo=True)
 Session = sessionmaker(bind=engine)
@@ -110,6 +110,8 @@ def main(code):
 
     existcode = session.query(Book).filter_by(product_code = code).first()
     if existcode:
+        print(existcode.product_code , "あるよ")
+        print(existcode.book_name)
         return
 
     base_url = 'https://www.ymm.co.jp/p/detail.php?code='+code+'&dm=d&o='
@@ -212,6 +214,7 @@ def main(code):
 
     # セッションをコミットしてデータベースに保存
     session.commit()
+    update_notice.update(datetime.now(),bookname,"追加されました")
 
     print("データベースに楽譜集と曲を保存しました。")
 

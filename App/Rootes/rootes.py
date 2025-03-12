@@ -4,13 +4,16 @@ from flask import render_template, request
 from flask_sqlalchemy import pagination
 from sqlalchemy.orm import contains_eager
 import random
+import json
 
 @app.route("/")
 def home():
+  json_open = open('Src/Static/notice.json', 'r',encoding="utf-8")
+  notice_data = json.load(json_open)
   num = db.session.query(Book).count()
   random_ids = random.sample(range(1, num), 4)
   picup = db.session.query(Book).filter(Book.id.in_(random_ids)).all()
-  return render_template('Pages/home.html',picup = picup)
+  return render_template('Pages/home.html',picup = picup,notice_data = notice_data) 
 
 
 @app.route("/searchbook",methods = ["GET"])
@@ -52,15 +55,15 @@ def advancedsearch():
     if search_params['song']:
         query = query.filter(Song.song_name.contains(search_params['song']))
     if search_params['book']:
-        query = query.join(Book).filter(Book.book_name.contains(search_params['book'])).options(contains_eager(Song.parent_book))
+        query = query.join(Book).filter(Book.book_name.contains(search_params['book']))
     if search_params['artist']:
-        query = query.join(Song.artists).filter(Artist.Artist_name.contains(search_params['artist'])).options(contains_eager(Song.artists))
+        query = query.join(Song.artists).filter(Artist.Artist_name.contains(search_params['artist']))
     if search_params['lyricist']:
-        query = query.join(Song.lyricists).filter(Lyricist.lyricist_name.contains(search_params['lyricist'])).options(contains_eager(Song.lyricists))
+        query = query.join(Song.lyricists).filter(Lyricist.lyricist_name.contains(search_params['lyricist']))
     if search_params['song_writer']:
-        query = query.join(Song.song_writers).filter(SongWriter.song_writer_name.contains(search_params['song_writer'])).options(contains_eager(Song.song_writers))
+        query = query.join(Song.song_writers).filter(SongWriter.song_writer_name.contains(search_params['song_writer']))
     if search_params['arranger']:
-        query = query.join(Song.arrangers).filter(Arranger.arranger_name.contains(search_params['arranger'])).options(contains_eager(Song.arrangers))
+        query = query.join(Song.arrangers).filter(Arranger.arranger_name.contains(search_params['arranger']))
     if search_params['grade']:
         query = query.filter(Song.grade.contains(search_params['grade']))
     if search_params['memo']:
