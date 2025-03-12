@@ -28,18 +28,25 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install SQLAlchemy bs4 requests
-
-      # 4. Run the Python script
+      # 4. Run Python script
       - name: Run Python program
         run: |
           python -m Database.Register.register_actions
-
+          
+      - name: push sql origin
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add Database/ompooscores.db
+          git commit -m "Automated update via GitHub Actions" || echo "No changes to commit"
+          git push origin updatesql
       # 5. Checkout the `release` branch
       - name: Checkout release branch
         run: |
           git fetch origin release
-          git checkout release -- Database/ompooscores.db -- Src/Static/notice.json
-
+          git stash
+          git switch release
+          git stash pop
       # 7. Commit and push changes to `release`
       - name: Commit and push changes
         run: |
@@ -47,4 +54,4 @@ jobs:
           git config --global user.email "${{ secrets.EMAIL }}"
           git add Database/ompooscores.db Src/Static/notice.json
           git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
-          git push origin release
+          git push origin

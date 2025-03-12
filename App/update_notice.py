@@ -15,6 +15,6 @@ def update(date, content, end_txt):
             "end_txt": end_txt
         }
     )
-
+    print(notice_data)
     with open('Src/Static/notice.json', 'w', encoding="utf-8") as f:
         json.dump(notice_data, f, ensure_ascii=False, indent=4)
