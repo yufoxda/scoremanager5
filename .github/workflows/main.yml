@@ -1,57 +1,61 @@
 name: sqlupdate
-
 on:
   push:
-    branches:
-      - updatesql
-    paths:
-      - Database/Register/datum/addbook.txt
+    branches: [updatesql]
+    paths:   [Database/Register/datum/addbook.txt]
+
+# ── ここがポイント ───────────────────────────
+concurrency:
+  group: db-update               # 並列実行は 1 本 + 待機 1 本まで
+  cancel-in-progress: false      # 先行 run が終わるまで後続は pending
+# ↑ 待ち行列の仕組み: docs › Control the concurrency… :contentReference[oaicite:2]{index=2}
+
+permissions:                     # PR を作るので両方必要
+  contents: write
+  pull-requests: write
 
 jobs:
   update-db:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout the `updatesql` branch
-      - name: Checkout updatesql branch
-        uses: actions/checkout@v2
+      # 1. 取得
+      - uses: actions/checkout@v4
         with:
           ref: updatesql
           fetch-depth: 0
 
-      # 2. Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      # 2. Python 実行
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # 3. Install dependencies
-      - name: Install Python dependencies
+      - name: Run script & commit
         run: |
           pip install SQLAlchemy bs4 requests
-      # 4. Run Python script
-      - name: Run Python program
-        run: |
           python -m Database.Register.register_actions
-          
-      - name: push sql origin
-        run: |
-          git config --global user.name "github-actions[bot]"
+
+          git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add Database/ompooscores.db
-          git commit -m "Automated update via GitHub Actions" || echo "No changes to commit"
-          git push origin updatesql
-      # 5. Checkout the `release` branch
-      - name: Checkout release branch
-        run: |
-          git fetch origin release
-          git stash
-          git switch release
-          git stash pop
-      # 7. Commit and push changes to `release`
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "${{ secrets.GITHUBNAME }}"
-          git config --global user.email "${{ secrets.EMAIL }}"
           git add Database/ompooscores.db Src/Static/notice.json
-          git commit -m "Update ompooscores.db after Python script execution" || echo "No changes to commit"
-          git push origin
+          git commit -m "DB auto-update ${{ github.sha }}" || echo "no change"
+          git push origin HEAD:updatesql
+
+      # 3. PR 作成 / 更新
+      - name: Create or update PR to release
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}     # 標準トークンで OK
+          base: release                          # マージ先
+          branch: updatesql                      # HEAD = updatesql
+          title: "Automated DB update"
+          body: |
+            This PR was generated automatically.  
+            Please review & merge.
+
+      # 4. （任意）Auto-merge をセット
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        run: gh pr merge --auto --merge "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
