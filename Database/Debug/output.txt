@@ -263,6 +263,12 @@ ID: 261, Name: 月刊エレクトーン2024年10月号, Product Code: GTM0110199
 ID: 262, Name: 月刊エレクトーン2024年12月号, Product Code: GTM01102179
 ID: 263, Name: 月刊エレクトーン2024年11月号, Product Code: GTM01102178
 ID: 264, Name: STAGEAディズニー5～3級Vol.20オーケストラで彩るディズニーの名曲たち2, Product Code: GTE01101952
+ID: 265, Name: STAGEAエレクトーンで弾く9～7級Vol.78やさしく弾ける大人のためのレパートリー歌謡曲＆ニューミュージック, Product Code: GTE01102003
+ID: 266, Name: 月刊エレクトーン2025年1月号, Product Code: GTM01102180
+ID: 267, Name: 月刊エレクトーン2025年3月号, Product Code: GTM01102342
+ID: 268, Name: 月刊エレクトーン2025年5月号, Product Code: GTM01102416
+ID: 269, Name: 月刊エレクトーン2025年4月号, Product Code: GTM01102343
+ID: 270, Name: 月刊エレクトーン2025年2月号, Product Code: GTM01102341
 
 Songs:
 ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
@@ -2570,7 +2576,75 @@ ID: 2302, Name: レット・イット・ゴー～ありのままで～, Book ID:
 ID: 2303, Name: 輝く未来, Book ID: 264, Memo: , Grade: 5～3
 ID: 2304, Name: 「シンデレラ」 メドレー(シンデレラ ～仕事のうた ～ビビディ・バビディ・ブー ～宮殿での舞踏会 ～これが恋かしら ～夢はひそかに), Book ID: 264, Memo: , Grade: 5～3
 ID: 2305, Name: 「メリー・ポピンズ」 メドレー(お砂糖ひとさじで～ステップ・イン・タイム～チム・チム・チェリー～スーパーカリフラジリスティックエクスピアリドーシャス), Book ID: 264, Memo: , Grade: 5～3
-
+ID: 2306, Name: 地上の星, Book ID: 265, Memo: , Grade: 7
+ID: 2307, Name: ヘッドライト・テールライト, Book ID: 265, Memo: , Grade: 9
+ID: 2308, Name: 異邦人, Book ID: 265, Memo: , Grade: 8
+ID: 2309, Name: 中央フリーウェイ, Book ID: 265, Memo: , Grade: 7
+ID: 2310, Name: 真夜中のドア～stay with me, Book ID: 265, Memo: , Grade: 7
+ID: 2311, Name: 迷い道, Book ID: 265, Memo: , Grade: 7
+ID: 2312, Name: ワインレッドの心, Book ID: 265, Memo: , Grade: 9
+ID: 2313, Name: 2億4千万の瞳-エキゾチック・ジャパン-, Book ID: 265, Memo: , Grade: 8
+ID: 2314, Name: EMPIRE, Book ID: 266, Memo: , Grade: 6
+ID: 2315, Name: ねっこ, Book ID: 266, Memo:  TBS系 日曜劇場『海に眠るダイヤモンド』主題歌, Grade: 6
+ID: 2316, Name: Same Blue, Book ID: 266, Memo:  TVアニメ『アオのハコ』 オープニング主題歌, Grade: 5
+ID: 2317, Name: MONKEY MAGIC, Book ID: 266, Memo: , Grade: 6
+ID: 2318, Name: 人生の扉, Book ID: 266, Memo: , Grade: 7
+ID: 2319, Name: ハッピー・バースデイ, Book ID: 266, Memo: , Grade: 7
+ID: 2320, Name: もしもピアノが弾けたなら, Book ID: 266, Memo: , Grade: 7
+ID: 2321, Name: 雪, Book ID: 266, Memo: , Grade: 8
+ID: 2322, Name: グリーンスリーブス, Book ID: 266, Memo: , Grade: 5
+ID: 2323, Name: Countdown to Heaven ～ 私、失敗しないので, Book ID: 266, Memo:  テレビ朝日系木曜ドラマ『Doctor-X ～外科医・大門未知子』より, Grade: 5
+ID: 2324, Name: 春の声, Book ID: 266, Memo: , Grade: 5
+ID: 2325, Name: BEHIND THE MASK, Book ID: 266, Memo: , Grade: 5
+ID: 2326, Name: ダンスホール(エレクトーン&エレクトーン), Book ID: 266, Memo: , Grade: 中
+ID: 2327, Name: Episode X, Book ID: 267, Memo:  『劇場版ドクターX』主題歌, Grade: 6
+ID: 2328, Name: 50%, Book ID: 267, Memo:  映画『はたらく細胞』主題歌, Grade: 6
+ID: 2329, Name: 春よ、来い, Book ID: 267, Memo: , Grade: 6
+ID: 2330, Name: ぼよよん行進曲, Book ID: 267, Memo:  NHK『おかあさんといっしょ』より, Grade: 6
+ID: 2331, Name: You're My Only Shinin' Star, Book ID: 267, Memo: , Grade: 6
+ID: 2332, Name: 愛はかげろうのように, Book ID: 267, Memo: , Grade: 7
+ID: 2333, Name: シンデレラ・ハネムーン, Book ID: 267, Memo: , Grade: 7
+ID: 2334, Name: スワニー河, Book ID: 267, Memo: , Grade: 6
+ID: 2335, Name: きのこいぬ, Book ID: 267, Memo:  TVアニメ『きのこいぬ』オープニング主題歌, Grade: 8
+ID: 2336, Name: 歌劇『カルメン』第1組曲より「間奏曲」, Book ID: 267, Memo: , Grade: 5
+ID: 2337, Name: Golden Hour(エレクトーン&エレクトーン), Book ID: 267, Memo: , Grade: 中上
+ID: 2338, Name: ビタースウィート・サンバ, Book ID: 267, Memo: , Grade: 5
+ID: 2339, Name: スケッチ, Book ID: 268, Memo:  『映画ドラえもん のび太の絵世界物語』主題歌, Grade: 6
+ID: 2340, Name: SBY, Book ID: 268, Memo:  劇場版『トリリオンゲーム』主題歌, Grade: 6
+ID: 2341, Name: 怪獣, Book ID: 268, Memo:  TVアニメ『チ。 ―地球の運動について―』オープニング主題歌, Grade: 7
+ID: 2342, Name: BOW AND ARROW, Book ID: 268, Memo:  TVアニメ『メダリスト』オープニング主題歌, Grade: 6
+ID: 2343, Name: 勇気100%, Book ID: 268, Memo: , Grade: 6
+ID: 2344, Name: すべてをあなたに, Book ID: 268, Memo: , Grade: 7
+ID: 2345, Name: 木蘭の涙, Book ID: 268, Memo: , Grade: 7
+ID: 2346, Name: ハイ・ホー, Book ID: 268, Memo:  ディズニー映画『白雪姫』より, Grade: 8
+ID: 2347, Name: パヴァーヌ, Book ID: 268, Memo: , Grade: 6
+ID: 2348, Name: Glorious Edo ～大河ドラマ「べらぼう～蔦重栄華乃夢噺～」メインテーマ, Book ID: 268, Memo:  NHK大河ドラマ『べらぼう～蔦重栄華乃夢噺～』より, Grade: 5
+ID: 2349, Name: Tomorrow, Book ID: 268, Memo: , Grade: 5～4
+ID: 2350, Name: アフリカン・シンフォニー(エレクトーン&エレクトーン), Book ID: 268, Memo: , Grade: 中上
+ID: 2351, Name: 百花繚乱, Book ID: 269, Memo:  TVアニメ『薬屋のひとりごと』Season 2 オープニングテーマ, Grade: 6
+ID: 2352, Name: AlwayS, Book ID: 269, Memo:  映画『野生の島のロズ』スペシャルソング, Grade: 7
+ID: 2353, Name: 君の知らない物語, Book ID: 269, Memo: , Grade: 6
+ID: 2354, Name: 星空のディスタンス, Book ID: 269, Memo: , Grade: 7
+ID: 2355, Name: You were mine, Book ID: 269, Memo: , Grade: 6
+ID: 2356, Name: 風のシルエット, Book ID: 269, Memo: , Grade: 5
+ID: 2357, Name: メリーさんのひつじ, Book ID: 269, Memo: , Grade: 5
+ID: 2358, Name: さくらさくら, Book ID: 269, Memo: , Grade: 8
+ID: 2359, Name: 再生へ導くダークヒーロー, Book ID: 269, Memo:  テレビ朝日系ドラマ『家政夫のミタゾノ』より, Grade: 6
+ID: 2360, Name: I Will Be There with You [Instrumental Version](ピアノ&エレクトーン), Book ID: 269, Memo:  JALオリジナルソング, Grade: 中
+ID: 2361, Name: イナズマ -2024 Ver.-, Book ID: 269, Memo: , Grade: 5
+ID: 2362, Name: ビターバカンス, Book ID: 270, Memo:  映画『聖☆おにいさん THE MOVIE ～ホーリーメンVS悪魔軍団～』主題歌, Grade: 6
+ID: 2363, Name: Sailing, Book ID: 270, Memo:  TVアニメ「SPECIAL EDITED VERSION『 ONE PIECE』 魚人島編」エンディング主題歌, Grade: 6
+ID: 2364, Name: Bunny Girl, Book ID: 270, Memo: , Grade: 7
+ID: 2365, Name: わたしの一番かわいいところ, Book ID: 270, Memo: , Grade: 6
+ID: 2366, Name: 旅立ちの日に…, Book ID: 270, Memo: , Grade: 6
+ID: 2367, Name: 時の流れに身をまかせ, Book ID: 270, Memo: , Grade: 7
+ID: 2368, Name: ヒーロー, Book ID: 270, Memo: , Grade: 6
+ID: 2369, Name: 思い出のアルバム, Book ID: 270, Memo: , Grade: 8
+ID: 2370, Name: わらの中の七面鳥, Book ID: 270, Memo: , Grade: 6
+ID: 2371, Name: 瑞風～MIZUKAZE～, Book ID: 270, Memo:  「TWILIGHT EXPRESS 瑞風」テーマソング, Grade: 6
+ID: 2372, Name: グランメゾン東京 - Main Theme -, Book ID: 270, Memo:  TBS系日曜劇場『グランメゾン東京』メインテーマ, Grade: 5
+ID: 2373, Name: 愛の夢 第3番, Book ID: 270, Memo: , Grade: 6
+ID: 2374, Name: さんぽ(ピアノ&エレクトーン), Book ID: 270, Memo:  スタジオジブリ映画『となりのトトロ』オープニングテーマ, Grade: 初中
 
 Artists:
 ID: 1, Name: MY FIRST STORY×HYDE
@@ -3122,6 +3196,27 @@ ID: 546, Name: スリー・ディグリーズ
 ID: 547, Name: こっちのけんと
 ID: 548, Name: 山口 百恵
 ID: 549, Name: bohemianvoodoo
+ID: 550, Name: 松原 みき
+ID: 551, Name: 渡辺 真知子
+ID: 552, Name: 西田 敏行
+ID: 553, Name: 今井 ゆうぞう、はいだ しょうこ
+ID: 554, Name: 中山 美穂
+ID: 555, Name: シャーリーン
+ID: 556, Name: Calmera
+ID: 557, Name: ホイットニー・ヒューストン
+ID: 558, Name: スターダスト☆レビュー
+ID: 559, Name: ブラザーズ・ジョンソン
+ID: 560, Name: 川島 容子
+ID: 561, Name: 幾田 りら
+ID: 562, Name: supercell
+ID: 563, Name: THE ALFEE
+ID: 564, Name: ボビー・コールドウェル
+ID: 565, Name: AKASAKI
+ID: 566, Name: FRUITS ZIPPER
+ID: 567, Name: 川嶋 あい
+ID: 568, Name: ボニー・タイラー
+ID: 569, Name: 葉加 瀬太郎
+ID: 570, Name: リスト
 
 Lyricists:
 ID: 1, Name: MY FIRST STORY
@@ -3753,6 +3848,42 @@ ID: 626, Name: Leon A.Huff
 ID: 627, Name: LOAR
 ID: 628, Name: こっちのけんと
 ID: 629, Name: William Douglas
+ID: 630, Name: D&H(PURPLE NIGHT)
+ID: 631, Name: Henrik Nordenback
+ID: 632, Name: Christian Fast
+ID: 633, Name: Didrik Thott
+ID: 634, Name: Stevie Wonder
+ID: 635, Name: イギリス民謡
+ID: 636, Name: Chris Mosdell
+ID: 637, Name: 中西 圭三
+ID: 638, Name: 田角 有里
+ID: 639, Name: 角松 敏生
+ID: 640, Name: Ron Miller
+ID: 641, Name: Kenny Hirsch
+ID: 642, Name: 仲宗根 泉
+ID: 643, Name: Takuya Harada
+ID: 644, Name: 山口 一郎
+ID: 645, Name: Michael Masser
+ID: 646, Name: 山田 ひろし
+ID: 647, Name: 幾田 りら
+ID: 648, Name: ryo
+ID: 649, Name: 高見沢 俊彦
+ID: 650, Name: 高橋 研
+ID: 651, Name: 川村 真澄
+ID: 652, Name: Bobby Caldwell
+ID: 653, Name: Alfons Kettner
+ID: 654, Name: アメリカ民謡
+ID: 655, Name: 日本古謡
+ID: 656, Name: David Foster
+ID: 657, Name: Amy Skylark Foster
+ID: 658, Name: Chaki Zulu
+ID: 659, Name: SOTA
+ID: 660, Name: SHUNTO
+ID: 661, Name: RYUHEI
+ID: 662, Name: AKASAKI
+ID: 663, Name: ヤマモトショウ
+ID: 664, Name: 川嶋 あい
+ID: 665, Name: Dean Pitchford
 
 Song Writers:
 ID: 1, Name: MY FIRST STORY
@@ -5068,6 +5199,46 @@ ID: 1310, Name: bashiry
 ID: 1311, Name: Lady J.D. Alicia Scott
 ID: 1312, Name: Oliver Wallace
 ID: 1313, Name: Paul Smith
+ID: 1314, Name: 渡辺 真知子
+ID: 1315, Name: 井上 大輔
+ID: 1316, Name: Henrik Nordenback
+ID: 1317, Name: Christian Fast
+ID: 1318, Name: Didrik Thott
+ID: 1319, Name: Stevie Wonder
+ID: 1320, Name: 坂田 晃一
+ID: 1321, Name: J.シュトラウスII
+ID: 1322, Name: 中西 圭三 編曲:小西 貴雄
+ID: 1323, Name: 角松 敏生
+ID: 1324, Name: Ron Miller
+ID: 1325, Name: Kenny Hirsch
+ID: 1326, Name: 仲宗根 泉
+ID: 1327, Name: G Bizet
+ID: 1328, Name: PAKshin
+ID: 1329, Name: Sol Lake
+ID: 1330, Name: 山口 一郎
+ID: 1331, Name: 岩寺 基晴
+ID: 1332, Name: 草刈 愛美
+ID: 1333, Name: 岡崎 英美
+ID: 1334, Name: 江島 啓一
+ID: 1335, Name: Gerald Goffin
+ID: 1336, Name: 柿沼 清史
+ID: 1337, Name: G.Faure
+ID: 1338, Name: George Johnson
+ID: 1339, Name: Louis Johnson
+ID: 1340, Name: Van Mccoy
+ID: 1341, Name: 幾田 りら
+ID: 1342, Name: 高見沢 俊彦
+ID: 1343, Name: 羽田 一郎
+ID: 1344, Name: Bobby Caldwell
+ID: 1345, Name: Alfons Kettner
+ID: 1346, Name: Amy Skylark Foster
+ID: 1347, Name: Atsushi Inoue
+ID: 1348, Name: AKASAKI
+ID: 1349, Name: ヤマモトショウ
+ID: 1350, Name: 川嶋 あい
+ID: 1351, Name: Jim Steinman
+ID: 1352, Name: 本多 鉄麿
+ID: 1353, Name: Franz Liszt
 
 Arrangers:
 ID: 1, Name: 黒崎 美保
@@ -5193,3 +5364,4 @@ ID: 120, Name: 矢口理津子
 ID: 121, Name: 稲垣千章
 ID: 122, Name: 敏いとうとハッピー&ブルー
 ID: 123, Name: 大木裕一郎
+ID: 124, Name: 笹山由紀子
