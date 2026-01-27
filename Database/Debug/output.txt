@@ -269,6 +269,13 @@ ID: 267, Name: 月刊エレクトーン2025年3月号, Product Code: GTM01102342
 ID: 268, Name: 月刊エレクトーン2025年5月号, Product Code: GTM01102416
 ID: 269, Name: 月刊エレクトーン2025年4月号, Product Code: GTM01102343
 ID: 270, Name: 月刊エレクトーン2025年2月号, Product Code: GTM01102341
+ID: 271, Name: 月刊エレクトーン2025年7月号, Product Code: GTM01102418
+ID: 272, Name: 月刊エレクトーン2025年6月号, Product Code: GTM01102417
+ID: 273, Name: 月刊エレクトーン2025年8月号, Product Code: GTM01102488
+ID: 274, Name: 月刊エレクトーン2025年9月号, Product Code: GTM01102489
+ID: 275, Name: 月刊エレクトーン2025年10月号, Product Code: GTM01102490
+ID: 276, Name: 月刊エレクトーン2025年11月号, Product Code: GTM01102666
+ID: 277, Name: 月刊エレクトーン2025年12月号, Product Code: GTM01102667
 
 Songs:
 ID: 1, Name: 夢幻, Book ID: 1, Memo: 『テレビアニメ「鬼滅の刃」柱稽古編』オープニング主題歌, Grade: 6
@@ -2645,6 +2652,88 @@ ID: 2371, Name: 瑞風～MIZUKAZE～, Book ID: 270, Memo:  「TWILIGHT EXPRESS �
 ID: 2372, Name: グランメゾン東京 - Main Theme -, Book ID: 270, Memo:  TBS系日曜劇場『グランメゾン東京』メインテーマ, Grade: 5
 ID: 2373, Name: 愛の夢 第3番, Book ID: 270, Memo: , Grade: 6
 ID: 2374, Name: さんぽ(ピアノ&エレクトーン), Book ID: 270, Memo:  スタジオジブリ映画『となりのトトロ』オープニングテーマ, Grade: 初中
+ID: 2375, Name: 夢の宇宙旅行, Book ID: 271, Memo: , Grade: 6
+ID: 2376, Name: 賜物, Book ID: 271, Memo:  NHK連続テレビ小説『あんぱん』主題歌, Grade: 6
+ID: 2377, Name: クスシキ, Book ID: 271, Memo:  TVアニメ『薬屋のひとりごと』第2期第2クールオープニングテーマ, Grade: 6
+ID: 2378, Name: 青と夏, Book ID: 271, Memo:  映画『青夏 きみに恋した30日』主題歌, Grade: 6
+ID: 2379, Name: 見つめあう恋, Book ID: 271, Memo: , Grade: 7
+ID: 2380, Name: ふたりの愛ランド, Book ID: 271, Memo: , Grade: 7
+ID: 2381, Name: ハワイへ行きたい, Book ID: 271, Memo: , Grade: 5
+ID: 2382, Name: たなばたさま, Book ID: 271, Memo: , Grade: 8
+ID: 2383, Name: ボレロ(エレクトーン&エレクトーン), Book ID: 271, Memo: , Grade: 中
+ID: 2384, Name: ふるさと, Book ID: 271, Memo: , Grade: 5
+ID: 2385, Name: 海溝, Book ID: 271, Memo: , Grade: 5～3
+ID: 2386, Name: ひとりごと, Book ID: 272, Memo:  TVアニメ『薬屋のひとりごと』第2期第2クールエンディングテーマ, Grade: 6
+ID: 2387, Name: Rock this Party, Book ID: 272, Memo: , Grade: 6
+ID: 2388, Name: PIECE OF MY WISH, Book ID: 272, Memo: , Grade: 7
+ID: 2389, Name: 僕のこと, Book ID: 272, Memo:  第97回全国高校サッカー選手権大会 応援歌, Grade: 6
+ID: 2390, Name: 青い珊瑚礁, Book ID: 272, Memo: , Grade: 6
+ID: 2391, Name: ウキウキ・ウェイク・ミー・アップ, Book ID: 272, Memo: , Grade: 6
+ID: 2392, Name: アンパンマンのマーチ, Book ID: 272, Memo: , Grade: 8
+ID: 2393, Name: ホット・スタッフ, Book ID: 272, Memo: , Grade: 8
+ID: 2394, Name: トリリオンゲーム - Main Theme -, Book ID: 272, Memo:  TBS系 金曜ドラマ『トリリオンゲーム』より, Grade: 5
+ID: 2395, Name: アメリカン・パトロール, Book ID: 272, Memo: , Grade: 5
+ID: 2396, Name: オーラ・リー, Book ID: 272, Memo: , Grade: 5
+ID: 2397, Name: ライラック(ピアノ&エレクトーン), Book ID: 272, Memo:  TVアニメ『忘却バッテリー』オープニング・テーマ, Grade: 中上
+ID: 2398, Name: TWILIGHT！！！, Book ID: 273, Memo:  劇場版『名探偵コナン 隻眼の残像(フラッシュバック)』主題歌, Grade: 6
+ID: 2399, Name: ブルーアンバー, Book ID: 273, Memo:  カンテレ・フジテレビ系月10ドラマ『あなたを奪ったその日から』主題歌, Grade: 6
+ID: 2400, Name: 夢中, Book ID: 273, Memo:  フジテレビ系 木曜劇場『波うららかに、めおと日和』主題歌, Grade: 5
+ID: 2401, Name: 夏祭り, Book ID: 273, Memo: , Grade: 7
+ID: 2402, Name: ふたりの夏物語-NEVER ENDING SUMMER-, Book ID: 273, Memo: , Grade: 7
+ID: 2403, Name: マホガニーのテーマ, Book ID: 273, Memo: , Grade: 6
+ID: 2404, Name: 燃えよドラゴン, Book ID: 273, Memo: , Grade: 5
+ID: 2405, Name: 「名探偵コナン」メイン・テーマ, Book ID: 273, Memo: , Grade: 8
+ID: 2406, Name: リカド・ボサノバ, Book ID: 273, Memo: , Grade: 5～3
+ID: 2407, Name: Aqua(ピアノ&エレクトーン), Book ID: 273, Memo: , Grade: 中
+ID: 2408, Name: アンネン・ポルカ, Book ID: 273, Memo: , Grade: 5
+ID: 2409, Name: タイスの瞑想曲, Book ID: 273, Memo: , Grade: 5
+ID: 2410, Name: Plazma, Book ID: 274, Memo:  TVアニメ『機動戦士Gundam GQuuuuuuX(ジークアクス)』主題歌, Grade: 6
+ID: 2411, Name: breakfast, Book ID: 274, Memo:  フジテレビ系『サン！シャイン』テーマソング, Grade: 6
+ID: 2412, Name: PUZZLE, Book ID: 274, Memo: , Grade: 6
+ID: 2413, Name: SEPTEMBER, Book ID: 274, Memo: , Grade: 6
+ID: 2414, Name: リボン, Book ID: 274, Memo:  ディズニー&ピクサー劇場最新作『星つなぎのエリオ』日本版エンドソング, Grade: 6
+ID: 2415, Name: パワー・オブ・ラヴ, Book ID: 274, Memo: , Grade: 6
+ID: 2416, Name: TRUTH, Book ID: 274, Memo: , Grade: 8
+ID: 2417, Name: 「PJ ー航空救難団ー」メインテーマ, Book ID: 274, Memo:  テレビ朝日 木曜ドラマ『PJ ～航空救難団～』より, Grade: 5
+ID: 2418, Name: ASAYAKE, Book ID: 274, Memo: , Grade: 5
+ID: 2419, Name: 夢中 -Piano ver.-(ピアノ&エレクトーン), Book ID: 274, Memo:  フジテレビ系 木曜劇場『波うららかに、めおと日和』主題歌, Grade: 中上
+ID: 2420, Name: 荒城の月, Book ID: 274, Memo: , Grade: 5
+ID: 2421, Name: 道, Book ID: 274, Memo: , Grade: 5～3
+ID: 2422, Name: 残酷な夜に輝け, Book ID: 275, Memo:  『劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来』主題歌, Grade: 6
+ID: 2423, Name: Carrying Happiness, Book ID: 275, Memo: , Grade: 6
+ID: 2424, Name: 空, Book ID: 275, Memo:  第92回NHK全国学校音楽コンクール(Nコン2025)“中学校の部”課題曲/NHK みんなのうた(2025年6月～7月放送), Grade: 6
+ID: 2425, Name: それもいいね, Book ID: 275, Memo:  NHK Eテレ『The Wakey Show ～ザ・ウェイキー・ショウ』エンディングテーマ, Grade: 6
+ID: 2426, Name: 浪漫飛行, Book ID: 275, Memo: , Grade: 7
+ID: 2427, Name: イングリッシュマン・イン・ニューヨーク, Book ID: 275, Memo: , Grade: 6
+ID: 2428, Name: ピアノソナタ第14番「月光」第1楽章, Book ID: 275, Memo: , Grade: 5
+ID: 2429, Name: as you do, Book ID: 275, Memo:  テレビ朝日系列「有働Times」主題歌, Grade: 6
+ID: 2430, Name: ケンタッキーのわが家, Book ID: 275, Memo: , Grade: 5
+ID: 2431, Name: 君の瞳に恋してる, Book ID: 275, Memo: , Grade: 5～3
+ID: 2432, Name: ミッキーマウス・マーチ(エレクトーン&エレクトーン), Book ID: 275, Memo: , Grade: 中
+ID: 2433, Name: 太陽が昇らない世界, Book ID: 276, Memo:  『劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来』主題歌, Grade: 6
+ID: 2434, Name: 革命道中, Book ID: 276, Memo:  TVアニメ『ダンダダン』第2期オープニングテーマ, Grade: 6
+ID: 2435, Name: カリスマックス, Book ID: 276, Memo: , Grade: 6
+ID: 2436, Name: 木枯しに抱かれて, Book ID: 276, Memo: , Grade: 7
+ID: 2437, Name: ヒーロー, Book ID: 276, Memo: , Grade: 6
+ID: 2438, Name: NIGHT DREAMER, Book ID: 276, Memo: , Grade: 6
+ID: 2439, Name: 「南極物語」メイン・テーマ, Book ID: 276, Memo: , Grade: 9
+ID: 2440, Name: 犬のおまわりさん, Book ID: 276, Memo: , Grade: 9
+ID: 2441, Name: 口笛吹きと犬, Book ID: 276, Memo: , Grade: 5
+ID: 2442, Name: 小犬のワルツ, Book ID: 276, Memo: , Grade: 5
+ID: 2443, Name: One's Heart, Book ID: 276, Memo: , Grade: 5～3
+ID: 2444, Name: 犬、逃げた。-ver. 2.0-(エレクトーン&エレクトーン), Book ID: 276, Memo: , Grade: 中上
+ID: 2445, Name: GOOD DAY, Book ID: 277, Memo:  「キリン グッドエール」CMソング, Grade: 6
+ID: 2446, Name: らしさ, Book ID: 277, Memo:  劇場アニメ『ひゃくえむ。』主題歌, Grade: 6
+ID: 2447, Name: Blue Jeans, Book ID: 277, Memo: , Grade: 6
+ID: 2448, Name: アゲハ蝶, Book ID: 277, Memo:  新土曜ドラマ『良いこと悪いこと』主題歌, Grade: 6
+ID: 2449, Name: FLASH, Book ID: 277, Memo:  映画『ちはやふる -上の句・下の句-』主題歌, Grade: 7
+ID: 2450, Name: 愛がすべて, Book ID: 277, Memo: , Grade: 6
+ID: 2451, Name: クリスマスキャロルの頃には, Book ID: 277, Memo: , Grade: 7
+ID: 2452, Name: YOUR CHRISTMAS, Book ID: 277, Memo: , Grade: 5
+ID: 2453, Name: 手のひらを太陽に, Book ID: 277, Memo: , Grade: 9
+ID: 2454, Name: 葦笛の踊り, Book ID: 277, Memo: , Grade: 5
+ID: 2455, Name: ハッピー・バースディ・トゥー・ユー, Book ID: 277, Memo: , Grade: 5
+ID: 2456, Name: 愛をこめて花束を -Orchestra Ver.-(ピアノ&エレクトーン), Book ID: 277, Memo: , Grade: 中上
 
 Artists:
 ID: 1, Name: MY FIRST STORY×HYDE
@@ -3217,6 +3306,30 @@ ID: 567, Name: 川嶋 あい
 ID: 568, Name: ボニー・タイラー
 ID: 569, Name: 葉加 瀬太郎
 ID: 570, Name: リスト
+ID: 571, Name: 石川優子とチャゲ
+ID: 572, Name: 塩谷 哲
+ID: 573, Name: timelesz
+ID: 574, Name: 今井 美樹
+ID: 575, Name: ワム!
+ID: 576, Name: ドリーミング
+ID: 577, Name: ドナ・サマー
+ID: 578, Name: 杉山清貴&オメガトライブ
+ID: 579, Name: ダイアナ・ロス
+ID: 580, Name: J.シュトラウス2世
+ID: 581, Name: 清水 翔太
+ID: 582, Name: ヒューイ・ルイス&ザ・ニュース
+ID: 583, Name: CASIOPEA
+ID: 584, Name: Wakeys
+ID: 585, Name: 米米CLUB
+ID: 586, Name: スティング
+ID: 587, Name: ベートーヴェン
+ID: 588, Name: アイナ・ジ・エンド
+ID: 589, Name: 小泉 今日子
+ID: 590, Name: マライア・キャリー
+ID: 591, Name: ヴァンゲリス
+ID: 592, Name: アーサー・プライヤー
+ID: 593, Name: HANA
+ID: 594, Name: チャイコフスキー
 
 Lyricists:
 ID: 1, Name: MY FIRST STORY
@@ -3884,6 +3997,42 @@ ID: 662, Name: AKASAKI
 ID: 663, Name: ヤマモトショウ
 ID: 664, Name: 川嶋 あい
 ID: 665, Name: Dean Pitchford
+ID: 666, Name: Geoff Stephens
+ID: 667, Name: Les Reed
+ID: 668, Name: チャゲ
+ID: 669, Name: 菊池 風磨
+ID: 670, Name: 佐藤 勝利
+ID: 671, Name: 松島 聡
+ID: 672, Name: George Michael
+ID: 673, Name: やなせたかし
+ID: 674, Name: Peter Bellotte
+ID: 675, Name: Harold Faltermeier
+ID: 676, Name: Keith Forsey
+ID: 677, Name: eill
+ID: 678, Name: Ryo'LEFTY'Miyata
+ID: 679, Name: Gerry Goffi n
+ID: 680, Name: Luiz Antonio
+ID: 681, Name: 清水 翔太
+ID: 682, Name: John Victor Colla
+ID: 683, Name: Christopher John Hayes
+ID: 684, Name: Huey Lewis
+ID: 685, Name: 土井 晩翠
+ID: 686, Name: Sting
+ID: 687, Name: Bob Crewe
+ID: 688, Name: Bob Gaudio
+ID: 689, Name: 近藤 光
+ID: 690, Name: アイナ・ジ・エンド
+ID: 691, Name: Shin Sakiura
+ID: 692, Name: 鈴木まなか
+ID: 693, Name: Hiroki Sagawa
+ID: 694, Name: MUTEKI DEAD SNAKE
+ID: 695, Name: Mariah Carey
+ID: 696, Name: Walter N. Afanasieff
+ID: 697, Name: 佐藤 義美
+ID: 698, Name: CHANMINA
+ID: 699, Name: Hugo Peretti
+ID: 700, Name: Luigi Creatore
+ID: 701, Name: George David Weiss
 
 Song Writers:
 ID: 1, Name: MY FIRST STORY
@@ -5239,6 +5388,42 @@ ID: 1350, Name: 川嶋 あい
 ID: 1351, Name: Jim Steinman
 ID: 1352, Name: 本多 鉄麿
 ID: 1353, Name: Franz Liszt
+ID: 1354, Name: Geoff Stephens
+ID: 1355, Name: Les Reed
+ID: 1356, Name: チャゲ
+ID: 1357, Name: 下総 皖一
+ID: 1358, Name: Anders Dannvik
+ID: 1359, Name: Ryo'LEFTY'Miyata
+ID: 1360, Name: Mattias Olofsson
+ID: 1361, Name: George Michael
+ID: 1362, Name: Peter Bellotte
+ID: 1363, Name: Harold Faltermeier
+ID: 1364, Name: Keith Forsey
+ID: 1365, Name: F. Meacham
+ID: 1366, Name: George R. Poulton
+ID: 1367, Name: eill
+ID: 1368, Name: Gerry Goffi n
+ID: 1369, Name: D.Ferreira
+ID: 1370, Name: Jules Massenet
+ID: 1371, Name: 清水 翔太
+ID: 1372, Name: John Victor Colla
+ID: 1373, Name: Christopher John Hayes
+ID: 1374, Name: Huey Lewis
+ID: 1375, Name: Sting
+ID: 1376, Name: アイナ・ジ・エンド
+ID: 1377, Name: Shin Sakiura
+ID: 1378, Name: 鈴木まなか
+ID: 1379, Name: Hiroki Sagawa
+ID: 1380, Name: MUTEKI DEAD SNAKE
+ID: 1381, Name: Mariah Carey
+ID: 1382, Name: Walter N. Afanasieff
+ID: 1383, Name: Vangelis
+ID: 1384, Name: 大中 恩
+ID: 1385, Name: Arthur Pryor
+ID: 1386, Name: カルメラ
+ID: 1387, Name: CHANMINA
+ID: 1388, Name: RyosukeDr.RSakai
+ID: 1389, Name: 三井 誠
 
 Arrangers:
 ID: 1, Name: 黒崎 美保
